@@ -140,7 +140,7 @@ CHARTS & GRAPHS
 }
 
 .therapistBox {
-	display: inline-block;
+	float: left;
 	width: 18px;
 	height: 18px;
 	background: rgba(123,204,196,0.5);
@@ -148,7 +148,7 @@ CHARTS & GRAPHS
 }
 
 .clientBox {
-	display: inline-block;
+	float: left;
 	width: 18px;
 	height: 18px;
 	background: rgba(123,204,196,0.5);
