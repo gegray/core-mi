@@ -1,28 +1,78 @@
 body {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	font-size: 16pt;
+}
+
+p {
+	font-size: 12pt;
+	font-weight: 300;
+	color: rgb(40,40,40);
 }
 
 .hr {
-	
+
 }
 
 .title {
-	margin: 5% 5% 0% 5%;
+	margin: 5% 5% 0% 0%;
 }
 
 .t1 {
-	font-weight: 
+	font-size: 18pt;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 1.5pt;
 }
 
 .t2 {
-
+	font-size: 14pt;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.25pt;
 }
 
 .t3 {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1pt;
+}
+
+.t4 {
+	font-weight: 700;
+}
+
+.p1 {
 
 }
 
+.p2 {
+	font-size: 8pt;
+}
+
+.score1 {
+	font-size: 60pt;
+	font-weight: 900;
+}
+
+.score2 {
+	font-weight: 900;
+}
+
+.gray {
+	color: rgb(152,152,152);
+}
+
+.green {
+	color: rgb(123,204,196);
+}
+
+.red {
+	color: rgb(255,116,116);
+}
+
 .sessionInfo {
+	margin: 0% 5% 0% 5%;
+}
+
+.coreInfo {
 
 }
