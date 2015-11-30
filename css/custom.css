@@ -155,3 +155,15 @@ CHARTS & GRAPHS
 	margin-right: 12px;
 }
 
+.overviewBarTemp {
+	width: auto;
+	height: 36px;
+	background: rgba(123,204,196,0.5);
+}
+
+.detailViewBarTemp {
+	width: auto;
+	height: 48px;
+	background: rgba(123,204,196,0.5);
+}
+
