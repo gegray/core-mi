@@ -59,7 +59,7 @@
 					<!-- Left Column -->
 					<div class="col-sm-4">
 				        <p class="t2">Overall MI Fidelity</p>
-				        <p class="score1"><span class="green">7</span><span class="score2">/12</span></p>
+				        <p class="totalScore1"><span class="green">7</span><span class="totalScore2">/12</span></p>
 				        <p class="t3">MI Adherance</p>
 				        <div class="pieChart"></div>
 				        <p class="t3">MI Alerts</p>
@@ -81,19 +81,55 @@
 				    	<p class="p1"><span class="plusMinus green">+ </span>Fui in sed num ad inate poena usor</p>
 				    	<p class="p1"><span class="plusMinus green">+ </span>Quod nos occhil unceps, que ternumpa</p>
 				    	<p class="t3">Areas for Improvement</p>
-				    	<p class="p1"><span class="plusMinus red">- </span>Fui in sed num ad inate poena usor</p>
-				    	<p class="p1"><span class="plusMinus red">- </span>Quod nos occhil unceps, que ternumpa</p>
+				    	<p class="p1"><span class="plusMinus red">&minus; </span>Fui in sed num ad inate poena usor</p>
+				    	<p class="p1"><span class="plusMinus red">&minus; </span>Quod nos occhil unceps, que ternumpa</p>
 				    </div>
 				</div> <!-- coreInfo -->
 			</div> <!-- row -->
 			
 			<!-- Behavior Counts -->
 			<div class="row">
-				<div class="bCounts">
+				<div class="behaviorCounts">
+					<!-- Left Column - Blank -->
+					<div class="col-sm-4"></div>
+					<!-- Middle & Right Columns -->
+					<div class="col-sm-8">
+						<p class="t2">Behavior Counts</p>
+						<p class="p1">Reflection to Question Ratio: <span class="w900">2.2 </span> (Reflection : Question)</p>
+						<div class="barTemp" />
+						<p class="p1">Percent Open Questions: <span class="w900">27% </span> (Open : Closed)</p>
+						<div class="barTemp" />
+						<p class="p1">Percent Complex Reflections: <span class="w900">75% </span> (Complex : Simple)</p>
+						<div class="barTemp" />
+					</div>
+				</div> <!-- behaviorCounts -->
+			</div> <!-- row -->
+			<hr />
 
+			<!-- Session View - Legend -->
+			<div class="row">
+				<div class="sessionView">
+					<div class="col-sm-2">
+						<div class="therapistBox" />
+						<p class="p1">Therapist</p>
+					</div>
+					<div class="col-sm-2">
+						<div class="clientBox" />
+						<p class="p1">Client</p>
+					</div>
+					<div class="col-sm-8">
+						<p class="p1">Percent Talk Time: <span class="w900">67% </span> (Therapist : Client)</p>
+						<div class="barTemp" />
+					</div>
+				</div> <!-- sessionView -->
+			</div> <!-- row -->
+
+			<!-- Session View - Overview -->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="overviewBarTemp" />
 				</div>
-			</div>
-
+			</div> <!-- row -->
 
 		</div> <!-- container -->
     </body>

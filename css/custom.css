@@ -1,5 +1,7 @@
-/*
-========== DEFAULT OVERRIDES ==========
+/* 
+========================================
+DEFAULT OVERRIDES
+======================================== 
 */
 
 body {
@@ -16,8 +18,10 @@ hr {
 
 }
 
-/*
-========== TYPE ==========
+/* 
+========================================
+TYPE
+======================================== 
 */
 
 .t1 {
@@ -25,6 +29,7 @@ hr {
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 1.25pt;
+	margin-top: 32px;
 }
 
 .t2 {
@@ -52,12 +57,12 @@ hr {
 	font-size: 8pt;
 }
 
-.score1 {
+.totalScore1 {
 	font-size: 60pt;
 	font-weight: 900;
 }
 
-.score2 {
+.totalScore2 {
 	font-weight: 100;
 }
 
@@ -65,8 +70,14 @@ hr {
 	font-weight: 900;
 }
 
-/*
-========== COLORS ==========
+.w900 {
+	font-weight: 900;
+}
+
+/* 
+========================================
+COLORS
+======================================== 
 */
 
 .gray {
@@ -81,8 +92,10 @@ hr {
 	color: rgb(255,116,116);
 }
 
-/*
-========== SECTION DIV CONTAINERS ==========
+/* 
+======================================== 
+SECTION DIV CONTAINERS 
+======================================== 
 */
 
 .sessionInfo {
@@ -93,12 +106,18 @@ hr {
 
 }
 
-.bCounts {
+.behaviorCounts {
 
 }
 
-/*
-========== CHARTS + GRAPHS ==========
+.sessionView {
+
+}
+
+/* 
+========================================
+CHARTS & GRAPHS 
+======================================== 
 */
 
 .pieChart {
@@ -110,6 +129,29 @@ hr {
 
 .barChart {
 	width: auto;
-	height: 300px;
+	height: 450px;
 	background: rgba(123,204,196,0.5);
 }
+
+.barTemp {
+	width: auto;
+	height: 18px;
+	background: rgba(123,204,196,0.5);
+}
+
+.therapistBox {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: rgba(123,204,196,0.5);
+	margin-right: 12px;
+}
+
+.clientBox {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: rgba(123,204,196,0.5);
+	margin-right: 12px;
+}
+
