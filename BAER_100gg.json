@@ -1,0 +1,96 @@
+{
+	"sessionNumber": "BAER_100",
+	"beginTime": "0:0:0.16",
+	"endTime": "0:21:41.48",
+	"date": "2015-03-03",
+	"therapist": "Dr. John Doe, PhD",
+	"client": {
+		"clientID": 2788940,
+		"sex": "f",
+		"age": 26
+	},
+	"scores": {
+		"globals": {
+			"overall": 6.3,
+			"evocation": 3.0,
+			"collaboration": 4.0,
+			"autonomySupport": 3.0,
+			"direction": 4.0,
+			"empathy": 5.1176,
+			"miSpirit": 3.3333333333333333
+		},
+		"behaviorCounts": {
+			"reflectionToQuestion": {
+				"reflections": 22,
+				"questions": 48,
+				"ratio": 0.68571428571429
+			},
+			"percentOpenQuestions": {
+				"openQuestions": 6,
+				"closedQuestions": 16,
+				"percent": 27.272727272727
+			},
+			"percentComplexReflections": {
+				"complexReflections": 66,
+				"simpleReflections": 12,
+				"percent": 84.615384615385
+			}
+		},
+		"miAdherance": 83.724584615385
+	},
+	"notes": {
+		"general": [{
+			"id": 1,
+			"text": "This is the note as a string. "
+		}, {
+			"id": 2,
+			"text": "This is another note as a string. "
+		}],
+		"sessionStrengths": [{
+			"id": 1,
+			"text": "This is a session strength as a string. "
+		}, {
+			"id": 2,
+			"text": "This is another session strength as a string. "
+		}],
+		"areasForImprovement": [{
+			"id": 1,
+			"text": "This is an area for improvement as a string. "
+		}, {
+			"id": 2,
+			"text": "This is another area for improvement as a string. "
+		}]
+	},
+	"session": {
+		"talkTime": {
+			"therapist": 464.06,
+			"client": 680.82,
+			"therapistToClientPercent": 0.405335056949
+		},
+		"talkTurn": [{
+			"id": 1,
+			"startTime": 0.16,
+			"endTime": 5.32,
+			"duration": 5.16,
+			"speaker": "client",
+			"vocalArousal": 0.78800,
+			"alerts": [{
+				"code": "REC",
+				"time": 0.16,
+				"text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+			}]
+		}, {
+			"id": 2,
+			"startTime": 6.38,
+			"endTime": 10.14,
+			"duration": 3.76,
+			"speaker": "client",
+			"vocalArousal": 0.78800,
+			"alerts": [{
+				"code": "REC",
+				"time": 6.38,
+				"text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+			}]
+		}]
+	}
+}

@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Core-MI Report</title>
 
@@ -9,17 +9,17 @@
 		<script src="https://code.jquery.com/jquery.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		
 		<!-- Add Angular Later
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		-->
 
-        <!-- Read scripts -->
-		<script src="app.js"></script>
-		<link href="css/custom.css" type="text/css" rel="stylesheet" />	
-
 		<!-- Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+		<!-- Custom CSS -->
+		<link href="css/custom.css" type="text/css" rel="stylesheet" />	
     </head>
 
     <body>
@@ -61,7 +61,70 @@
 				        <p class="t2">Overall MI Fidelity</p>
 				        <p class="totalScore1"><span class="green">7</span><span class="totalScore2">/12</span></p>
 				        <p class="t3">MI Adherance</p>
-				        <div class="pieChart"></div>
+
+				        <!-- D3 Pie Chart -->
+				        <div id = "pie">
+					        <script type="text/javascript">
+					        	var w = 100;
+					        	var h = 100;
+
+					        	var dataset = [ 82, 18 ];
+					        	var data;
+
+					        	var outerRadius = w / 2;
+					        	var innerRadius = 0;
+								var arc = d3.svg.arc()
+									.innerRadius(innerRadius)
+									.outerRadius(outerRadius);
+
+								var pie = d3.layout.pie();
+
+								var color = [ "rgb(123,204,196)", "rgb(255,116,116)" ]
+
+								var svg = d3.select("#pie")
+									.append("svg")
+						            .attr("width", w)
+						            .attr("height", h);
+
+						        d3.json("BAER_100gg.json", function(json) {
+				        			data = json;
+				        			var miAdherance = json.scores.miAdherance;
+				        			var miNon = 100 - miAdherance;
+				        			var miArr = [ miAdherance, miNon ];
+
+				        			var arcs = svg.selectAll("g.arc")
+								    	.data(pie(miArr))
+								        .enter()
+								        .append("g")
+								        .attr("class", "arc")
+								        .attr("transform", "translate(" + outerRadius + ", " + outerRadius + ")");
+
+							        arcs.append("path")
+							        	.attr("class", function(d, i) {
+							        		if (i == 0) {
+							        			return "greenFill"
+							        		} else {
+							        			return "redFill"
+							        		}
+							        	})
+									    .attr("d", arc);
+
+									arcs.append("text")
+										.attr("transform", function(d) {
+									        return "translate(" + arc.centroid(d) + ")";
+									    })
+									    .attr("text-anchor", "middle")
+									    .text(function(d, i) {
+									    	if (i == 0) {
+									    		return Math.round(d.value) + "%";
+									    	}
+									    })
+									    .attr("class", "pieText");
+					        	});
+
+					        </script>
+				        </div>
+
 				        <p class="t3">MI Alerts</p>
 				        <p class="p1 red">2 Advise<br>
 				        	1 Confront<br>
@@ -171,7 +234,7 @@
 			<!-- Legend -->
 			<div class="row">
 				<div class="col-sm-2">
-					<p class=""
+					<p class=""></p>
 				</div>
 			</div>
 

@@ -1,0 +1,4102 @@
+{
+    "sessionNumber": "BAER_100",
+    "beginTime": "0:0:0.16",
+    "endTime": "0:21:41.48",
+    "date": "2015-03-03",
+    "therapist": "Dr. John Doe, PhD",
+    "client": {
+        "clientID": 2788940,
+        "sex": "f",
+        "age": 26
+    },
+    "scores": {
+        "globals": {
+            "overall": 6.3,
+            "evocation": 3.0,
+            "collaboration": 4.0,
+            "autonomySupport": 3.0,
+            "direction": 4.0,
+            "empathy": 5.1176,
+            "miSpirit": 3.3333333333333333
+        },
+        "behaviorCounts": {
+            "reflectionToQuestion": {
+                "reflections": 22,
+                "questions": 48,
+                "ratio": 0.68571428571429
+            },
+            "percentOpenQuestions": {
+                "openQuestions": 6,
+                "closedQuestions": 16,
+                "percent": 27.272727272727
+            },
+            "percentComplexReflections": {
+                "complexReflections": 66,
+                "simpleReflections": 12,
+                "percent": 84.615384615385
+            }
+        },
+        "miAdherance": 83.724584615385
+    },
+    "notes": {
+        "general": [
+            {
+                "id": 1,
+                "text": "This is the note as a string. "
+            },
+            {
+                "id": 2,
+                "text": "This is another note as a string. "
+            }
+        ],
+        "sessionStrengths": [
+            {
+                "id": 1,
+                "text": "This is a session strength as a string. "
+            },
+            {
+                "id": 2,
+                "text": "This is another session strength as a string. "
+            }
+        ],
+        "areasForImprovement": [
+            {
+                "id": 1,
+                "text": "This is an area for improvement as a string. "
+            },
+            {
+                "id": 2,
+                "text": "This is another area for improvement as a string. "
+            }
+        ]
+    },
+    "session": {
+        "talkTime": {
+            "therapist": 464.06,
+            "client": 680.82,
+            "therapistToClientPercent": 0.405335056949,
+        },
+        "talkTurn": [
+            {
+                "id": 1,
+                "startTime": 0.16,
+                "endTime": 5.32,
+                "duration": 5.16,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 0.16,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 2,
+                "startTime": 6.38,
+                "endTime": 10.14,
+                "duration": 3.76,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 6.38,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 3,
+                "startTime": 10.9,
+                "endTime": 14.76,
+                "duration": 3.86,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 10.9,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 4,
+                "startTime": 15.42,
+                "endTime": 18.32,
+                "duration": 2.9,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 15.42,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 5,
+                "startTime": 18.96,
+                "endTime": 23.76,
+                "duration": 4.8,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 18.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 6,
+                "startTime": 23.78,
+                "endTime": 28.92,
+                "duration": 5.14,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 23.78,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 7,
+                "startTime": 29.16,
+                "endTime": 33.72,
+                "duration": 4.56,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 29.16,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 8,
+                "startTime": 35.3,
+                "endTime": 40.74,
+                "duration": 5.44,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 35.3,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 9,
+                "startTime": 40.76,
+                "endTime": 48.22,
+                "duration": 7.46,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 40.76,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 10,
+                "startTime": 48.24,
+                "endTime": 53.42,
+                "duration": 5.18,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 48.24,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 11,
+                "startTime": 53.44,
+                "endTime": 64.06,
+                "duration": 10.62,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 53.44,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 12,
+                "startTime": 64.08,
+                "endTime": 69.54,
+                "duration": 5.46,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 64.08,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 13,
+                "startTime": 70.08,
+                "endTime": 72.34,
+                "duration": 2.26,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 70.08,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 14,
+                "startTime": 72.62,
+                "endTime": 74.92,
+                "duration": 2.3,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 72.62,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 15,
+                "startTime": 76.78,
+                "endTime": 79.44,
+                "duration": 2.66,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 76.78,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 16,
+                "startTime": 79.92,
+                "endTime": 82.8,
+                "duration": 2.88,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 79.92,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 17,
+                "startTime": 82.86,
+                "endTime": 86.66,
+                "duration": 3.8,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 82.86,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 18,
+                "startTime": 87.48,
+                "endTime": 90.5,
+                "duration": 3.02,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 87.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 19,
+                "startTime": 90.52,
+                "endTime": 95.04,
+                "duration": 4.52,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 90.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 20,
+                "startTime": 95.06,
+                "endTime": 98.3,
+                "duration": 3.24,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 95.06,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 21,
+                "startTime": 98.32,
+                "endTime": 99.32,
+                "duration": 1.0,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 98.32,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 22,
+                "startTime": 99.34,
+                "endTime": 102.48,
+                "duration": 3.14,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 99.34,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 23,
+                "startTime": 102.5,
+                "endTime": 106.7,
+                "duration": 4.2,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 102.5,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 24,
+                "startTime": 106.72,
+                "endTime": 109.46,
+                "duration": 2.74,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 106.72,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 25,
+                "startTime": 109.48,
+                "endTime": 112.4,
+                "duration": 2.92,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 109.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 26,
+                "startTime": 113.52,
+                "endTime": 118.94,
+                "duration": 5.42,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 113.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 27,
+                "startTime": 119.78,
+                "endTime": 127.3,
+                "duration": 7.52,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 119.78,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 28,
+                "startTime": 128.0,
+                "endTime": 134.22,
+                "duration": 6.22,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 128.0,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 29,
+                "startTime": 135.1,
+                "endTime": 138.1,
+                "duration": 3.0,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 135.1,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 30,
+                "startTime": 138.12,
+                "endTime": 143.88,
+                "duration": 5.76,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 138.12,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 31,
+                "startTime": 145.96,
+                "endTime": 147.94,
+                "duration": 1.98,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 145.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 32,
+                "startTime": 149.2,
+                "endTime": 161.24,
+                "duration": 12.04,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 149.2,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 33,
+                "startTime": 161.76,
+                "endTime": 164.6,
+                "duration": 2.84,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 161.76,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 34,
+                "startTime": 164.62,
+                "endTime": 168.38,
+                "duration": 3.76,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 164.62,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 35,
+                "startTime": 169.14,
+                "endTime": 173.18,
+                "duration": 4.04,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 169.14,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 36,
+                "startTime": 173.58,
+                "endTime": 178.08,
+                "duration": 4.5,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 173.58,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 37,
+                "startTime": 178.48,
+                "endTime": 180.96,
+                "duration": 2.48,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 178.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 38,
+                "startTime": 181.52,
+                "endTime": 184.5,
+                "duration": 2.98,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 181.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 39,
+                "startTime": 186.86,
+                "endTime": 192.98,
+                "duration": 6.12,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 186.86,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 40,
+                "startTime": 193.52,
+                "endTime": 195.54,
+                "duration": 2.02,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 193.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 41,
+                "startTime": 196.14,
+                "endTime": 198.66,
+                "duration": 2.52,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 196.14,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 42,
+                "startTime": 199.32,
+                "endTime": 202.4,
+                "duration": 3.08,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 199.32,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 43,
+                "startTime": 202.42,
+                "endTime": 210.82,
+                "duration": 8.4,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 202.42,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 44,
+                "startTime": 211.3,
+                "endTime": 215.22,
+                "duration": 3.92,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 211.3,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 45,
+                "startTime": 215.3,
+                "endTime": 219.18,
+                "duration": 3.88,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 215.3,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 46,
+                "startTime": 219.2,
+                "endTime": 219.8,
+                "duration": 0.6,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 219.2,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 47,
+                "startTime": 219.82,
+                "endTime": 226.16,
+                "duration": 6.34,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 219.82,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 48,
+                "startTime": 226.18,
+                "endTime": 234.96,
+                "duration": 8.78,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 226.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 49,
+                "startTime": 236.86,
+                "endTime": 237.72,
+                "duration": 0.86,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 236.86,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 50,
+                "startTime": 237.74,
+                "endTime": 240.98,
+                "duration": 3.24,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 237.74,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 51,
+                "startTime": 241.0,
+                "endTime": 242.42,
+                "duration": 1.42,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 241.0,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 52,
+                "startTime": 242.44,
+                "endTime": 245.16,
+                "duration": 2.72,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 242.44,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 53,
+                "startTime": 245.18,
+                "endTime": 246.0,
+                "duration": 0.82,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 245.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 54,
+                "startTime": 246.02,
+                "endTime": 252.92,
+                "duration": 6.9,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 246.02,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 55,
+                "startTime": 255.3,
+                "endTime": 259.32,
+                "duration": 4.02,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 255.3,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 56,
+                "startTime": 260.04,
+                "endTime": 261.02,
+                "duration": 0.98,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 260.04,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 57,
+                "startTime": 261.04,
+                "endTime": 270.46,
+                "duration": 9.42,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 261.04,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 58,
+                "startTime": 270.48,
+                "endTime": 273.96,
+                "duration": 3.48,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 270.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 59,
+                "startTime": 274.64,
+                "endTime": 275.94,
+                "duration": 1.3,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 274.64,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 60,
+                "startTime": 276.64,
+                "endTime": 278.98,
+                "duration": 2.34,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 276.64,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 61,
+                "startTime": 279.96,
+                "endTime": 281.26,
+                "duration": 1.3,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 279.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 62,
+                "startTime": 281.76,
+                "endTime": 287.14,
+                "duration": 5.38,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 281.76,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 63,
+                "startTime": 287.16,
+                "endTime": 290.08,
+                "duration": 2.92,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 287.16,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 64,
+                "startTime": 290.18,
+                "endTime": 291.3,
+                "duration": 1.12,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 290.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 65,
+                "startTime": 291.32,
+                "endTime": 295.22,
+                "duration": 3.9,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 291.32,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 66,
+                "startTime": 295.98,
+                "endTime": 299.44,
+                "duration": 3.46,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 295.98,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 67,
+                "startTime": 301.94,
+                "endTime": 303.1,
+                "duration": 1.16,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 301.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 68,
+                "startTime": 303.12,
+                "endTime": 308.06,
+                "duration": 4.94,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 303.12,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 69,
+                "startTime": 308.68,
+                "endTime": 309.88,
+                "duration": 1.2,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 308.68,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 70,
+                "startTime": 311.38,
+                "endTime": 312.96,
+                "duration": 1.58,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 311.38,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 71,
+                "startTime": 314.26,
+                "endTime": 315.52,
+                "duration": 1.26,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 314.26,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 72,
+                "startTime": 315.62,
+                "endTime": 322.88,
+                "duration": 7.26,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 315.62,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 73,
+                "startTime": 322.9,
+                "endTime": 326.66,
+                "duration": 3.76,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 322.9,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 74,
+                "startTime": 328.0,
+                "endTime": 331.44,
+                "duration": 3.44,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 328.0,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 75,
+                "startTime": 331.96,
+                "endTime": 332.94,
+                "duration": 0.98,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 331.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 76,
+                "startTime": 332.96,
+                "endTime": 339.7,
+                "duration": 6.74,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 332.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 77,
+                "startTime": 339.88,
+                "endTime": 340.86,
+                "duration": 0.98,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 339.88,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 78,
+                "startTime": 340.88,
+                "endTime": 348.94,
+                "duration": 8.06,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 340.88,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 79,
+                "startTime": 350.86,
+                "endTime": 352.9,
+                "duration": 2.04,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 350.86,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 80,
+                "startTime": 353.28,
+                "endTime": 358.26,
+                "duration": 4.98,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 353.28,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 81,
+                "startTime": 360.66,
+                "endTime": 362.4,
+                "duration": 1.74,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 360.66,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 82,
+                "startTime": 363.0,
+                "endTime": 367.86,
+                "duration": 4.86,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 363.0,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 83,
+                "startTime": 368.5,
+                "endTime": 378.3,
+                "duration": 9.8,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 368.5,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 84,
+                "startTime": 378.32,
+                "endTime": 382.38,
+                "duration": 4.06,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 378.32,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 85,
+                "startTime": 382.44,
+                "endTime": 387.36,
+                "duration": 4.92,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 382.44,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 86,
+                "startTime": 387.38,
+                "endTime": 391.24,
+                "duration": 3.86,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 387.38,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 87,
+                "startTime": 391.26,
+                "endTime": 395.52,
+                "duration": 4.26,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 391.26,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 88,
+                "startTime": 395.54,
+                "endTime": 399.26,
+                "duration": 3.72,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 395.54,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 89,
+                "startTime": 399.68,
+                "endTime": 416.44,
+                "duration": 16.76,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 399.68,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 90,
+                "startTime": 417.52,
+                "endTime": 420.06,
+                "duration": 2.54,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 417.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 91,
+                "startTime": 420.96,
+                "endTime": 422.52,
+                "duration": 1.56,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 420.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 92,
+                "startTime": 422.54,
+                "endTime": 425.76,
+                "duration": 3.22,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 422.54,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 93,
+                "startTime": 426.48,
+                "endTime": 427.88,
+                "duration": 1.4,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 426.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 94,
+                "startTime": 428.42,
+                "endTime": 428.9,
+                "duration": 0.48,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 428.42,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 95,
+                "startTime": 428.92,
+                "endTime": 435.9,
+                "duration": 6.98,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 428.92,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 96,
+                "startTime": 435.92,
+                "endTime": 439.28,
+                "duration": 3.36,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 435.92,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 97,
+                "startTime": 440.0,
+                "endTime": 446.9,
+                "duration": 6.9,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 440.0,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 98,
+                "startTime": 446.92,
+                "endTime": 452.0,
+                "duration": 5.08,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 446.92,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 99,
+                "startTime": 453.24,
+                "endTime": 467.16,
+                "duration": 13.92,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 453.24,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 100,
+                "startTime": 467.98,
+                "endTime": 469.78,
+                "duration": 1.8,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 467.98,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 101,
+                "startTime": 470.28,
+                "endTime": 475.64,
+                "duration": 5.36,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 470.28,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 102,
+                "startTime": 475.9,
+                "endTime": 480.6,
+                "duration": 4.7,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 475.9,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 103,
+                "startTime": 481.26,
+                "endTime": 485.58,
+                "duration": 4.32,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 481.26,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 104,
+                "startTime": 485.6,
+                "endTime": 487.04,
+                "duration": 1.44,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 485.6,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 105,
+                "startTime": 487.06,
+                "endTime": 495.4,
+                "duration": 8.34,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 487.06,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 106,
+                "startTime": 495.94,
+                "endTime": 500.5,
+                "duration": 4.56,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 495.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 107,
+                "startTime": 503.52,
+                "endTime": 506.2,
+                "duration": 2.68,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 503.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 108,
+                "startTime": 506.92,
+                "endTime": 511.22,
+                "duration": 4.3,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 506.92,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 109,
+                "startTime": 511.24,
+                "endTime": 512.1,
+                "duration": 0.86,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 511.24,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 110,
+                "startTime": 512.12,
+                "endTime": 512.78,
+                "duration": 0.66,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 512.12,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 111,
+                "startTime": 512.8,
+                "endTime": 516.76,
+                "duration": 3.96,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 512.8,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 112,
+                "startTime": 517.56,
+                "endTime": 519.24,
+                "duration": 1.68,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 517.56,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 113,
+                "startTime": 519.26,
+                "endTime": 524.6,
+                "duration": 5.34,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 519.26,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 114,
+                "startTime": 524.62,
+                "endTime": 529.16,
+                "duration": 4.54,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 524.62,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 115,
+                "startTime": 529.18,
+                "endTime": 529.88,
+                "duration": 0.7,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 529.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 116,
+                "startTime": 529.9,
+                "endTime": 538.56,
+                "duration": 8.66,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 529.9,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 117,
+                "startTime": 539.84,
+                "endTime": 542.26,
+                "duration": 2.42,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 539.84,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 118,
+                "startTime": 543.08,
+                "endTime": 551.4,
+                "duration": 8.32,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 543.08,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 119,
+                "startTime": 551.42,
+                "endTime": 554.1,
+                "duration": 2.68,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 551.42,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 120,
+                "startTime": 555.38,
+                "endTime": 556.26,
+                "duration": 0.88,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 555.38,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 121,
+                "startTime": 556.28,
+                "endTime": 579.7,
+                "duration": 23.42,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 556.28,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 122,
+                "startTime": 580.4,
+                "endTime": 583.94,
+                "duration": 3.54,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 580.4,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 123,
+                "startTime": 584.58,
+                "endTime": 585.58,
+                "duration": 1.0,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 584.58,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 124,
+                "startTime": 586.82,
+                "endTime": 587.7,
+                "duration": 0.88,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 586.82,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 125,
+                "startTime": 587.72,
+                "endTime": 590.98,
+                "duration": 3.26,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 587.72,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 126,
+                "startTime": 592.38,
+                "endTime": 594.88,
+                "duration": 2.5,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 592.38,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 127,
+                "startTime": 595.86,
+                "endTime": 602.0,
+                "duration": 6.14,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 595.86,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 128,
+                "startTime": 602.2,
+                "endTime": 604.48,
+                "duration": 2.28,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 602.2,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 129,
+                "startTime": 605.14,
+                "endTime": 607.4,
+                "duration": 2.26,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 605.14,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 130,
+                "startTime": 608.4,
+                "endTime": 622.88,
+                "duration": 14.48,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 608.4,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 131,
+                "startTime": 622.9,
+                "endTime": 631.76,
+                "duration": 8.86,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 622.9,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 132,
+                "startTime": 631.78,
+                "endTime": 637.36,
+                "duration": 5.58,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 631.78,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 133,
+                "startTime": 637.96,
+                "endTime": 642.92,
+                "duration": 4.96,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 637.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 134,
+                "startTime": 642.94,
+                "endTime": 654.14,
+                "duration": 11.2,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 642.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 135,
+                "startTime": 656.74,
+                "endTime": 658.06,
+                "duration": 1.32,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 656.74,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 136,
+                "startTime": 658.08,
+                "endTime": 666.2,
+                "duration": 8.12,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 658.08,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 137,
+                "startTime": 667.1,
+                "endTime": 668.76,
+                "duration": 1.66,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 667.1,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 138,
+                "startTime": 669.36,
+                "endTime": 686.4,
+                "duration": 17.04,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 669.36,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 139,
+                "startTime": 686.42,
+                "endTime": 690.04,
+                "duration": 3.62,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 686.42,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 140,
+                "startTime": 691.18,
+                "endTime": 696.06,
+                "duration": 4.88,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 691.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 141,
+                "startTime": 696.36,
+                "endTime": 697.74,
+                "duration": 1.38,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 696.36,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 142,
+                "startTime": 697.76,
+                "endTime": 704.48,
+                "duration": 6.72,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 697.76,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 143,
+                "startTime": 705.84,
+                "endTime": 713.2,
+                "duration": 7.36,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 705.84,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 144,
+                "startTime": 713.92,
+                "endTime": 714.56,
+                "duration": 0.64,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 713.92,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 145,
+                "startTime": 714.58,
+                "endTime": 728.64,
+                "duration": 14.06,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 714.58,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 146,
+                "startTime": 729.06,
+                "endTime": 734.52,
+                "duration": 5.46,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 729.06,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 147,
+                "startTime": 735.14,
+                "endTime": 737.3,
+                "duration": 2.16,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 735.14,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 148,
+                "startTime": 738.66,
+                "endTime": 744.1,
+                "duration": 5.44,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 738.66,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 149,
+                "startTime": 744.64,
+                "endTime": 752.78,
+                "duration": 8.14,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 744.64,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 150,
+                "startTime": 752.8,
+                "endTime": 753.32,
+                "duration": 0.52,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 752.8,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 151,
+                "startTime": 753.34,
+                "endTime": 757.84,
+                "duration": 4.5,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 753.34,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 152,
+                "startTime": 760.28,
+                "endTime": 763.36,
+                "duration": 3.08,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 760.28,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 153,
+                "startTime": 763.38,
+                "endTime": 765.32,
+                "duration": 1.94,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 763.38,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 154,
+                "startTime": 765.34,
+                "endTime": 769.16,
+                "duration": 3.82,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 765.34,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 155,
+                "startTime": 769.52,
+                "endTime": 773.22,
+                "duration": 3.7,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 769.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 156,
+                "startTime": 774.42,
+                "endTime": 785.64,
+                "duration": 11.22,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 774.42,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 157,
+                "startTime": 786.58,
+                "endTime": 793.92,
+                "duration": 7.34,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 786.58,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 158,
+                "startTime": 793.94,
+                "endTime": 794.98,
+                "duration": 1.04,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 793.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 159,
+                "startTime": 795.0,
+                "endTime": 798.56,
+                "duration": 3.56,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 795.0,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 160,
+                "startTime": 800.32,
+                "endTime": 801.2,
+                "duration": 0.88,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 800.32,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 161,
+                "startTime": 801.22,
+                "endTime": 809.82,
+                "duration": 8.6,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 801.22,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 162,
+                "startTime": 809.84,
+                "endTime": 811.16,
+                "duration": 1.32,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 809.84,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 163,
+                "startTime": 811.18,
+                "endTime": 813.44,
+                "duration": 2.26,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 811.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 164,
+                "startTime": 813.46,
+                "endTime": 817.42,
+                "duration": 3.96,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 813.46,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 165,
+                "startTime": 817.44,
+                "endTime": 825.34,
+                "duration": 7.9,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 817.44,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 166,
+                "startTime": 826.72,
+                "endTime": 834.12,
+                "duration": 7.4,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 826.72,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 167,
+                "startTime": 834.14,
+                "endTime": 840.28,
+                "duration": 6.14,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 834.14,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 168,
+                "startTime": 840.3,
+                "endTime": 843.3,
+                "duration": 3.0,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 840.3,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 169,
+                "startTime": 843.54,
+                "endTime": 854.62,
+                "duration": 11.08,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 843.54,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 170,
+                "startTime": 854.64,
+                "endTime": 855.76,
+                "duration": 1.12,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 854.64,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 171,
+                "startTime": 855.78,
+                "endTime": 858.86,
+                "duration": 3.08,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 855.78,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 172,
+                "startTime": 859.1,
+                "endTime": 862.66,
+                "duration": 3.56,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 859.1,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 173,
+                "startTime": 862.96,
+                "endTime": 865.4,
+                "duration": 2.44,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 862.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 174,
+                "startTime": 867.02,
+                "endTime": 869.78,
+                "duration": 2.76,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 867.02,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 175,
+                "startTime": 869.98,
+                "endTime": 873.52,
+                "duration": 3.54,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 869.98,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 176,
+                "startTime": 873.92,
+                "endTime": 876.0,
+                "duration": 2.08,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 873.92,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 177,
+                "startTime": 877.28,
+                "endTime": 881.78,
+                "duration": 4.5,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 877.28,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 178,
+                "startTime": 881.8,
+                "endTime": 894.44,
+                "duration": 12.64,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 881.8,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 179,
+                "startTime": 894.58,
+                "endTime": 906.46,
+                "duration": 11.88,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 894.58,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 180,
+                "startTime": 907.3,
+                "endTime": 911.54,
+                "duration": 4.24,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 907.3,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 181,
+                "startTime": 912.3,
+                "endTime": 913.96,
+                "duration": 1.66,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 912.3,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 182,
+                "startTime": 914.86,
+                "endTime": 915.92,
+                "duration": 1.06,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 914.86,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 183,
+                "startTime": 915.94,
+                "endTime": 928.5,
+                "duration": 12.56,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 915.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 184,
+                "startTime": 929.94,
+                "endTime": 930.92,
+                "duration": 0.98,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 929.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 185,
+                "startTime": 930.94,
+                "endTime": 937.62,
+                "duration": 6.68,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 930.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 186,
+                "startTime": 939.68,
+                "endTime": 942.34,
+                "duration": 2.66,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 939.68,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 187,
+                "startTime": 951.7,
+                "endTime": 956.7,
+                "duration": 5.0,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 951.7,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 188,
+                "startTime": 958.44,
+                "endTime": 960.04,
+                "duration": 1.6,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 958.44,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 189,
+                "startTime": 960.6,
+                "endTime": 962.82,
+                "duration": 2.22,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 960.6,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 190,
+                "startTime": 963.48,
+                "endTime": 966.68,
+                "duration": 3.2,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 963.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 191,
+                "startTime": 966.86,
+                "endTime": 971.1,
+                "duration": 4.24,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 966.86,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 192,
+                "startTime": 971.7,
+                "endTime": 979.66,
+                "duration": 7.96,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 971.7,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 193,
+                "startTime": 979.68,
+                "endTime": 983.52,
+                "duration": 3.84,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 979.68,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 194,
+                "startTime": 983.54,
+                "endTime": 988.62,
+                "duration": 5.08,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 983.54,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 195,
+                "startTime": 988.72,
+                "endTime": 995.32,
+                "duration": 6.6,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 988.72,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 196,
+                "startTime": 995.78,
+                "endTime": 1001.72,
+                "duration": 5.94,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 995.78,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 197,
+                "startTime": 1002.48,
+                "endTime": 1004.1,
+                "duration": 1.62,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1002.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 198,
+                "startTime": 1006.24,
+                "endTime": 1007.88,
+                "duration": 1.64,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1006.24,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 199,
+                "startTime": 1007.9,
+                "endTime": 1013.82,
+                "duration": 5.92,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1007.9,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 200,
+                "startTime": 1014.34,
+                "endTime": 1018.48,
+                "duration": 4.14,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1014.34,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 201,
+                "startTime": 1018.88,
+                "endTime": 1020.2,
+                "duration": 1.32,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1018.88,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 202,
+                "startTime": 1020.96,
+                "endTime": 1023.16,
+                "duration": 2.2,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1020.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 203,
+                "startTime": 1023.2,
+                "endTime": 1025.7,
+                "duration": 2.5,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1023.2,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 204,
+                "startTime": 1025.74,
+                "endTime": 1028.6,
+                "duration": 2.86,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1025.74,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 205,
+                "startTime": 1030.22,
+                "endTime": 1035.94,
+                "duration": 5.72,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1030.22,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 206,
+                "startTime": 1035.96,
+                "endTime": 1039.96,
+                "duration": 4.0,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1035.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 207,
+                "startTime": 1040.0,
+                "endTime": 1043.42,
+                "duration": 3.42,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1040.0,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 208,
+                "startTime": 1043.48,
+                "endTime": 1050.68,
+                "duration": 7.2,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1043.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 209,
+                "startTime": 1051.32,
+                "endTime": 1052.02,
+                "duration": 0.7,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1051.32,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 210,
+                "startTime": 1052.04,
+                "endTime": 1052.88,
+                "duration": 0.84,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1052.04,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 211,
+                "startTime": 1052.9,
+                "endTime": 1056.92,
+                "duration": 4.02,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1052.9,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 212,
+                "startTime": 1057.52,
+                "endTime": 1058.92,
+                "duration": 1.4,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1057.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 213,
+                "startTime": 1058.94,
+                "endTime": 1062.28,
+                "duration": 3.34,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1058.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 214,
+                "startTime": 1062.3,
+                "endTime": 1065.8,
+                "duration": 3.5,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1062.3,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 215,
+                "startTime": 1065.82,
+                "endTime": 1066.72,
+                "duration": 0.9,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1065.82,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 216,
+                "startTime": 1066.74,
+                "endTime": 1069.84,
+                "duration": 3.1,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1066.74,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 217,
+                "startTime": 1070.54,
+                "endTime": 1071.7,
+                "duration": 1.16,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1070.54,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 218,
+                "startTime": 1071.72,
+                "endTime": 1074.78,
+                "duration": 3.06,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1071.72,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 219,
+                "startTime": 1075.8,
+                "endTime": 1077.68,
+                "duration": 1.88,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1075.8,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 220,
+                "startTime": 1079.34,
+                "endTime": 1083.02,
+                "duration": 3.68,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1079.34,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 221,
+                "startTime": 1083.36,
+                "endTime": 1086.52,
+                "duration": 3.16,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1083.36,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 222,
+                "startTime": 1087.28,
+                "endTime": 1089.64,
+                "duration": 2.36,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1087.28,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 223,
+                "startTime": 1091.52,
+                "endTime": 1095.44,
+                "duration": 3.92,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1091.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 224,
+                "startTime": 1099.26,
+                "endTime": 1105.1,
+                "duration": 5.84,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1099.26,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 225,
+                "startTime": 1105.12,
+                "endTime": 1109.04,
+                "duration": 3.92,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1105.12,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 226,
+                "startTime": 1109.06,
+                "endTime": 1110.06,
+                "duration": 1.0,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1109.06,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 227,
+                "startTime": 1110.08,
+                "endTime": 1110.92,
+                "duration": 0.84,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1110.08,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 228,
+                "startTime": 1110.94,
+                "endTime": 1116.24,
+                "duration": 5.3,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1110.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 229,
+                "startTime": 1117.44,
+                "endTime": 1118.72,
+                "duration": 1.28,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1117.44,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 230,
+                "startTime": 1119.28,
+                "endTime": 1121.06,
+                "duration": 1.78,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1119.28,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 231,
+                "startTime": 1121.7,
+                "endTime": 1123.38,
+                "duration": 1.68,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1121.7,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 232,
+                "startTime": 1123.74,
+                "endTime": 1125.5,
+                "duration": 1.76,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1123.74,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 233,
+                "startTime": 1126.18,
+                "endTime": 1135.84,
+                "duration": 9.66,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1126.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 234,
+                "startTime": 1137.52,
+                "endTime": 1141.3,
+                "duration": 3.78,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1137.52,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 235,
+                "startTime": 1141.88,
+                "endTime": 1143.4,
+                "duration": 1.52,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1141.88,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 236,
+                "startTime": 1148.1,
+                "endTime": 1153.34,
+                "duration": 5.24,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1148.1,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 237,
+                "startTime": 1156.18,
+                "endTime": 1158.8,
+                "duration": 2.62,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1156.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 238,
+                "startTime": 1160.46,
+                "endTime": 1162.12,
+                "duration": 1.66,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1160.46,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 239,
+                "startTime": 1164.92,
+                "endTime": 1169.46,
+                "duration": 4.54,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1164.92,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 240,
+                "startTime": 1169.48,
+                "endTime": 1173.76,
+                "duration": 4.28,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1169.48,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 241,
+                "startTime": 1174.18,
+                "endTime": 1175.36,
+                "duration": 1.18,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1174.18,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 242,
+                "startTime": 1176.24,
+                "endTime": 1178.26,
+                "duration": 2.02,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1176.24,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 243,
+                "startTime": 1178.28,
+                "endTime": 1187.02,
+                "duration": 8.74,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1178.28,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 244,
+                "startTime": 1189.26,
+                "endTime": 1189.92,
+                "duration": 0.66,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1189.26,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 245,
+                "startTime": 1189.94,
+                "endTime": 1193.28,
+                "duration": 3.34,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1189.94,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 246,
+                "startTime": 1193.68,
+                "endTime": 1194.9,
+                "duration": 1.22,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1193.68,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 247,
+                "startTime": 1196.14,
+                "endTime": 1196.94,
+                "duration": 0.8,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1196.14,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 248,
+                "startTime": 1196.96,
+                "endTime": 1204.28,
+                "duration": 7.32,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1196.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 249,
+                "startTime": 1204.72,
+                "endTime": 1218.78,
+                "duration": 14.06,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1204.72,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 250,
+                "startTime": 1218.8,
+                "endTime": 1225.06,
+                "duration": 6.26,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1218.8,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 251,
+                "startTime": 1225.08,
+                "endTime": 1228.0,
+                "duration": 2.92,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1225.08,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 252,
+                "startTime": 1228.02,
+                "endTime": 1228.58,
+                "duration": 0.56,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1228.02,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 253,
+                "startTime": 1228.6,
+                "endTime": 1229.34,
+                "duration": 0.74,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1228.6,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 254,
+                "startTime": 1229.36,
+                "endTime": 1233.24,
+                "duration": 3.88,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1229.36,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 255,
+                "startTime": 1233.26,
+                "endTime": 1236.44,
+                "duration": 3.18,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1233.26,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 256,
+                "startTime": 1236.46,
+                "endTime": 1238.48,
+                "duration": 2.02,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1236.46,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 257,
+                "startTime": 1238.5,
+                "endTime": 1242.94,
+                "duration": 4.44,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1238.5,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 258,
+                "startTime": 1242.96,
+                "endTime": 1244.18,
+                "duration": 1.22,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1242.96,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 259,
+                "startTime": 1244.2,
+                "endTime": 1246.04,
+                "duration": 1.84,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1244.2,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 260,
+                "startTime": 1246.06,
+                "endTime": 1248.8,
+                "duration": 2.74,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1246.06,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 261,
+                "startTime": 1248.82,
+                "endTime": 1258.32,
+                "duration": 9.5,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1248.82,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 262,
+                "startTime": 1258.34,
+                "endTime": 1261.72,
+                "duration": 3.38,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1258.34,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 263,
+                "startTime": 1261.74,
+                "endTime": 1262.72,
+                "duration": 0.98,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1261.74,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 264,
+                "startTime": 1262.74,
+                "endTime": 1269.08,
+                "duration": 6.34,
+                "speaker": "client",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1262.74,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 265,
+                "startTime": 1269.1,
+                "endTime": 1281.66,
+                "duration": 12.56,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1269.1,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 266,
+                "startTime": 1281.7,
+                "endTime": 1287.76,
+                "duration": 6.06,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1281.7,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 267,
+                "startTime": 1287.98,
+                "endTime": 1292.68,
+                "duration": 4.7,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1287.98,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+            {
+                "id": 268,
+                "startTime": 1293.06,
+                "endTime": 1301.48,
+                "duration": 8.42,
+                "speaker": "therapist",
+                "vocalArousal": 0.78800,
+                "alerts": [
+                    {
+                        "code": "REC",
+                        "time": 1293.06,
+                        "text": "This is an alert (change talk, sustain talk, MI alert, ect.). "
+                    },
+                ]
+            },
+        ]
+    }
+}

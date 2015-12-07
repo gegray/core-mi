@@ -74,6 +74,10 @@ TYPE
 	font-weight: 900;
 }
 
+.pieText {
+	text-align: center;
+}
+
 /* 
 ========================================
 COLORS
@@ -90,6 +94,14 @@ COLORS
 
 .red {
 	color: rgb(255,116,116);
+}
+
+.greenFill {
+	fill: rgb(123,204,196);
+}
+
+.redFill {
+	fill: rgb(255,116,116);
 }
 
 /* 
