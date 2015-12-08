@@ -26,7 +26,7 @@
     	<div class="container">
 
     		<!-- CORE-MI REPORT -->
-    		<div class="row">
+    		<div class="row headerBackground">
     			<div class="col-sm-12">
 		        	<p class="t1">Core-MI Report</p>
 		        </div>
@@ -60,37 +60,44 @@
 					<div class="col-sm-4">
 				        <p class="t2">Overall MI Fidelity</p>
 				        <p class="totalScore1"><span class="green">7</span><span class="totalScore2">/12</span></p>
-				        <p class="t3">MI Adherance</p>
+				        <p class="t3">MI Adherence</p>
 
-				        <!-- D3 Pie Chart -->
+				        <!-- D3 MI Adherence pie chart -->
 				        <div id = "pie">
 					        <script type="text/javascript">
-					        	var w = 100;
-					        	var h = 100;
-
-					        	var dataset = [ 82, 18 ];
 					        	var data;
 
-					        	var outerRadius = w / 2;
-					        	var innerRadius = 0;
-								var arc = d3.svg.arc()
-									.innerRadius(innerRadius)
-									.outerRadius(outerRadius);
-
-								var pie = d3.layout.pie();
-
-								var color = [ "rgb(123,204,196)", "rgb(255,116,116)" ]
-
-								var svg = d3.select("#pie")
-									.append("svg")
-						            .attr("width", w)
-						            .attr("height", h);
-
+					        	// Main: These functions execute once data has been saved to a global variable
+					        	// so that the passed JSON document will only be parsed once.
 						        d3.json("BAER_100gg.json", function(json) {
-				        			data = json;
-				        			var miAdherance = json.scores.miAdherance;
+						        	data = json;
+
+									d3MIAdherence();	// D3 MI Adherence pie chart
+									d3RToQNum();		// D3 Reflection to Question Ratio: number
+									d3RToQBarGraph();	// D3 Reflection to Question Ratio: bar graph
+					        	});
+
+						        // D3 MI Adherence Pie Chart
+								function d3MIAdherence() {
+									var miAdherance = data.scores.miAdherance;
 				        			var miNon = 100 - miAdherance;
 				        			var miArr = [ miAdherance, miNon ];
+
+						        	var w = 100;
+						        	var h = 100;
+
+						        	var outerRadius = w / 2;
+						        	var innerRadius = 0;
+									var arc = d3.svg.arc()
+										.innerRadius(innerRadius)
+										.outerRadius(outerRadius);
+
+									var pie = d3.layout.pie();
+
+									var svg = d3.select("#pie")
+										.append("svg")
+							            .attr("width", w)
+							            .attr("height", h);
 
 				        			var arcs = svg.selectAll("g.arc")
 								    	.data(pie(miArr))
@@ -120,7 +127,53 @@
 									    	}
 									    })
 									    .attr("class", "pieText");
-					        	});
+								}
+
+								// D3 Reflection to Question Ratio: number
+								function d3RToQNum() {
+									var ratio = data.scores.behaviorCounts.reflectionToQuestion.ratio.toFixed(2);
+
+									d3.select("#d3RToQNum")
+										.text(ratio);
+								}
+
+								// D3 Reflection to Question Ratio: bar graph
+								function d3RToQBarGraph() {
+									var w = 470;
+									var h = 18;
+
+									var r = data.scores.behaviorCounts.reflectionToQuestion.questions;		// swap
+									var q = data.scores.behaviorCounts.reflectionToQuestion.reflections; 	// swap
+									var rqTotal = r + q;
+									var ratio = data.scores.behaviorCounts.reflectionToQuestion.ratio.toFixed(2);
+									if (ratio > 3.0) {
+										ratio = 3.0;
+									}
+									var ratioWidth = ratio
+									var rqArr = [ rqTotal, r, q ];
+
+									/*
+									var scale = d3.scale.linear()
+										.domain([0, 3.0])
+										.range([0, w]);
+									*/
+
+									var svg = d3.select("#d3RToQBar")
+										.append("svg")
+										.attr("width", w)
+										.attr("height", h);
+
+									var totalBar = svg.append("rect")
+										.attr("width", w)
+							            .attr("height", h)
+										.attr("class", "redFill");
+
+									var ratioBar = svg.append("rect")
+										.attr("width", ratio * w / 3.0)
+										.attr("height", h)
+										.attr("class", "greenFill");
+								}
+
 
 					        </script>
 				        </div>
@@ -159,9 +212,17 @@
 					<!-- Middle & Right Columns -->
 					<div class="col-sm-8">
 						<p class="t2">Behavior Counts</p>
-						<p class="p1">Reflection to Question Ratio: <span class="w900">2.2 </span> (Reflection : Question)</p>
-						<div class="barTemp">
-						</div>
+						<p class="p1">Reflection to Question Ratio: 
+							<span class="w900" id="d3RToQNum">
+								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
+							</span> (Reflection : Question)
+						</p>
+
+						<!-- D3 Reflection to Question: bar graph -->
+				        <div id = "d3RToQBar">
+					        <!-- D3 Reflection to Question Ratio: bar graph GOES HERE -->
+					    </div>
+
 						<p class="p1">Percent Open Questions: <span class="w900">27% </span> (Open : Closed)</p>
 						<div class="barTemp">
 						</div>
