@@ -139,7 +139,9 @@
 
 								// D3 Reflection to Question Ratio: bar graph
 								function d3RToQBarGraph() {
-									var w = 470;
+									d3.select(window).on("resize", resize);
+
+									var w = parseInt(d3.select("#d3RToQBar").style("width"));
 									var h = 18;
 
 									var r = data.scores.behaviorCounts.reflectionToQuestion.reflections;	// swap
@@ -172,8 +174,17 @@
 										.attr("width", ratio * w / 3.0)
 										.attr("height", h)
 										.attr("class", "greenFill");
-								}
 
+									// Responsive width for D3 Reflection to Question Ratio: bar graph
+									function resize() {
+										// adjust things when the window size changes
+										w = parseInt(d3.select("#d3RToQBar").style("width"));
+
+										svg.attr("width", w);
+										totalBar.attr("width", w);
+										ratioBar.attr("width", ratio * w / 3.0);
+									}
+								}
 
 					        </script>
 				        </div>

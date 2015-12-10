@@ -150,8 +150,9 @@ CHARTS & GRAPHS
 
 .d3RToQBarAxisColumn {
 	display: inline-block;
-    width: 32.8%;
-    text-align: right;
+	width: 33.3333333333%;
+	text-align: right;
+	float: right;
 }
 
 /* TEMP */
