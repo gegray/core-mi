@@ -142,8 +142,8 @@
 									var w = 470;
 									var h = 18;
 
-									var r = data.scores.behaviorCounts.reflectionToQuestion.questions;		// swap
-									var q = data.scores.behaviorCounts.reflectionToQuestion.reflections; 	// swap
+									var r = data.scores.behaviorCounts.reflectionToQuestion.reflections;	// swap
+									var q = data.scores.behaviorCounts.reflectionToQuestion.questions; 		// swap
 									var rqTotal = r + q;
 									var ratio = data.scores.behaviorCounts.reflectionToQuestion.ratio.toFixed(2);
 									if (ratio > 3.0) {
@@ -219,8 +219,20 @@
 						</p>
 
 						<!-- D3 Reflection to Question: bar graph -->
-				        <div id = "d3RToQBar">
+				        <div id="d3RToQBar">
 					        <!-- D3 Reflection to Question Ratio: bar graph GOES HERE -->
+					    </div>
+
+					    <div id="d3RToQBarAxis">
+					    	<div class="d3RToQBarAxisColumn">
+					    		<p class="p2 gray">Competency: 1.0 |</p>
+					    	</div>
+					    	<div class="d3RToQBarAxisColumn">
+					    		<p class="p2 gray">Proficiency: 2.0 |</p>
+					    	</div>
+					    	<div class="d3RToQBarAxisColumn">
+					    		<p class="p2 gray">&ge; 3.0 |</p>
+					    	</div>
 					    </div>
 
 						<p class="p1">Percent Open Questions: <span class="w900">27% </span> (Open : Closed)</p>

@@ -11,7 +11,7 @@ body {
 p {
 	font-size: 12px;
 	font-weight: 300;
-	color: rgb(40,40,40);
+	color: #333333;
 }
 
 hr {
@@ -25,7 +25,6 @@ TYPE
 */
 
 .t1 {
-	color: rgb(255,255,255);
 	font-size: 18pt;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -85,20 +84,24 @@ COLORS
 ======================================== 
 */
 
-.headerBackground {
-	background-color: rgb(51,51,51);
+.blackBackground {
+	background-color: #333333;
+}
+
+.black {
+	color: #333333;
 }
 
 .gray {
-	color: rgb(152,152,152);
+	color: #878787;
 }
 
 .green {
-	color: rgb(123,204,196);
+	color: #2CC990;
 }
 
 .red {
-	color: rgb(255,116,116);
+	color: #FF947F;
 }
 
 .greenFill {
@@ -106,7 +109,7 @@ COLORS
 }
 
 .redFill {
-	fill: #FCB941;
+	fill: #FF947F;
 }
 
 /* 
@@ -137,30 +140,43 @@ CHARTS & GRAPHS
 ======================================== 
 */
 
+.d3RToQBar {
+
+}
+
+.d3RToQBarAxis {
+
+}
+
+.d3RToQBarAxisColumn {
+	display: inline-block;
+    width: 32.8%;
+    text-align: right;
+}
+
+/* TEMP */
+
 .pieChart {
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	background: rgb(123,204,196);
+	
 }
 
 .barChart {
 	width: auto;
 	height: 450px;
-	background: rgba(123,204,196,0.5);
+	background: #2CC990;
 }
 
 .barTemp {
 	width: auto;
 	height: 18px;
-	background: rgba(123,204,196,0.5);
+	background: #2CC990;
 }
 
 .therapistBox {
 	float: left;
 	width: 18px;
 	height: 18px;
-	background: rgba(123,204,196,0.5);
+	background: #2CC990;
 	margin-right: 12px;
 }
 
@@ -168,19 +184,19 @@ CHARTS & GRAPHS
 	float: left;
 	width: 18px;
 	height: 18px;
-	background: rgba(123,204,196,0.5);
+	background: #333333;
 	margin-right: 12px;
 }
 
 .overviewBarTemp {
 	width: auto;
 	height: 36px;
-	background: rgba(123,204,196,0.5);
+	background: #2CC990;
 }
 
 .detailViewBarTemp {
 	width: auto;
 	height: 48px;
-	background: rgba(123,204,196,0.5);
+	background: #2CC990;
 }
 
