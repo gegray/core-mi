@@ -140,12 +140,16 @@ CHARTS & GRAPHS
 ======================================== 
 */
 
-.d3RToQBar {
+#d3RToQBar {
 
 }
 
-.d3RToQBarAxis {
+#d3RToQBarAxis {
 
+}
+
+.axisFloatContainer {
+	float: right;
 }
 
 .d3RToQBarAxisColumn {
@@ -154,6 +158,66 @@ CHARTS & GRAPHS
 	text-align: right;
 	float: right;
 }
+
+#d3PctOpenQuestionsBar {
+
+}
+
+#d3PctOpenQuestionsAxis {
+	
+}
+
+.d3PctOpenQuestionsAxisColumnEmpty {
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+	float: right;
+}
+
+.d3PctOpenQuestionsAxisColumnProficiency {
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+	float: right;
+}
+
+.d3PctOpenQuestionsAxisColumnCompetency {
+	display: inline-block;
+	width: 49%;
+	text-align: right;
+	float: right;
+}
+
+#d3PctComplexReflectionsBar {
+	
+}
+
+#d3PctComplexReflectionsAxis {
+
+}
+
+.d3PctComplexReflectionsAxisColumnEmpty {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	float: right;
+}
+
+.d3PctComplexReflectionsAxisColumnProficiency {
+	display: inline-block;
+	width: 10%;
+	text-align: right;
+	float: right;
+}
+
+.d3PctComplexReflectionsAxisColumnCompetency {
+	display: inline-block;
+	width: 39%;
+	text-align: right;
+	float: right;
+}
+
+
 
 /* TEMP */
 
