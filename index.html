@@ -72,6 +72,7 @@
 
 				        <!-- D3 MI Adherence pie chart -->
 				        <div id = "pie">
+				        	
 					        <script type="text/javascript">
 					        	var data;
 
@@ -181,7 +182,7 @@
 
 								// D3 Reflection to Question Ratio: bar graph
 								function d3RToQBarGraph() {
-									d3.select(window).on("resize", resize1);
+									d3.select(window).on("resize.1", resize);
 
 									var w = parseInt(d3.select("#d3RToQBar").style("width"));
 									var h = 18;
@@ -192,7 +193,6 @@
 									if (ratio > 3.0) {
 										ratio = 3.0;
 									}
-									ratio = 2.5;
 
 									var svg = d3.select("#d3RToQBar")
 										.append("svg")
@@ -234,7 +234,7 @@
 									}
 
 									// Responsive width for D3 Reflection to Question Ratio: bar graph
-									function resize1() {
+									function resize() {
 										// adjust width when the window size changes
 										w = parseInt(d3.select("#d3RToQBar").style("width"));
 
@@ -261,7 +261,7 @@
 
 								// D3 Percent Open Questions: bar graph
 								function d3POQBar() {
-									d3.select(window).on("resize", resize2);
+									d3.select(window).on("resize.2", resize);
 
 									var w = parseInt(d3.select("#d3PctOpenQuestionsBar").style("width"));
 									var h = 18;
@@ -272,7 +272,6 @@
 									if (pct > 100.0) {
 										pct = 100.0;
 									}
-									pct = 75;
 
 									var svg = d3.select("#d3PctOpenQuestionsBar")
 										.append("svg")
@@ -314,7 +313,7 @@
 									}
 
 									// Responsive width for D3 Percent Open Questions: bar graph
-									function resize2() {
+									function resize() {
 										// adjust width when the window size changes
 										w = parseInt(d3.select("#d3PctOpenQuestionsBar").style("width"));
 
@@ -341,7 +340,7 @@
 
 								// D3 Percent Complex Reflections: bar graph
 								function d3PCRBar() {
-									d3.select(window).on("resize", resize3);
+									d3.select(window).on("resize.3", resize);
 
 									var w = parseInt(d3.select("#d3PctComplexReflectionsBar").style("width"));
 									var h = 18;
@@ -393,7 +392,7 @@
 									}
 
 									// Responsive width for D3 Percent Complex Reflections: bar graph
-									function resize3() {
+									function resize() {
 										// adjust width when the window size changes
 										w = parseInt(d3.select("#d3PctComplexReflectionsBar").style("width"));
 
