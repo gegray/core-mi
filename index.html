@@ -356,6 +356,7 @@
 			// D3 Notes: general
 			function d3NotesGeneral() {
 				var text = data.notes.general;
+
 				d3.select("#d3NotesGeneral")
 					.selectAll("p")
 					.data(text)
@@ -370,6 +371,7 @@
 			// D3 Notes: session strengths
 			function d3NotesStrengths() {
 				var text = data.notes.sessionStrengths;
+
 				d3.select("#d3NotesStrengths")
 					.selectAll("p")
 					.data(text)
@@ -392,6 +394,7 @@
 			// D3 Notes: areas for improvement
 			function d3NotesImprovements() {
 				var text = data.notes.areasForImprovement;
+
 				d3.select("#d3NotesImprovements")
 					.selectAll("p")
 					.data(text)
@@ -414,12 +417,14 @@
 			// D3 Reflection to Question Ratio: number
 			function d3RToQNum() {
 				var ratio = data.scores.behaviorCounts.reflectionToQuestion.ratio.toFixed(2);
+
 				d3.select("#d3RToQNum").text(ratio);
 			}
 
 			// D3 Reflection to Question Ratio: bar graph
 			function d3RToQBarGraph() {
-				d3.select(window).on("resize.1", resize);
+				d3.select(window).on("resize.1", resize);	// the ".1" here is a workaround for multiple responsive
+															// d3 objects on one page. 
 
 				var w = parseInt(d3.select("#d3RToQBar").style("width"));
 				var h = 18;
@@ -498,7 +503,8 @@
 
 			// D3 Percent Open Questions: bar graph
 			function d3POQBar() {
-				d3.select(window).on("resize.2", resize);
+				d3.select(window).on("resize.2", resize);	// the ".2" here is a workaround for multiple responsive
+															// d3 objects on one page. 
 
 				var w = parseInt(d3.select("#d3PctOpenQuestionsBar").style("width"));
 				var h = 18;
@@ -577,7 +583,8 @@
 
 			// D3 Percent Complex Reflections: bar graph
 			function d3PCRBar() {
-				d3.select(window).on("resize.3", resize);
+				d3.select(window).on("resize.3", resize);	// the ".3" here is a workaround for multiple responsive
+															// d3 objects on one page. 
 
 				var w = parseInt(d3.select("#d3PctComplexReflectionsBar").style("width"));
 				var h = 18;
