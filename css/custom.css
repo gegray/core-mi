@@ -157,6 +157,10 @@ CHARTS & GRAPHS
 ======================================== 
 */
 
+.axesShiftLeft {
+	margin-right: -0.5px;
+}
+
 #d3RToQBar {
 
 }
