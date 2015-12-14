@@ -163,7 +163,7 @@ CHARTS & GRAPHS
 
 #d3RToQBarAxis {
 	margin-top: -10px;
-	margin-right: -0.5px;
+	margin-right: -1px;
 }
 
 .axisFloatContainer {
@@ -183,7 +183,7 @@ CHARTS & GRAPHS
 
 #d3PctOpenQuestionsAxis {
 	margin-top: -10px;
-	margin-right: -0.5px;
+	margin-right: -1px;
 }
 
 .d3PctOpenQuestionsAxisColumnEmpty {
@@ -213,7 +213,7 @@ CHARTS & GRAPHS
 
 #d3PctComplexReflectionsAxis {
 	margin-top: -10px;
-	margin-right: -0.5px;
+	margin-right: -1px;
 }
 
 .d3PctComplexReflectionsAxisColumnEmpty {
