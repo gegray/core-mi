@@ -106,7 +106,7 @@ COLORS
 }
 
 .green {
-	color: #25A777;
+	color: #13997A;
 }
 
 .red {
@@ -114,15 +114,15 @@ COLORS
 }
 
 .greenFill {
-	fill: #25A777;
+	fill: #13997A;
 }
 
 .greenFill2 {
-	fill: #2CC98F;
+	fill: #22AA88;
 }
 
 .greenFill3 {
-	fill: #47D7A2;
+	fill: #25BB96;
 }
 
 .redFill {
@@ -252,20 +252,20 @@ CHARTS & GRAPHS
 .barChart {
 	width: auto;
 	height: 450px;
-	background: #25A777;
+	background: #13997A;
 }
 
 .barTemp {
 	width: auto;
 	height: 18px;
-	background: #25A777;
+	background: #13997A;
 }
 
 .therapistBox {
 	float: left;
 	width: 18px;
 	height: 18px;
-	background: #25A777;
+	background: #13997A;
 	margin-right: 12px;
 }
 
@@ -280,12 +280,12 @@ CHARTS & GRAPHS
 .overviewBarTemp {
 	width: auto;
 	height: 36px;
-	background: #25A777;
+	background: #13997A;
 }
 
 .detailViewBarTemp {
 	width: auto;
 	height: 48px;
-	background: #25A777;
+	background: #13997A;
 }
 
