@@ -15,7 +15,7 @@ p {
 }
 
 hr {
-
+	width: ;
 }
 
 /* 
@@ -163,6 +163,7 @@ CHARTS & GRAPHS
 
 #d3RToQBarAxis {
 	margin-top: -10px;
+	margin-right: -0.5px;
 }
 
 .axisFloatContainer {
@@ -182,6 +183,7 @@ CHARTS & GRAPHS
 
 #d3PctOpenQuestionsAxis {
 	margin-top: -10px;
+	margin-right: -0.5px;
 }
 
 .d3PctOpenQuestionsAxisColumnEmpty {
@@ -211,6 +213,7 @@ CHARTS & GRAPHS
 
 #d3PctComplexReflectionsAxis {
 	margin-top: -10px;
+	margin-right: -0.5px;
 }
 
 .d3PctComplexReflectionsAxisColumnEmpty {
