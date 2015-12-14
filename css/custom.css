@@ -25,6 +25,7 @@ TYPE
 */
 
 .t1 {
+	font-family: 'Raleway';
 	font-size: 18pt;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -33,6 +34,7 @@ TYPE
 }
 
 .t2 {
+	font-family: 'Raleway';
 	font-size: 14pt;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -40,12 +42,14 @@ TYPE
 }
 
 .t3 {
+	font-family: 'Raleway';
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.75pt;
 }
 
 .t4 {
+	font-family: 'Raleway';
 	font-weight: 700;
 }
 
@@ -63,6 +67,7 @@ p.p2.gray {
 
 .totalScore1 {
 	font-size: 60pt;
+	letter-spacing: -5px;
 	font-weight: 900;
 }
 
