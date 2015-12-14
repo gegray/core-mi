@@ -38,16 +38,24 @@
 		        <div class="sessionInfo">
 	        		<div class="col-sm-4">
 				        <p class="t4">Session Number</p>
-				        <p class="p1">2015.10.30-14687</p>
-				        <p class="p1">March 3, 2015, 3:43 - 4:37pm</p>
+				        <p class="p1" id="d3SessionNumber">
+				        	<!-- D3 Reflection to Question Ratio: number GOES HERE -->
+				        </p>
+				        <p class="p1" id="d3Date">
+				        	<!-- D3 Date (and time?) GOES HERE -->
+				        </p>
 				    </div>
 				    <div class="col-sm-4">
 				        <p class="t4">Therapist</p>
-				        <p class="p1">Dr. John Doe, PhD</p>
+				        <p class="p1" id="d3TherapistName">
+				        	<!-- D3 Therapist Name GOES HERE -->
+				        </p>
 				    </div>
 				    <div class="col-sm-4">
 				        <p class="t4">Client</p>
-				        <p class="p1">F, age 26</p>
+				        <p class="p1" id="d3ClientInfo">
+				        	<!-- D3 Client Info GOES HERE -->
+				        </p>
 				    </div>
 			    </div> <!-- sessionInfo -->
 			</div> <!-- row -->
@@ -72,14 +80,46 @@
 						        d3.json("BAER_100gg.json", function(json) {
 						        	data = json;
 
+						        	// Header Info
+						        	d3SessionNumber();	// D3 Session Number
+						        	d3Date();			// D3 Date
+						        	d3TherapistName();	// D3 Therapist's Name
+						        	d3ClientInfo();		// D3 Client Info
+
 									d3MIAdherence();	// D3 MI Adherence pie chart
 									d3RToQNum();		// D3 Reflection to Question Ratio: number
 									d3RToQBarGraph();	// D3 Reflection to Question Ratio: bar graph
 									d3POQNum();			// D3 Percent Open Questions: number
-									// d3POQBar();			// D3 Percent Open Questions: bar graph
+									d3POQBar();			// D3 Percent Open Questions: bar graph
 									d3PCRNum();			// D3 Percent Complex Reflections: number
-									// d3PCRBar();			// D3 Percent Complex Reflections: bar graph
+									d3PCRBar();			// D3 Percent Complex Reflections: bar graph
 					        	});
+
+					        	// D3 Session Number
+					        	function d3SessionNumber() {
+					        		var num = data.sessionNumber;
+									d3.select("#d3SessionNumber").text(num);
+					        	}
+
+					        	// D3 Date (and time?)
+					        	function d3Date() {
+					        		var date = data.date;
+									d3.select("#d3Date").text(date);
+					        	}
+
+					        	// D3 Date (and time?)
+					        	function d3TherapistName() {
+					        		var name = data.therapist;
+									d3.select("#d3TherapistName").text(name);
+					        	}
+
+					        	// D3 Date (and time?)
+					        	function d3ClientInfo() {
+					        		var id = data.client.clientID;
+					        		var sex = data.client.sex;
+					        		var age = data.client.age;
+									d3.select("#d3ClientInfo").text("ID: " + id + ", " + sex + ", age " + age);
+					        	}
 
 						        // D3 MI Adherence Pie Chart
 								function d3MIAdherence() {
@@ -141,26 +181,18 @@
 
 								// D3 Reflection to Question Ratio: bar graph
 								function d3RToQBarGraph() {
-									d3.select(window).on("resize", resize);
+									d3.select(window).on("resize", resize1);
 
 									var w = parseInt(d3.select("#d3RToQBar").style("width"));
 									var h = 18;
 
 									var r = data.scores.behaviorCounts.reflectionToQuestion.reflections;	// swap
 									var q = data.scores.behaviorCounts.reflectionToQuestion.questions; 		// swap
-									var rqTotal = r + q;
 									var ratio = data.scores.behaviorCounts.reflectionToQuestion.ratio.toFixed(2);
 									if (ratio > 3.0) {
 										ratio = 3.0;
 									}
-									var ratioWidth = ratio
-									var rqArr = [ rqTotal, r, q ];
-
-									/*
-									var scale = d3.scale.linear()
-										.domain([0, 3.0])
-										.range([0, w]);
-									*/
+									ratio = 2.5;
 
 									var svg = d3.select("#d3RToQBar")
 										.append("svg")
@@ -172,19 +204,52 @@
 							            .attr("height", h)
 										.attr("class", "redFill");
 
-									var ratioBar = svg.append("rect")
-										.attr("width", ratio * w / 3.0)
-										.attr("height", h)
-										.attr("class", "greenFill");
+									if (ratio > 2.0) {
+										var ratioBar1 = svg.append("rect")
+											.attr("width", ratio * w / 3.0)
+											.attr("height", h)
+											.attr("class", "greenFill");
+										var ratioBar2 = svg.append("rect")
+											.attr("width", w * 2.0 / 3.0)
+											.attr("height", h)
+											.attr("class", "greenFill2");
+										var ratioBar3 = svg.append("rect")
+											.attr("width", w * 1.0 / 3.0)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									} else if (ratio > 1.0) {
+										var ratioBar2 = svg.append("rect")
+											.attr("width", ratio * w / 3.0)
+											.attr("height", h)
+											.attr("class", "greenFill2");
+										var ratioBar3 = svg.append("rect")
+											.attr("width", w * 1.0 / 3.0)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									} else {
+										var ratioBar3 = svg.append("rect")
+											.attr("width", ratio * w / 3.0)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									}
 
 									// Responsive width for D3 Reflection to Question Ratio: bar graph
-									function resize() {
+									function resize1() {
 										// adjust width when the window size changes
 										w = parseInt(d3.select("#d3RToQBar").style("width"));
 
 										svg.attr("width", w);
 										totalBar.attr("width", w);
-										ratioBar.attr("width", ratio * w / 3.0);
+										if (ratio > 2.0) {
+											ratioBar1.attr("width", ratio * w / 3.0);
+											ratioBar2.attr("width", w * 2.0 / 3.0);
+											ratioBar3.attr("width", w * 1.0 / 3.0);
+										} else if (ratio > 1.0) {
+											ratioBar2.attr("width", ratio * w / 3.0);
+											ratioBar3.attr("width", w * 1.0 / 3.0);
+										} else {
+											ratioBar3.attr("width", ratio * w / 3.0);
+										}
 									}
 								}
 
@@ -194,10 +259,157 @@
 									d3.select("#d3POQNum").text(pct);
 								}
 
+								// D3 Percent Open Questions: bar graph
+								function d3POQBar() {
+									d3.select(window).on("resize", resize2);
+
+									var w = parseInt(d3.select("#d3PctOpenQuestionsBar").style("width"));
+									var h = 18;
+
+									var oq = data.scores.behaviorCounts.percentOpenQuestions.openQuestions;
+									var cq = data.scores.behaviorCounts.percentOpenQuestions.closedQuestions;
+									var pct = data.scores.behaviorCounts.percentOpenQuestions.percent.toFixed(2);
+									if (pct > 100.0) {
+										pct = 100.0;
+									}
+									pct = 75;
+
+									var svg = d3.select("#d3PctOpenQuestionsBar")
+										.append("svg")
+										.attr("width", w)
+										.attr("height", h);
+
+									var totalBar = svg.append("rect")
+										.attr("width", w)
+										.attr("height", h)
+										.attr("class", "redFill");
+
+									if (pct > 70) {
+										var pctBar1 = svg.append("rect")
+											.attr("width", pct / 100 * w)
+											.attr("height", h)
+											.attr("class", "greenFill");
+										var pctBar2 = svg.append("rect")
+											.attr("width", w * 0.7)
+											.attr("height", h)
+											.attr("class", "greenFill2");
+										var pctBar3 = svg.append("rect")
+											.attr("width", w * 0.5)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									} else if (pct > 50) {
+										var pctBar2 = svg.append("rect")
+											.attr("width", pct / 100 * w)
+											.attr("height", h)
+											.attr("class", "greenFill2");
+										var pctBar3 = svg.append("rect")
+											.attr("width", w * 0.5)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									} else {
+										var pctBar3 = svg.append("rect")
+											.attr("width", pct / 100 * w)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									}
+
+									// Responsive width for D3 Percent Open Questions: bar graph
+									function resize2() {
+										// adjust width when the window size changes
+										w = parseInt(d3.select("#d3PctOpenQuestionsBar").style("width"));
+
+										svg.attr("width", w);
+										totalBar.attr("width", w);
+										if (pct > 70) {
+											pctBar1.attr("width", pct / 100 * w);
+											pctBar2.attr("width", w * 0.7);
+											pctBar3.attr("width", w * 0.5);
+										} else if (pct > 50) {
+											pctBar2.attr("width", pct / 100 * w);
+											pctBar3.attr("width", w * 0.5);
+										} else {
+											pctBar3.attr("width", pct / 100 * w);
+										}
+									}
+								}
+
 								// D3 Percent Complex Reflections: number
 								function d3PCRNum() {
 									var pct = data.scores.behaviorCounts.percentComplexReflections.percent.toFixed(2);
 									d3.select("#d3PCRNum").text(pct);
+								}
+
+								// D3 Percent Complex Reflections: bar graph
+								function d3PCRBar() {
+									d3.select(window).on("resize", resize3);
+
+									var w = parseInt(d3.select("#d3PctComplexReflectionsBar").style("width"));
+									var h = 18;
+
+									var cr = data.scores.behaviorCounts.percentComplexReflections.complexReflections;
+									var sr = data.scores.behaviorCounts.percentComplexReflections.simpleReflections;
+									var pct = data.scores.behaviorCounts.percentComplexReflections.percent.toFixed(2);
+									if (pct > 100.0) {
+										pct = 100.0;
+									}
+
+									var svg = d3.select("#d3PctComplexReflectionsBar")
+										.append("svg")
+										.attr("width", w)
+										.attr("height", h);
+
+									var totalBar = svg.append("rect")
+										.attr("width", w)
+										.attr("height", h)
+										.attr("class", "redFill");
+
+									if (pct > 50) {
+										var pctBar1 = svg.append("rect")
+											.attr("width", pct / 100 * w)
+											.attr("height", h)
+											.attr("class", "greenFill");
+										var pctBar2 = svg.append("rect")
+											.attr("width", w * 0.5)
+											.attr("height", h)
+											.attr("class", "greenFill2");
+										var pctBar3 = svg.append("rect")
+											.attr("width", w * 0.4)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									} else if (pct > 40) {
+										var pctBar2 = svg.append("rect")
+											.attr("width", pct / 100 * w)
+											.attr("height", h)
+											.attr("class", "greenFill2");
+										var pctBar3 = svg.append("rect")
+											.attr("width", w * 0.4)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									} else {
+										var pctBar3 = svg.append("rect")
+											.attr("width", pct / 100 * w)
+											.attr("height", h)
+											.attr("class", "greenFill3");
+									}
+
+									// Responsive width for D3 Percent Complex Reflections: bar graph
+									function resize3() {
+										// adjust width when the window size changes
+										w = parseInt(d3.select("#d3PctComplexReflectionsBar").style("width"));
+
+										svg.attr("width", w);
+										totalBar.attr("width", w);
+										if (pct > 50) {
+											pctBar1.attr("width", pct / 100 * w);
+											pctBar2.attr("width", w * 0.5);
+											pctBar3.attr("width", w * 0.4);
+										} else if (pct > 40) {
+											pctBar2.attr("width", pct / 100 * w);
+											pctBar3.attr("width", w * 0.4);
+										} else {
+											pctBar3.attr("width", pct / 100 * w);
+										}
+									}
 								}
 
 					        </script>
@@ -248,13 +460,13 @@
 					    </div>
 					    <div id="d3RToQBarAxis">
 					    	<div class="d3RToQBarAxisColumn">
-					    		<p class="p2 gray">&ge; 3.0 |</p>
+					    		<p class="p2 gray">|<br>&ge; 3.0 |</p>
 					    	</div>
 					    	<div class="d3RToQBarAxisColumn">
-					    		<p class="p2 gray">p: 2.0 |</p>
+					    		<p class="p2 gray">|<br>p: 2.0 |</p>
 					    	</div>
 					    	<div class="d3RToQBarAxisColumn">
-					    		<p class="p2 gray">c: 1.0 |</p>
+					    		<p class="p2 gray">|<br>c: 1.0 |</p>
 					    	</div>
 					    </div>
 
@@ -263,21 +475,19 @@
 								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
 							</span>% (Open : Closed)
 						</p>
-						<div class="barTemp">
-						</div>
 						<!-- D3 Percent Open Questions: bar graph -->
 				        <div id="d3PctOpenQuestionsBar">
 					        <!-- D3 Percent Open Questions: bar graph GOES HERE -->
 					    </div>
 						<div id="d3PctOpenQuestionsAxis">
 					    	<div class="d3PctOpenQuestionsAxisColumnEmpty">
-					    		<p class="p2 gray">|</p>
+					    		<p class="p2 gray">|<br>100% |</p>
 					    	</div>
 					    	<div class="d3PctOpenQuestionsAxisColumnProficiency">
-					    		<p class="p2 gray">p: 70% |</p>
+					    		<p class="p2 gray">|<br>p: 70% |</p>
 					    	</div>
 					    	<div class="d3PctOpenQuestionsAxisColumnCompetency">
-					    		<p class="p2 gray">c: 50% |</p>
+					    		<p class="p2 gray">|<br>c: 50% |</p>
 					    	</div>
 					    </div>
 
@@ -286,21 +496,19 @@
 								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
 							</span>% (Complex : Simple)
 						</p>
-						<div class="barTemp">
-						</div>
 						<!-- D3 Reflection to Question: bar graph -->
 				        <div id="d3PctComplexReflectionsBar">
 					        <!-- D3 Reflection to Question Ratio: bar graph GOES HERE -->
 					    </div>
 						<div id="d3PctComplexReflectionsAxis">
 					    	<div class="d3PctComplexReflectionsAxisColumnEmpty">
-					    		<p class="p2 gray">|</p>
+					    		<p class="p2 gray">|<br>100% |</p>
 					    	</div>
 					    	<div class="d3PctComplexReflectionsAxisColumnProficiency">
-					    		<p class="p2 gray">p: 50% |</p>
+					    		<p class="p2 gray">|<br>p: 50% |</p>
 					    	</div>
 					    	<div class="d3PctComplexReflectionsAxisColumnCompetency">
-					    		<p class="p2 gray">c: 40% |</p>
+					    		<p class="p2 gray">|<br>c: 40% |</p>
 					    	</div>
 					    </div>
 
