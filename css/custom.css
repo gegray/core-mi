@@ -12,7 +12,7 @@ p {
 	font-size: 10pt;
 	font-weight: 300;
 	color: #333333;
-	margin: 0 0 8px 0;
+	margin-bottom: 8px;
 }
 
 hr {
@@ -26,33 +26,35 @@ TYPE
 ======================================== 
 */
 
-.t1 {
+.t1,
+.t2,
+.t3,
+.t4 {
 	font-family: 'Raleway';
-	font-size: 14pt;
 	font-weight: 900;
+}
+
+.t1 {
+	color: #FFFFFF;
+	font-size: 14pt;
 	text-transform: uppercase;
-	letter-spacing: 1pt;
+	letter-spacing: 2px;
 	margin-top: 18px;
 }
 
 .t2 {
-	font-family: 'Raleway';
 	font-size: 10pt;
-	font-weight: 900;
 	text-transform: uppercase;
-	letter-spacing: 0.75pt;
+	letter-spacing: 1.5px;
 	margin-bottom: 12px;
 }
 
 .t3 {
-	font-family: 'Raleway';
-	font-weight: 900;
 	margin-top: 24px;
 }
 
 .t4 {
-	font-family: 'Raleway';
-	font-weight: 900;
+
 }
 
 .p1 {
@@ -92,11 +94,6 @@ p.p2.gray {
 	text-align: center;
 	color: #FFFFFF;
 	fill: #FFFFFF;
-	font-weight: 900;
-}
-
-.miAlertText {
-	font-weight: 900;
 }
 
 /* 
@@ -146,6 +143,17 @@ COLORS
 SECTION DIV CONTAINERS 
 ======================================== 
 */
+
+.headerBackground {
+	background-color: #333333;
+	overflow-x: hidden;
+	padding-left: 1000px;
+	padding-right: 1000px;
+	margin-left: -1015px;
+	margin-right: -1015px;
+	padding-bottom: 8px;
+	margin-bottom: 12px;
+}
 
 .sessionInfo {
 	

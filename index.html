@@ -32,7 +32,6 @@
 		        	<p class="t1">Core-MI Report</p>
 		        </div>
 		    </div> <!-- row -->
-		    <hr />
 
 		    <!-- Session #, Therapist, Client -->
 		    <div class="row">
@@ -60,7 +59,7 @@
 				    </div>
 			    </div> <!-- sessionInfo -->
 			</div> <!-- row -->
-			<hr />
+			<hr>
 
 			<!-- Overall, Global, Notes -->
 			<div class="row">
@@ -79,9 +78,9 @@
 				        </div>
 
 				        <p class="t3">MI Alerts</p>
-				        <p class="p1 red miAlertText"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 2 Advise</p>
-				        <p class="p1 red miAlertText"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 1 Confront</p>
-				        <p class="p1 red miAlertText"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 1 Direction</p>
+				        <p class="p1 red w900"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 2 Advise</p>
+				        <p class="p1 red w900"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 1 Confront</p>
+				        <p class="p1 red w900"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 1 Direction</p>
 				    </div>
 				    <!-- Middle Column -->
 				    <div class="col-sm-4">
@@ -188,7 +187,7 @@
 					</div>
 				</div> <!-- behaviorCounts -->
 			</div> <!-- row -->
-			<hr />
+			<hr>
 
 			<!-- Session View - Title -->
 			<div class="row">
@@ -361,7 +360,7 @@
 				    		return Math.round(d.value) + "%";
 				    	}
 				    })
-				    .attr("class", "pieText");
+				    .attr("class", "w900 pieText");
 			}
 
 			// D3 Notes: general
@@ -390,7 +389,7 @@
 					.append("p")
 					.attr("class", "p1")
 					.append("span")
-					.attr("class", "plusMinus green")
+					.attr("class", "w900 green")
 					.text("+");
 
 				d3.select("#d3NotesStrengths")
@@ -413,7 +412,7 @@
 					.append("p")
 					.attr("class", "p1")
 					.append("span")
-					.attr("class", "plusMinus red")
+					.attr("class", "w900 red")
 					.html("&minus;");
 
 				d3.select("#d3NotesImprovements")
