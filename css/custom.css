@@ -82,10 +82,6 @@ p.p2.gray {
 	-webkit-text-stroke: 1px white;
 }
 
-.plusMinus {
-	font-weight: 900;
-}
-
 .w900 {
 	font-weight: 900;
 }
@@ -120,6 +116,10 @@ COLORS
 
 .red {
 	color: #FF947F;
+}
+
+.blackFill {
+	fill: #333333;
 }
 
 .greenFill {

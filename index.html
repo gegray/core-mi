@@ -72,7 +72,6 @@
 				        <p class="totalScore1"><span class="green">7</span><span class="totalScore2">/12</span></p>
 				        <p class="t3">MI Adherence</p>
 
-				        <!-- D3 MI Adherence pie chart -->
 				        <div id = "pie">
 				        	<!-- D3 MI Adherence pie chart GOES HERE -->
 				        </div>
@@ -87,7 +86,12 @@
 				    	<p class="t2">Global Ratings
 				    		<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 				    	</p>
-				    	<div class="barChart"></div>
+
+				    	<div id="d3GlobalRatings">
+				    		<!-- D3 Global Ratings GOES HERE -->
+				    	</div>
+				    	<!-- Global Ratings Labels (below) TO GO HERE -->
+
 				    </div>
 				    <!-- Right Column -->
 				    <div class="col-sm-4">
@@ -273,6 +277,8 @@
 
 				d3MIAdherence();		// D3 MI Adherence pie chart
 
+				d3GlobalRatings();		// D3 Global Ratings
+
 				d3NotesGeneral();		// D3 Notes: general
 				d3NotesStrengths();		// D3 Notes: strengths
 				d3NotesImprovements();	// D3 Notes: areas for improvement
@@ -361,6 +367,89 @@
 				    	}
 				    })
 				    .attr("class", "w900 pieText");
+			}
+
+			// D3 Global Ratings
+			function d3GlobalRatings() {
+				// d3.select(window).on("resize.0", resize);	// the ".1" here is a workaround for multiple responsive
+															// d3 objects on one page. 
+
+				var w = parseInt(d3.select("#d3GlobalRatings").style("width"));
+				var h = 400;
+
+				var miSpiritScore = data.scores.globals.miSpirit.toFixed(2);
+				var empathyScore = data.scores.globals.empathy.toFixed(2);
+
+				if (empathyScore > 5.0) {
+					empathyScore = 5.0;
+				}
+				if (miSpiritScore > 5.0) {
+					miSpiritScore = 5.0;
+				}
+
+				var svg = d3.select("#d3GlobalRatings")
+					.append("svg")
+					.attr("width", w)
+					.attr("height", h);
+
+				var totalBackground = svg.append("rect")
+					.attr("width", w)
+		            .attr("height", h)
+					.attr("class", "greenFill");
+
+				var proficiencyBackground = svg.append("rect")
+					.attr("width", w)
+		            .attr("height", h)
+					.attr("class", "greenFill2");
+
+				// var proficiencyText = svg.append("p: 4.0");
+
+				var competencyBackground = svg.append("rect")
+					.attr("width", w)
+		            .attr("height", h)
+					.attr("class", "greenFill3");
+
+				// var competencyText = svg.append("c: 3.5");
+
+
+				/*
+				var miSpiritBar = svg.append("rect")
+					.attr("width", w / 5)
+					.attr("height", function() {
+						return miSpiritScore / 5 * h;
+					})
+					.attr("class", "blackFill");
+
+				var miSpiritBarText = svg.append("" + miSpiritScore);
+
+				var empathyBar = svg.append("rect")
+					.attr("width", w / 5)
+					.attr("height", function() {
+						return empathyScore / 5 * h;
+					})
+					.attr("class", "blackFill");
+
+				var empathyBarText = svg.append("" + empathyScore);
+
+				// Responsive width for D3 Reflection to Question Ratio: bar graph
+				function resize() {
+					// adjust width when the window size changes
+					w = parseInt(d3.select("#d3RToQBar").style("width"));
+
+					svg.attr("width", w);
+					totalBar.attr("width", w);
+					if (ratio > 2.0) {
+						ratioBar1.attr("width", ratio * w / 3.0);
+						ratioBar2.attr("width", w * 2.0 / 3.0);
+						ratioBar3.attr("width", w * 1.0 / 3.0);
+					} else if (ratio > 1.0) {
+						ratioBar2.attr("width", ratio * w / 3.0);
+						ratioBar3.attr("width", w * 1.0 / 3.0);
+					} else {
+						ratioBar3.attr("width", ratio * w / 3.0);
+					}
+				}
+				*/
 			}
 
 			// D3 Notes: general
