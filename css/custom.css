@@ -236,7 +236,7 @@ CHARTS & GRAPHS
 
 #d3PctOpenQuestionsAxis {
 	margin-top: -8px;
-	margin-right: -0.75px;
+	margin-right: -1px;
 }
 
 .d3PctOpenQuestionsAxisColumnEmpty {
@@ -266,7 +266,7 @@ CHARTS & GRAPHS
 
 #d3PctComplexReflectionsAxis {
 	margin-top: -8px;
-	margin-right: -0.75px;
+	margin-right: -1px;
 }
 
 .d3PctComplexReflectionsAxisColumnEmpty {
