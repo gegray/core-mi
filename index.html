@@ -7,7 +7,7 @@
         <meta name="mobile-web-app-capable" content="yes">
         <title>Core-MI Report</title>
 
-        <!-- Include libraries -->
+        <!-- Included libraries -->
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.css" />
 		<script src="https://code.jquery.com/jquery.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -227,9 +227,16 @@
 						<p class="p1">Client</p>
 					</div>
 					<div class="col-sm-8">
-						<p class="p1">Percent Talk Time: <span class="w900">67% </span> (Therapist : Client)</p>
-						<div class="barTemp">
-						</div>
+						<p class="p1">Percent Talk Time: 
+							<span class="w900" id="d3PctTalkTimeNum">
+								<!-- D3 Percent Talk Time: number GOES HERE -->
+							</span>% (Therapist : Client)
+						</p>
+
+						<!-- D3 Percent Talk Time: bar graph -->
+				        <div id="d3PctTalkTimeBar">
+					        <!-- D3 Percent Talk Time: bar graph GOES HERE -->
+					    </div>
 					</div>
 				</div> <!-- sessionView -->
 			</div> <!-- row -->
@@ -300,6 +307,9 @@
 				d3POQBar();				// D3 Percent Open Questions: bar graph
 				d3PCRNum();				// D3 Percent Complex Reflections: number
 				d3PCRBar();				// D3 Percent Complex Reflections: bar graph
+
+				d3PctTalkTimeNum();		// D3 Percent Talk Time: number
+				d3PctTalkTimeBar();		// D3 Percent Talk Time: bar graph
         	});
 
         	// D3 Session Number
@@ -785,6 +795,50 @@
 					} else {
 						pctBar3.attr("width", pct / 100 * w);
 					}
+				}
+			}
+
+			// D3 Percent Talk Time: number
+			function d3PctTalkTimeNum() {
+				var pct = data.session.talkTime.therapistToClientPercent * 100;
+				pct = pct.toFixed(2);
+				d3.select("#d3PctTalkTimeNum").text(pct);
+			}
+
+			// D3 Percent Talk Time: bar graph
+			function d3PctTalkTimeBar() {
+				//d3.select(window).on("resize.4", resize);	// the ".4" here is a workaround for multiple responsive
+															// d3 objects on one page. 
+
+				var w = parseFloat(d3.select("#d3PctTalkTimeBar").style("width"));
+				var h = 18;
+
+				var therapistPct = data.session.talkTime.therapistToClientPercent;
+				var clientPct = 1 - therapistPct;
+
+				var svg = d3.select("#d3PctTalkTimeBar")
+					.append("svg")
+					.attr("width", w)
+					.attr("height", h);
+
+				var totalBar = svg.append("rect")
+					.attr("width", w)
+					.attr("height", h)
+					.attr("class", "blueFill");
+
+				var therapistBar= svg.append("rect")
+					.attr("width", w * therapistPct)
+					.attr("height", h)
+					.attr("class", "greenFill");
+
+				// Responsive width for D3 Percent Complex Reflections: bar graph
+				function resize() {
+					// adjust width when the window size changes
+					w = parseFloat(d3.select("#d3PctComplexReflectionsBar").style("width"));
+
+					svg.attr("width", w);
+					totalBar.attr("width", w);
+					therapistBar.attr("width", w * therapistPct);
 				}
 			}
 

@@ -138,8 +138,16 @@ COLORS
 	color: #FF947F;
 }
 
+.blue {
+	color: #337AB7;
+}
+
 .blackFill {
 	fill: #333333;
+}
+
+.grayFill {
+	fill: #878787;
 }
 
 .greenFill {
@@ -156,6 +164,10 @@ COLORS
 
 .redFill {
 	fill: #FF947F;
+}
+
+.blueFill {
+	fill: #337AB7;
 }
 
 /* 
@@ -288,6 +300,10 @@ CHARTS & GRAPHS
 	width: 39%;
 	text-align: right;
 	float: right;
+}
+
+#d3PctTalkTimeBar {
+
 }
 
 
