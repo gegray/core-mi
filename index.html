@@ -801,8 +801,7 @@
 			// D3 Percent Talk Time: number
 			function d3PctTalkTimeNum() {
 				var pct = data.session.talkTime.therapistToClientPercent * 100;
-				pct = pct.toFixed(2);
-				d3.select("#d3PctTalkTimeNum").text(pct);
+				d3.select("#d3PctTalkTimeNum").text(pct.toFixed(2));
 			}
 
 			// D3 Percent Talk Time: bar graph
