@@ -92,6 +92,17 @@
 				    	</div>
 				    	<!-- Global Ratings Labels (below) TO GO HERE -->
 
+				    	<div id="globalRatingsLabels">
+				    		<span></span>
+							<span>
+								<p class="p1 centerText">MI Spirit</p>
+							</span>
+							<span></span>
+							<span>
+								<p class="p1 centerText">Empathy</p>
+							</span>
+							<span></span>
+				    	</div>
 				    </div>
 				    <!-- Right Column -->
 				    <div class="col-sm-4">
@@ -157,13 +168,13 @@
 					    </div>
 						<div id="d3PctOpenQuestionsAxis">
 					    	<div class="d3PctOpenQuestionsAxisColumnEmpty">
-					    		<p class="p2 gray">|<br>100% |</p>
+					    		<p class="p2 gray">|<br>100 |</p>
 					    	</div>
 					    	<div class="d3PctOpenQuestionsAxisColumnProficiency axesShiftLeft">
-					    		<p class="p2 gray">|<br>p: 70% |</p>
+					    		<p class="p2 gray">|<br>p: 70 |</p>
 					    	</div>
 					    	<div class="d3PctOpenQuestionsAxisColumnCompetency axesShiftLeft">
-					    		<p class="p2 gray">|<br>c: 50% |</p>
+					    		<p class="p2 gray">|<br>c: 50 |</p>
 					    	</div>
 					    </div>
 
@@ -178,13 +189,13 @@
 					    </div>
 						<div id="d3PctComplexReflectionsAxis">
 					    	<div class="d3PctComplexReflectionsAxisColumnEmpty">
-					    		<p class="p2 gray">|<br>100% |</p>
+					    		<p class="p2 gray">|<br>100 |</p>
 					    	</div>
 					    	<div class="d3PctComplexReflectionsAxisColumnProficiency axesShiftLeft">
-					    		<p class="p2 gray">|<br>p: 50% |</p>
+					    		<p class="p2 gray">|<br>p: 50 |</p>
 					    	</div>
 					    	<div class="d3PctComplexReflectionsAxisColumnCompetency axesShiftLeft">
-					    		<p class="p2 gray">|<br>c: 40% |</p>
+					    		<p class="p2 gray">|<br>c: 40 |</p>
 					    	</div>
 					    </div>
 
@@ -371,11 +382,12 @@
 
 			// D3 Global Ratings
 			function d3GlobalRatings() {
-				// d3.select(window).on("resize.0", resize);	// the ".1" here is a workaround for multiple responsive
+				d3.select(window).on("resize.0", resize);	// the ".0" here is a workaround for multiple responsive
 															// d3 objects on one page. 
 
-				var w = parseInt(d3.select("#d3GlobalRatings").style("width"));
+				var w = parseFloat(d3.select("#d3GlobalRatings").style("width"));
 				var h = 400;
+				var barWidth = w / 5;
 
 				var miSpiritScore = data.scores.globals.miSpirit.toFixed(2);
 				var empathyScore = data.scores.globals.empathy.toFixed(2);
@@ -399,57 +411,75 @@
 
 				var proficiencyBackground = svg.append("rect")
 					.attr("width", w)
-		            .attr("height", h)
+		            .attr("height", h * 4 / 5)
+		            .attr("x", 0)
+		            .attr("y", h * 1 / 5)
 					.attr("class", "greenFill2");
-
-				// var proficiencyText = svg.append("p: 4.0");
 
 				var competencyBackground = svg.append("rect")
 					.attr("width", w)
-		            .attr("height", h)
+		            .attr("height", h * 3.5 / 5)
+		            .attr("x", 0)
+		            .attr("y", h * 1.5 / 5)
 					.attr("class", "greenFill3");
 
-				// var competencyText = svg.append("c: 3.5");
+				var proficiencyText = svg.append("text")
+					.attr("x", w)
+					.attr("y", h * 1.5 / 5)
+					.text("p: 3.5 __")
+					.attr("class", "globalLabelText");
 
-
-				/*
+				var competencyText = svg.append("text")
+					.attr("x", w)
+					.attr("y", h * 1 / 5)
+					.text("c: 4.0 __")
+					.attr("class", "globalLabelText");
+				
 				var miSpiritBar = svg.append("rect")
-					.attr("width", w / 5)
-					.attr("height", function() {
-						return miSpiritScore / 5 * h;
-					})
+					.attr("width", barWidth)
+					.attr("height", miSpiritScore / 5 * h)
+					.attr("x", barWidth)
+					.attr("y", (5 - miSpiritScore) / 5 * h)
 					.attr("class", "blackFill");
 
-				var miSpiritBarText = svg.append("" + miSpiritScore);
+				var miSpiritBarText = svg.append("text")
+					.attr("x", barWidth * 1.5)
+					.attr("y", (5 - miSpiritScore) / 5 * h + 24)
+					.text(miSpiritScore)
+					.attr("class", "globalScoreText");
 
 				var empathyBar = svg.append("rect")
-					.attr("width", w / 5)
-					.attr("height", function() {
-						return empathyScore / 5 * h;
-					})
+					.attr("width", barWidth)
+					.attr("height", empathyScore / 5 * h)
+					.attr("x", barWidth * 3)
+					.attr("y", (5 - empathyScore) / 5 * h)
 					.attr("class", "blackFill");
 
-				var empathyBarText = svg.append("" + empathyScore);
+				var empathyBarText = svg.append("text")
+					.attr("x", barWidth * 3.5)
+					.attr("y", (5 - empathyScore) / 5 * h + 24)
+					.text(empathyScore)
+					.attr("class", "globalScoreText");
 
-				// Responsive width for D3 Reflection to Question Ratio: bar graph
+				// Responsive width for D3 Global Ratings: bar graph
 				function resize() {
 					// adjust width when the window size changes
-					w = parseInt(d3.select("#d3RToQBar").style("width"));
+					w = parseFloat(d3.select("#d3GlobalRatings").style("width"));
+					barWidth = w / 5;
 
 					svg.attr("width", w);
-					totalBar.attr("width", w);
-					if (ratio > 2.0) {
-						ratioBar1.attr("width", ratio * w / 3.0);
-						ratioBar2.attr("width", w * 2.0 / 3.0);
-						ratioBar3.attr("width", w * 1.0 / 3.0);
-					} else if (ratio > 1.0) {
-						ratioBar2.attr("width", ratio * w / 3.0);
-						ratioBar3.attr("width", w * 1.0 / 3.0);
-					} else {
-						ratioBar3.attr("width", ratio * w / 3.0);
-					}
+					totalBackground.attr("width", w);
+					proficiencyBackground.attr("width", w);
+					competencyBackground.attr("width", w);
+					proficiencyText.attr("x", w);
+					competencyText.attr("x", w);
+					miSpiritBar.attr("width", barWidth)
+						.attr("x", barWidth);
+					miSpiritBarText.attr("x", barWidth * 1.5);
+					empathyBar.attr("width", barWidth)
+						.attr("x", barWidth * 3);
+					empathyBarText.attr("x", barWidth * 3.5);
 				}
-				*/
 			}
 
 			// D3 Notes: general
@@ -525,7 +555,7 @@
 				d3.select(window).on("resize.1", resize);	// the ".1" here is a workaround for multiple responsive
 															// d3 objects on one page. 
 
-				var w = parseInt(d3.select("#d3RToQBar").style("width"));
+				var w = parseFloat(d3.select("#d3RToQBar").style("width"));
 				var h = 18;
 
 				var r = data.scores.behaviorCounts.reflectionToQuestion.reflections;	// swap
@@ -579,7 +609,7 @@
 				// Responsive width for D3 Reflection to Question Ratio: bar graph
 				function resize() {
 					// adjust width when the window size changes
-					w = parseInt(d3.select("#d3RToQBar").style("width"));
+					w = parseFloat(d3.select("#d3RToQBar").style("width"));
 
 					svg.attr("width", w);
 					totalBar.attr("width", w);
@@ -607,7 +637,7 @@
 				d3.select(window).on("resize.2", resize);	// the ".2" here is a workaround for multiple responsive
 															// d3 objects on one page. 
 
-				var w = parseInt(d3.select("#d3PctOpenQuestionsBar").style("width"));
+				var w = parseFloat(d3.select("#d3PctOpenQuestionsBar").style("width"));
 				var h = 18;
 
 				var oq = data.scores.behaviorCounts.percentOpenQuestions.openQuestions;
@@ -661,7 +691,7 @@
 				// Responsive width for D3 Percent Open Questions: bar graph
 				function resize() {
 					// adjust width when the window size changes
-					w = parseInt(d3.select("#d3PctOpenQuestionsBar").style("width"));
+					w = parseFloat(d3.select("#d3PctOpenQuestionsBar").style("width"));
 
 					svg.attr("width", w);
 					totalBar.attr("width", w);
@@ -689,7 +719,7 @@
 				d3.select(window).on("resize.3", resize);	// the ".3" here is a workaround for multiple responsive
 															// d3 objects on one page. 
 
-				var w = parseInt(d3.select("#d3PctComplexReflectionsBar").style("width"));
+				var w = parseFloat(d3.select("#d3PctComplexReflectionsBar").style("width"));
 				var h = 18;
 
 				var cr = data.scores.behaviorCounts.percentComplexReflections.complexReflections;
@@ -741,7 +771,7 @@
 				// Responsive width for D3 Percent Complex Reflections: bar graph
 				function resize() {
 					// adjust width when the window size changes
-					w = parseInt(d3.select("#d3PctComplexReflectionsBar").style("width"));
+					w = parseFloat(d3.select("#d3PctComplexReflectionsBar").style("width"));
 
 					svg.attr("width", w);
 					totalBar.attr("width", w);

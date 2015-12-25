@@ -45,7 +45,7 @@ TYPE
 .t2 {
 	font-size: 10pt;
 	text-transform: uppercase;
-	letter-spacing: 1.5px;
+	letter-spacing: 1.25px;
 	margin-bottom: 12px;
 }
 
@@ -66,7 +66,7 @@ TYPE
 }
 
 p.p2.gray {
-	line-height: 0.85;
+	line-height: 0.8;
 }
 
 .totalScore1 {
@@ -92,6 +92,26 @@ p.p2.gray {
 	fill: #FFFFFF;
 }
 
+.globalLabelText {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 8pt;
+	fill: #FFFFFF;
+	text-anchor: end;
+}
+
+.globalScoreText {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	font-size: 10pt;
+	fill: #FFFFFF;
+	text-anchor: middle;
+}
+
+.centerText {
+	text-align: center;
+}
+
 /* 
 ========================================
 COLORS
@@ -111,7 +131,7 @@ COLORS
 }
 
 .green {
-	color: #13997A;
+	color: #22AA88;
 }
 
 .red {
@@ -123,15 +143,15 @@ COLORS
 }
 
 .greenFill {
-	fill: #13997A;
+	fill: #22AA88;
 }
 
 .greenFill2 {
-	fill: #25BB96;
+	fill: #33D7AE;
 }
 
 .greenFill3 {
-	fill: #33D7AE;
+	fill: #88E7D0;
 }
 
 .redFill {
@@ -177,6 +197,15 @@ CHARTS & GRAPHS
 ======================================== 
 */
 
+#globalRatingsLabels {
+
+}
+
+#globalRatingsLabels span {
+	display: inline-block;
+	width: 19%;
+}
+
 .axesShiftLeft {
 	margin-right: -0.5px;
 }
@@ -186,8 +215,8 @@ CHARTS & GRAPHS
 }
 
 #d3RToQBarAxis {
-	margin-top: -10px;
-	margin-right: -1px;
+	margin-top: -8px;
+	margin-right: -0.5px;
 }
 
 .axisFloatContainer {
@@ -206,8 +235,8 @@ CHARTS & GRAPHS
 }
 
 #d3PctOpenQuestionsAxis {
-	margin-top: -10px;
-	margin-right: -1px;
+	margin-top: -8px;
+	margin-right: -0.5px;
 }
 
 .d3PctOpenQuestionsAxisColumnEmpty {
@@ -236,8 +265,8 @@ CHARTS & GRAPHS
 }
 
 #d3PctComplexReflectionsAxis {
-	margin-top: -10px;
-	margin-right: -1px;
+	margin-top: -8px;
+	margin-right: -0.5px;
 }
 
 .d3PctComplexReflectionsAxisColumnEmpty {
