@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.css" />
 		<script src="https://code.jquery.com/jquery.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
@@ -67,9 +67,28 @@
 					<!-- Left Column -->
 					<div class="col-sm-4">
 				        <p class="t2">Overall MI Fidelity
-				        	<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+				        	<!-- Trigger the modal with a button -->
+				        	<span type="button" data-toggle="modal" data-target="#overallMiFidelityModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+				        	<!-- Modal -->
+				        	<div id="overallMiFidelityModal" class="modal fade" role="dialog">
+				        		<div class="modal-dialog">
+				        			<!-- Modal content-->
+				        			<div class="modal-content">
+				        				<div class="modal-header">
+				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        					<h4 class="modal-title">Modal Header</h4>
+				        				</div>
+				        				<div class="modal-body">
+				        					<p>Some text in the modal.</p>
+				        				</div>
+				        				<div class="modal-footer">
+				        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
 				        </p>
-				        <p class="totalScore1"><span class="green">7</span><span class="totalScore2">/12</span></p>
+				        <p class="totalScore1"><span id="d3OverallMIFidelity" class="green"></span><span class="totalScore2">/12</span></p>
 				        <p class="t3">MI Adherence</p>
 
 				        <div id = "pie">
@@ -84,7 +103,26 @@
 				    <!-- Middle Column -->
 				    <div class="col-sm-4">
 				    	<p class="t2">Global Ratings
-				    		<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+				    		<!-- Trigger the modal with a button -->
+				        	<span type="button" data-toggle="modal" data-target="#globalRatingsModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+				        	<!-- Modal -->
+				        	<div id="globalRatingsModal" class="modal fade" role="dialog">
+				        		<div class="modal-dialog">
+				        			<!-- Modal content-->
+				        			<div class="modal-content">
+				        				<div class="modal-header">
+				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        					<h4 class="modal-title">Modal Header</h4>
+				        				</div>
+				        				<div class="modal-body">
+				        					<p>Some text in the modal.</p>
+				        				</div>
+				        				<div class="modal-footer">
+				        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
 				    	</p>
 
 				    	<div id="d3GlobalRatings">
@@ -107,7 +145,26 @@
 				    <!-- Right Column -->
 				    <div class="col-sm-4">
 				    	<p class="t2">Notes
-				    		<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+				    		<!-- Trigger the modal with a button -->
+				        	<span type="button" data-toggle="modal" data-target="#notesModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+				        	<!-- Modal -->
+				        	<div id="notesModal" class="modal fade" role="dialog">
+				        		<div class="modal-dialog">
+				        			<!-- Modal content-->
+				        			<div class="modal-content">
+				        				<div class="modal-header">
+				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        					<h4 class="modal-title">Modal Header</h4>
+				        				</div>
+				        				<div class="modal-body">
+				        					<p>Some text in the modal.</p>
+				        				</div>
+				        				<div class="modal-footer">
+				        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
 				    	</p>
 				    	<div id="d3NotesGeneral">
 				    		<!-- D3 Notes: general GOES HERE-->
@@ -134,7 +191,26 @@
 					<div class="col-sm-8">
 						<hr>
 						<p class="t2">Behavior Counts
-							<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							<!-- Trigger the modal with a button -->
+				        	<span type="button" data-toggle="modal" data-target="#overallMiFidelityModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+				        	<!-- Modal -->
+				        	<div id="overallMiFidelityModal" class="modal fade" role="dialog">
+				        		<div class="modal-dialog">
+				        			<!-- Modal content-->
+				        			<div class="modal-content">
+				        				<div class="modal-header">
+				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        					<h4 class="modal-title">Modal Header</h4>
+				        				</div>
+				        				<div class="modal-body">
+				        					<p>Some text in the modal.</p>
+				        				</div>
+				        				<div class="modal-footer">
+				        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        				</div>
+				        			</div>
+				        		</div>
+				        	</div>
 						</p>
 						<p class="p1">Reflection to Question Ratio: 
 							<span class="w900" id="d3RToQNum">
@@ -208,7 +284,26 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<p class="t2">Session View
-						<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+						<!-- Trigger the modal with a button -->
+			        	<span type="button" data-toggle="modal" data-target="#sessionViewModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+			        	<!-- Modal -->
+			        	<div id="sessionViewModal" class="modal fade" role="dialog">
+			        		<div class="modal-dialog">
+			        			<!-- Modal content-->
+			        			<div class="modal-content">
+			        				<div class="modal-header">
+			        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        					<h4 class="modal-title">Modal Header</h4>
+			        				</div>
+			        				<div class="modal-body">
+			        					<p>Some text in the modal.</p>
+			        				</div>
+			        				<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        				</div>
+			        			</div>
+			        		</div>
+			        	</div>
 					</p>
 				</div>
 			</div>
@@ -248,13 +343,12 @@
 				</div>
 			</div>
 
-			<div id="#d3SessionOverview">
-				<p>TEST</p>
-			</div>
-
 			<!-- Session View - Overview Bar -->
 			<div class="row">
 				<div class="col-sm-12">
+					<div id="d3SessionOverview">
+						<p>TEST</p>
+					</div>
 					<div class="overviewBarTemp">
 					</div>
 				</div>
@@ -287,7 +381,7 @@
         	var data;
 
         	// Main: These functions execute once data has been saved to a global variable
-        	// so that the passed JSON document will only be parsed once.
+        	// so that the passed JSON document will only be retrieved once.
 	        d3.json("BAER_100.json", function(json) {
 	        	data = json;
 
@@ -297,14 +391,19 @@
 	        	d3TherapistName();		// D3 Therapist's Name
 	        	d3ClientInfo();			// D3 Client Info
 
+	        	// Overall MI Fidelity
+	        	d3OverallMIFidelity();	// D3 Overall MI Fidelity: number
 				d3MIAdherence();		// D3 MI Adherence pie chart
 
+				// Global Ratings
 				d3GlobalRatings();		// D3 Global Ratings
 
+				// Notes
 				d3NotesGeneral();		// D3 Notes: general
 				d3NotesStrengths();		// D3 Notes: strengths
 				d3NotesImprovements();	// D3 Notes: areas for improvement
 
+				// Behavior Counts
 				d3RToQNum();			// D3 Reflection to Question Ratio: number
 				d3RToQBarGraph();		// D3 Reflection to Question Ratio: bar graph
 				d3POQNum();				// D3 Percent Open Questions: number
@@ -312,10 +411,10 @@
 				d3PCRNum();				// D3 Percent Complex Reflections: number
 				d3PCRBar();				// D3 Percent Complex Reflections: bar graph
 
+				// Session View
 				d3PctTalkTimeNum();		// D3 Percent Talk Time: number
 				d3PctTalkTimeBar();		// D3 Percent Talk Time: bar graph
-
-				// d3SessionOverview();	// D3 Session View: Overview timeline
+				d3SessionOverview();	// D3 Session View: Overview timeline
         	});
 
         	// D3 Session Number
@@ -342,6 +441,12 @@
         		var sex = data.client.sex;
         		var age = data.client.age;
 				d3.select("#d3ClientInfo").text("ID: " + id + ", " + sex + ", age " + age);
+        	}
+
+        	// D3 Overall MI Fidelity: number
+        	function d3OverallMIFidelity() {
+        		var score = data.scores.globals.overall;
+        		d3.select("#d3OverallMIFidelity").text(score);
         	}
 
 	        // D3 MI Adherence Pie Chart
@@ -825,7 +930,7 @@
 				var totalBar = svg.append("rect")
 					.attr("width", w)
 					.attr("height", h)
-					.attr("class", "orangeFill");
+					.attr("class", "blackFill"); // orangeFill ggedit
 
 				var therapistBar= svg.append("rect")
 					.attr("width", w * therapistPct)
@@ -850,13 +955,19 @@
 				var w = parseFloat(d3.select("#d3SessionOverview").style("width"));
 				var h = 18;
 
-				var therapistPct = data.session.talkTime.therapistToClientPercent;
-				var clientPct = 1 - therapistPct;
+				var talkTurns = data.session.talkTurn;
+
+				var xScale = d3.scale.linear()
+					.domain([0, d3.max(talkTurns, function(d) { 
+						return d["endTime"];
+					})])
+					.range([0, w]);
 
 				var svg = d3.select("#d3SessionOverview")
 					.append("svg")
 					.attr("width", w)
 					.attr("height", h);
+
 
 				
 				/*
