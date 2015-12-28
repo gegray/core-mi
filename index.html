@@ -562,11 +562,8 @@
 					.attr("width", barWidth)
 					.attr("height", miSpiritScore / 5 * h)
 					.attr("x", barWidth)
-					.attr("class", "blackFill")
-					.attr("y", h)
-					.transition()
-					.duration(500)
-					.attr("y", (5 - miSpiritScore) / 5 * h);
+					.attr("y", (5 - miSpiritScore) / 5 * h)
+					.attr("class", "blackFill");
 
 				var miSpiritBarText = svg.append("text")
 					.attr("x", barWidth * 1.5)
@@ -578,11 +575,8 @@
 					.attr("width", barWidth)
 					.attr("height", empathyScore / 5 * h)
 					.attr("x", barWidth * 3)
-					.attr("class", "blackFill")
-					.attr("y", h)
-					.transition()
-					.duration(500)
 					.attr("y", (5 - empathyScore) / 5 * h)
+					.attr("class", "blackFill");
 
 				var empathyBarText = svg.append("text")
 					.attr("x", barWidth * 3.5)
