@@ -245,6 +245,10 @@ SECTION DIV CONTAINERS
 
 }
 
+.legend {
+	height: 72px;
+}
+
 /* 
 ========================================
 CHARTS & GRAPHS 
