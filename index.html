@@ -248,6 +248,10 @@
 				</div>
 			</div>
 
+			<div id="#d3SessionOverview">
+				<p>TEST</p>
+			</div>
+
 			<!-- Session View - Overview Bar -->
 			<div class="row">
 				<div class="col-sm-12">
@@ -284,7 +288,7 @@
 
         	// Main: These functions execute once data has been saved to a global variable
         	// so that the passed JSON document will only be parsed once.
-	        d3.json("BAER_100gg.json", function(json) {
+	        d3.json("BAER_100.json", function(json) {
 	        	data = json;
 
 	        	// Header Info
@@ -310,6 +314,8 @@
 
 				d3PctTalkTimeNum();		// D3 Percent Talk Time: number
 				d3PctTalkTimeBar();		// D3 Percent Talk Time: bar graph
+
+				// d3SessionOverview();	// D3 Session View: Overview timeline
         	});
 
         	// D3 Session Number
@@ -340,7 +346,7 @@
 
 	        // D3 MI Adherence Pie Chart
 			function d3MIAdherence() {
-				var miAdherance = data.scores.miAdherance;
+				var miAdherance = data.scores.miAdherence;
     			var miNon = 100 - miAdherance;
     			var miArr = [ miAdherance, miNon ];
 
@@ -575,8 +581,6 @@
 					ratio = 3.0;
 				}
 
-				ratio = 2.7; //ggdelete
-
 				var svg = d3.select("#d3RToQBar")
 					.append("svg")
 					.attr("width", w)
@@ -806,7 +810,7 @@
 
 			// D3 Percent Talk Time: bar graph
 			function d3PctTalkTimeBar() {
-				//d3.select(window).on("resize.4", resize);	// the ".4" here is a workaround for multiple responsive
+				d3.select(window).on("resize.4", resize);	// the ".4" here is a workaround for multiple responsive
 															// d3 objects on one page. 
 
 				var w = parseFloat(d3.select("#d3PctTalkTimeBar").style("width"));
@@ -823,7 +827,7 @@
 				var totalBar = svg.append("rect")
 					.attr("width", w)
 					.attr("height", h)
-					.attr("class", "blueFill");
+					.attr("class", "orangeFill");
 
 				var therapistBar= svg.append("rect")
 					.attr("width", w * therapistPct)
@@ -839,6 +843,35 @@
 					totalBar.attr("width", w);
 					therapistBar.attr("width", w * therapistPct);
 				}
+			}
+
+			function d3SessionOverview() {
+				//d3.select(window).on("resize.5", resize);	// the ".5" here is a workaround for multiple responsive
+															// d3 objects on one page. 
+
+				var w = parseFloat(d3.select("#d3SessionOverview").style("width"));
+				var h = 18;
+
+				var therapistPct = data.session.talkTime.therapistToClientPercent;
+				var clientPct = 1 - therapistPct;
+
+				var svg = d3.select("#d3SessionOverview")
+					.append("svg")
+					.attr("width", w)
+					.attr("height", h);
+
+				
+				/*
+				// Responsive width for D3 Percent Complex Reflections: bar graph
+				function resize() {
+					// adjust width when the window size changes
+					w = parseFloat(d3.select("#d3PctComplexReflectionsBar").style("width"));
+
+					svg.attr("width", w);
+					totalBar.attr("width", w);
+					therapistBar.attr("width", w * therapistPct);
+				}
+				*/
 			}
 
         </script>

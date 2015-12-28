@@ -163,7 +163,19 @@ COLORS
 }
 
 .redFill {
+	fill: #EEEEEE;
+}
+
+.redFillRED {
 	fill: #FF947F;
+}
+
+.orangeFill {
+	fill: #EAC435;
+}
+
+.orangeFillOLD {
+	fill: #FFA630;
 }
 
 .blueFill {
