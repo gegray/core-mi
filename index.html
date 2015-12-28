@@ -46,13 +46,13 @@
 				        </p>
 				    </div>
 				    <div class="col-sm-4">
-				        <p class="t4">Therapist</p>
+				        <p class="t4 green">Therapist</p>
 				        <p class="p1" id="d3TherapistName">
 				        	<!-- D3 Therapist Name GOES HERE -->
 				        </p>
 				    </div>
 				    <div class="col-sm-4">
-				        <p class="t4">Client</p>
+				        <p class="t4 blue">Client</p>
 				        <p class="p1" id="d3ClientInfo">
 				        	<!-- D3 Client Info GOES HERE -->
 				        </p>
@@ -509,7 +509,7 @@
 															// d3 objects on one page. 
 
 				var w = parseFloat(d3.select("#d3GlobalRatings").style("width"));
-				var h = 400;
+				var h = 350;
 				var barWidth = w / 5;
 
 				var miSpiritScore = data.scores.globals.miSpirit.toFixed(2);
@@ -932,7 +932,7 @@
 				var totalBar = svg.append("rect")
 					.attr("width", w)
 					.attr("height", h)
-					.attr("class", "blackFill"); // orangeFill ggedit
+					.attr("class", "blueFill"); // orangeFill ggedit
 
 				var therapistBar= svg.append("rect")
 					.attr("width", w * therapistPct)

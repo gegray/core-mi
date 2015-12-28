@@ -348,6 +348,22 @@ CHARTS & GRAPHS
 	float: right;
 }
 
+.therapistBox {
+	float: left;
+	width: 18px;
+	height: 18px;
+	background: #13997A;
+	margin-right: 12px;
+}
+
+.clientBox {
+	float: left;
+	width: 18px;
+	height: 18px;
+	background: #337AB7;
+	margin-right: 12px;
+}
+
 #d3PctTalkTimeBar {
 
 }
@@ -372,21 +388,7 @@ CHARTS & GRAPHS
 	background: #13997A;
 }
 
-.therapistBox {
-	float: left;
-	width: 18px;
-	height: 18px;
-	background: #13997A;
-	margin-right: 12px;
-}
 
-.clientBox {
-	float: left;
-	width: 18px;
-	height: 18px;
-	background: #333333;
-	margin-right: 12px;
-}
 
 .overviewBarTemp {
 	width: auto;
