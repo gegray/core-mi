@@ -48,6 +48,11 @@ button.ui-btn-icon-notext {
 
 }
 
+.extent {
+	fill: none;
+	stroke: 1pt #333333;
+}
+
 /* 
 ========================================
 TYPE
@@ -366,6 +371,31 @@ CHARTS & GRAPHS
 
 #d3PctTalkTimeBar {
 
+}
+
+.bar1Group {
+
+}
+
+.bar2Group {
+
+}
+
+.brushGroup {
+
+}
+
+.axis {
+	path, line {
+		fill: none;
+		stroke: #333333;
+	}
+
+	text {
+		font-family: 'Roboto', Helvetica, Arial, sans-serif;
+		font-size: 8pt;
+		fill: #878787;
+	}
 }
 
 
