@@ -48,9 +48,29 @@ button.ui-btn-icon-notext {
 
 }
 
-.extent {
-	fill: none;
-	stroke: 1pt #333333;
+.brush .extent {
+	opacity: 1;
+	fill: #333333;
+	fill-opacity: 0.25;
+	stroke: #333333;
+	stroke-width: 2;
+}
+
+.resize rect {
+	visibility: visible !important;
+	fill: #333333;
+	width: 8px;
+	opacity: 1;
+	stroke: #333333;
+	stroke-width: 2;
+}
+
+.resize.e rect {
+	x: 0;
+}
+
+.resize.w rect {
+	x: -8;
 }
 
 /* 

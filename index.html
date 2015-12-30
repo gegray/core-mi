@@ -1002,7 +1002,7 @@
 					.domain([0, d3.max(talkTurns, function(d) { 
 						return d.endTime;
 					})])
-					.range([0, w]);;
+					.range([0, w]);
 
 				var xScaleAxis = d3.scale.linear()
 					.domain(axisRange);
@@ -1024,6 +1024,9 @@
 
 				var brush = d3.svg.brush()
 					.x(xScaleBrush)
+					.extent([0, d3.max(talkTurns, function(d) {
+						return d.endTime / 10;
+					})])
 					.on("brush", display);
 
 				brushGroup.append("g")
@@ -1057,8 +1060,8 @@
 
 				// update the area
 				function update(grp, data, main) {
-					grp.selectAll("rect").data(data, function(d) {  // , i?
-						return d.id;
+					grp.selectAll("rect").data(data, function(d, i) {  // , i?
+						return d.i;
 					})
 					.attr("x", function(d) {
 						return xScale(d.startTime);
@@ -1107,7 +1110,7 @@
 
 				function exit(grp, data) {
 					grp.selectAll("rect").data(data, function(d) {
-						return d.id;
+						return d.i;
 					})
 					.exit()
 					.remove();
