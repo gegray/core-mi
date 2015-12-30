@@ -962,14 +962,13 @@
 
 				var bar1Margin = {top: 24, right: 0, bottom: 24, left: 0};
 				var bar2Margin = {top: 24, right: 0, bottom: 24, left: 0};
-				var bar1Height = (h - bar1Margin.top - bar1Margin.bottom) / 2;
-				var bar2Height = (h - bar2Margin.top - bar2Margin.bottom) / 2;
+				var bar1Height = (h - bar1Margin.top - bar1Margin.bottom - bar2Margin.top - bar2Margin.bottom) / 2;
+				var bar2Height = (h - bar1Margin.top - bar1Margin.bottom - bar2Margin.top - bar2Margin.bottom) / 2;
 
 				var btmData = talkTurns;
 				var selected;
 
-				var svg = d3.select("#d3SessionOverview")
-					.append("svg")
+				var svg = d3.select("#d3SessionOverview").append("svg")
 					.attr("width", w)
 					.attr("height", h);
 
