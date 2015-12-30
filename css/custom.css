@@ -145,6 +145,13 @@ p.p2.gray {
 	text-align: center;
 }
 
+.axis text {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 10.6667px;
+	font-weight: 300;
+	fill: #878787;
+	text-rendering: optimizeLegibility;
+}
 
 
 /* 
@@ -385,17 +392,12 @@ CHARTS & GRAPHS
 
 }
 
-.axis {
-	path, line {
-		fill: none;
-		stroke: #333333;
-	}
-
-	text {
-		font-family: 'Roboto', Helvetica, Arial, sans-serif;
-		font-size: 8pt;
-		fill: #878787;
-	}
+.axis path, 
+.axis line {
+	fill: none;
+	stroke: #878787;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
 }
 
 

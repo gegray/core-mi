@@ -989,32 +989,35 @@
 					return d.endTime;
 				}));
 
-				axisRange.shift();
-				axisRange.push((axisRange[axisRange.length - 1] + 1));
+				// axisRange.shift(); // gg removes first tick value
+				// axisRange.push((axisRange[axisRange.length - 1] + 1)); // gg removes first tick value
 
 				var xScale = d3.scale.linear()
 					.domain([0, d3.max(talkTurns, function(d) { 
-						return d["endTime"];
-					})]);
+						return d.endTime;
+					})])
+					.range([0, w]);
 
 				var xScaleBrush = d3.scale.linear()
 					.domain([0, d3.max(talkTurns, function(d) { 
-						return d["endTime"];
-					})]);
+						return d.endTime;
+					})])
+					.range([0, w]);;
 
 				var xScaleAxis = d3.scale.linear()
 					.domain(axisRange);
 
 				var xAxis = d3.svg.axis()
 					.scale(xScaleAxis)
-					.tickSize(3, 0)
-					// .tickValues(  ) // write a function that returns tick values
+					.ticks(10)
+					.tickSize(4, 0)
 					.orient("bottom");
 
 				// Prepare the x axis
 				svg.append("g")
 					.attr("class", "x axis")
-					.attr("transform", "translate(" + bar2Margin.left + "," + (bar1Margin.top + bar1Height + bar1Margin.bottom + bar2Margin.top) + ")")
+					.attr("width", w)
+					.attr("transform", "translate(" + bar2Margin.left + "," + (5 + bar1Margin.top + bar1Height + bar1Margin.bottom + bar2Margin.top + bar2Height) + ")")
 					.call(xAxis)
 					// more here? looks like axis title only in example:
 					// http://codepen.io/chris-creditdesign/pen/tlEgJ
