@@ -959,19 +959,154 @@
 				var h = 204;
 
 				var talkTurns = data.session.talkTurn;
+				var selected = talkTurns;
 
 				var bar1Margin = {top: 24, right: 0, bottom: 24, left: 0};
 				var bar2Margin = {top: 24, right: 0, bottom: 24, left: 0};
 				var bar1Height = (h - bar1Margin.top - bar1Margin.bottom - bar2Margin.top - bar2Margin.bottom) / 2;
 				var bar2Height = (h - bar1Margin.top - bar1Margin.bottom - bar2Margin.top - bar2Margin.bottom) / 2;
 
-				var btmData = talkTurns;
-				var selected;
+				var x = d3.scale.linear()
+					.domain([0, d3.max(talkTurns, function(d) { 
+						return d.endTime;
+					})])
+					.range([0, w]);
+
+				var x2 = d3.scale.linear()
+					.domain([0, d3.max(talkTurns, function(d) { 
+						return d.endTime;
+					})])
+					.range([0, w]);
 
 				var svg = d3.select("#d3SessionOverview").append("svg")
 					.attr("width", w)
 					.attr("height", h);
 
+				svg.append("defs").append("clipPath")
+					.attr("id", "clip")
+					.append("rect")
+					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")")
+					.attr("width", w)
+					.attr("height", h);
+
+				var bar1Group = svg.append("g")
+					.attr("class", "bar1Group")
+					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")");
+
+				var bar2Group = svg.append("g")
+					.attr("class", "bar2Group")
+					.attr("transform", "translate(" + bar2Margin.left + "," + (bar1Margin.top + bar1Height + bar1Margin.bottom + bar2Margin.top) + ")");
+
+				var brushGroup = svg.append("g")
+					.attr("class", "brushGroup")
+					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")");
+
+				var xAxis = d3.svg.axis()
+					.scale(x)
+					.orient("bottom");
+
+				var x2Axis = d3.svg.axis()
+					.scale(x2)
+					.orient("bottom");
+
+
+
+				var brush = d3.svg.brush()
+					.x(x2)
+					.extent([0, d3.max(talkTurns, function(d) {
+						return d.endTime / 10;
+					})])
+					.on("brush", brushed);
+
+				brushGroup.append("g")
+					.attr("class", "brush")
+					.call(brush)
+					.selectAll("rect")
+					.attr("height", bar1Height);
+
+
+
+				var bar = bar1Group.selectAll("rect").data(talkTurns)
+					.enter()
+					.append("rect")
+					.attr("x", function(d) {
+						return x(d.startTime);
+					})
+					.attr("width", function(d) {
+						return x(d.duration);
+					})
+					.attr("height", bar1Height)
+					.attr("class", function(d) {
+						if (d.speaker == "therapist") {
+							return "greenFill";
+						} else {
+							return "blueFill";
+						}
+					})
+					.attr("fill-opacity", function(d) {
+						return d.vocalArousal;
+					});
+
+				var bar2 = bar2Group.selectAll("rect").data(talkTurns)
+					.enter()
+					.append("rect")
+					.attr("x", function(d) {
+						return x(d.startTime);
+					})
+					.attr("width", function(d) {
+						return x(d.duration);
+					})
+					.attr("height", bar1Height)
+					.attr("class", function(d) {
+						if (d.speaker == "therapist") {
+							return "greenFill";
+						} else {
+							return "blueFill";
+						}
+					})
+					.attr("fill-opacity", function(d) {
+						return d.vocalArousal;
+					});
+
+				x.domain([0, d3.max(talkTurns, function(d) {
+					return d.endTime;
+				})]);
+				x2.domain(x.domain());
+
+				bar1Group.append("rect")
+					.datum(talkTurns)
+					.attr("class", "area")
+					.attr("d", bar);
+
+				bar1Group.append("g")
+					.attr("class", "x axis")
+					.call(xAxis);
+
+				bar2Group.append("rect")
+					.datum(data)
+					.attr("class", "area")
+					.attr("d", bar2);
+
+				bar2Group.append("g")
+					.attr("class", "x axis")
+					.call(x2Axis);
+
+				bar2Group.append("g")
+					.attr("class", "x brush")
+					.call(brush)
+					.selectAll("rect")
+
+				function brushed() {
+					x.domain(brush.empty() ? x2.domain() : brush.extent());
+					bar1Group.select(".area").attr("d", bar);
+					bar1Group.select(".x.axis").call(xAxis);
+				}
+				
+
+				
+
+
+				/* gg old function
 				var bar1Group = svg.append("g")
 					.attr("class", "bar1Group")
 					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")");
@@ -1033,35 +1168,34 @@
 					.attr("class", "brush")
 					.call(brush)
 					.selectAll("rect")
-					.attr("opacity", 0.5)
 					.attr("height", bar1Height);
 
 				function display() {
 					selected = xScaleBrush.domain()
 						.filter(function(d) {
-							return (brush.extent()[0] <= xScaleBrush(d) && xScaleBrush(d) <= brush.extent()[1]);
+							return (brush.extent()[0] <= d && d <= brush.extent()[1]);
 						});
 
-						var start;
-						var end;
+					var start;
+					var end;
 
-						// Keep at least 3 bars selected
-						if (selected.length > 2 ) {
-							start = selected[0];
-							end = selected[selected.length - 1] + 1;
-						} else {
-							start = 0;
-							end = btmData.length;
-						}
+					// Keep at least 3 bars selected
+					if (selected.length > 2 ) {
+						start = selected[0];
+						end = selected[selected.length];
+					} else {
+						start = selected[0];
+						end = selected[1];
+					}
 
-						var updatedData = btmData.slice()
-						updateBars(updatedData);
+					var updatedData = talkTurns.slice(start, end);
+					updateBars(updatedData);
 				}
 
 				// update the area
 				function update(grp, data, main) {
 					grp.selectAll("rect").data(data, function(d, i) {  // , i?
-						return d.i;
+						return d;
 					})
 					.attr("x", function(d) {
 						return xScale(d.startTime);
@@ -1110,15 +1244,17 @@
 
 				function exit(grp, data) {
 					grp.selectAll("rect").data(data, function(d) {
-						return d.i;
+						return d;
 					})
 					.exit()
 					.remove();
 				}
 
 				function updateBars(data) {
-					xScale.domain([0, d3.max(talkTurns, function(d) { 
-						return d["endTime"];
+					xScale.domain([d3.min(data, function(d) {
+						return d.startTime;
+					}), d3.max(data, function(d) { 
+						return d.endTime;
 					})]);
 
 					update(bar2Group, data, true);	// Update
@@ -1126,8 +1262,10 @@
 					exit(bar2Group, data);			// Exit
 				}
 
-				enter(bar1Group, btmData, false);
-				updateBars(btmData);
+				enter(bar1Group, talkTurns, false);
+				updateBars(talkTurns);
+				*/ // gg old function
+
 
 				/*
 				var slider = svg.append("g");
