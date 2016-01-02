@@ -37,7 +37,7 @@
 		    <div class="row">
 		        <div class="sessionInfo">
 	        		<div class="col-sm-4">
-				        <p class="t4">Session Number</p>
+				        <p class="t4">Session</p>
 				        <p class="p1" id="d3SessionNumber">
 				        	<!-- D3 Reflection to Question Ratio: number GOES HERE -->
 				        </p>
@@ -76,7 +76,7 @@
 				        			<div class="modal-content">
 				        				<div class="modal-header">
 				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				        					<h4 class="modal-title">Modal Header</h4>
+				        					<h4 class="modal-title">Overall MI Fidelity</h4>
 				        				</div>
 				        				<div class="modal-body">
 				        					<p>Some text in the modal.</p>
@@ -89,13 +89,55 @@
 				        	</div>
 				        </p>
 				        <p class="totalScore1"><span id="d3OverallMIFidelity" class="green"></span><span class="totalScore2">/12</span></p>
-				        <p class="t3">MI Adherence</p>
+				        <p class="t3">MI Adherence
+				        	<!-- Trigger the modal with a button -->
+							<span type="button" data-toggle="modal" data-target="#MIAdheranceModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							<!-- Modal -->
+							<div id="MIAdheranceModal" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">MI Adherance</h4>
+										</div>
+										<div class="modal-body">
+											<p>Some text in the modal.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+				        </p>
 
 				        <div id = "pie">
 				        	<!-- D3 MI Adherence pie chart GOES HERE -->
 				        </div>
 
-				        <p class="t3">MI Alerts</p>
+				        <p class="t3">MI Alerts
+				        	<!-- Trigger the modal with a button -->
+							<span type="button" data-toggle="modal" data-target="#MIAlertsModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							<!-- Modal -->
+							<div id="MIAlertsModal" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">MI Alerts</h4>
+										</div>
+										<div class="modal-body">
+											<p>Some text in the modal.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+				        </p>
 				        <p class="p1 red w900"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 2 Advise</p>
 				        <p class="p1 red w900"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 1 Confront</p>
 				        <p class="p1 red w900"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 1 Direction</p>
@@ -112,7 +154,7 @@
 				        			<div class="modal-content">
 				        				<div class="modal-header">
 				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				        					<h4 class="modal-title">Modal Header</h4>
+				        					<h4 class="modal-title">Global Ratings</h4>
 				        				</div>
 				        				<div class="modal-body">
 				        					<p>Some text in the modal.</p>
@@ -133,11 +175,53 @@
 				    	<div id="globalRatingsLabels">
 				    		<span></span>
 							<span>
-								<p class="p1 centerText">MI Spirit</p>
+								<p class="p1 centerText">MI Spirit
+									<!-- Trigger the modal with a button -->
+									<span type="button" data-toggle="modal" data-target="#MISpiritModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+									<!-- Modal -->
+									<div id="MISpiritModal" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">MI Spirit</h4>
+												</div>
+												<div class="modal-body">
+													<p>Some text in the modal.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</p>
 							</span>
 							<span></span>
 							<span>
-								<p class="p1 centerText">Empathy</p>
+								<p class="p1 centerText">Empathy
+									<!-- Trigger the modal with a button -->
+									<span type="button" data-toggle="modal" data-target="#empathyModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+									<!-- Modal -->
+									<div id="empathyModal" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Empathy</h4>
+												</div>
+												<div class="modal-body">
+													<p>Some text in the modal.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</p>
 							</span>
 							<span></span>
 				    	</div>
@@ -154,7 +238,7 @@
 				        			<div class="modal-content">
 				        				<div class="modal-header">
 				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				        					<h4 class="modal-title">Modal Header</h4>
+				        					<h4 class="modal-title">Notes</h4>
 				        				</div>
 				        				<div class="modal-body">
 				        					<p>Some text in the modal.</p>
@@ -200,7 +284,7 @@
 				        			<div class="modal-content">
 				        				<div class="modal-header">
 				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				        					<h4 class="modal-title">Modal Header</h4>
+				        					<h4 class="modal-title">Behavior Counts</h4>
 				        				</div>
 				        				<div class="modal-body">
 				        					<p>Some text in the modal.</p>
@@ -215,7 +299,27 @@
 						<p class="p1">Reflection to Question Ratio: 
 							<span class="w900" id="d3RToQNum">
 								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
-							</span> (Reflection : Question)
+							</span> (Reflection : Question) 
+							<!-- Trigger the modal with a button -->
+							<span type="button" data-toggle="modal" data-target="#RToQModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							<!-- Modal -->
+							<div id="RToQModal" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Reflection to Question Ratio</h4>
+										</div>
+										<div class="modal-body">
+											<p>Some text in the modal.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</p>
 						<!-- D3 Reflection to Question: bar graph -->
 				        <div id="d3RToQBar">
@@ -236,7 +340,27 @@
 						<p class="p1">Percent Open Questions: 
 							<span class="w900" id="d3POQNum">
 								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
-							</span>% (Open : Closed)
+							</span>% (Open : Closed) 
+							<!-- Trigger the modal with a button -->
+							<span type="button" data-toggle="modal" data-target="#POQModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							<!-- Modal -->
+							<div id="POQModal" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Percent Open Questions</h4>
+										</div>
+										<div class="modal-body">
+											<p>Some text in the modal.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</p>
 						<!-- D3 Percent Open Questions: bar graph -->
 				        <div id="d3PctOpenQuestionsBar">
@@ -257,7 +381,27 @@
 						<p class="p1">Percent Complex Reflections: 
 							<span class="w900" id="d3PCRNum">
 								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
-							</span>% (Complex : Simple)
+							</span>% (Complex : Simple) 
+							<!-- Trigger the modal with a button -->
+							<span type="button" data-toggle="modal" data-target="#PCRModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							<!-- Modal -->
+							<div id="PCRModal" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Percent Complex Reflections</h4>
+										</div>
+										<div class="modal-body">
+											<p>Some text in the modal.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</p>
 						<!-- D3 Reflection to Question: bar graph -->
 				        <div id="d3PctComplexReflectionsBar">
@@ -293,7 +437,7 @@
 			        			<div class="modal-content">
 			        				<div class="modal-header">
 			        					<button type="button" class="close" data-dismiss="modal">&times;</button>
-			        					<h4 class="modal-title">Modal Header</h4>
+			        					<h4 class="modal-title">Session View</h4>
 			        				</div>
 			        				<div class="modal-body">
 			        					<p>Some text in the modal.</p>
@@ -325,7 +469,27 @@
 						<p class="p1">Percent Talk Time: 
 							<span class="w900" id="d3PctTalkTimeNum">
 								<!-- D3 Percent Talk Time: number GOES HERE -->
-							</span>% (Therapist : Client)
+							</span>% (Therapist : Client) 
+							<!-- Trigger the modal with a button -->
+							<span type="button" data-toggle="modal" data-target="#pctTalkTimeModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							<!-- Modal -->
+							<div id="pctTalkTimeModal" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Percent Talk Time</h4>
+										</div>
+										<div class="modal-body">
+											<p>Some text in the modal.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</p>
 
 						<!-- D3 Percent Talk Time: bar graph -->
@@ -1074,32 +1238,32 @@
 				x2.domain(x.domain());
 
 				bar1Group.append("rect")
-					.datum(talkTurns)
+					.datum(data)
 					.attr("class", "area")
-					.attr("d", bar);
+					.attr("d", bar2);
 
 				bar1Group.append("g")
 					.attr("class", "x axis")
 					.call(xAxis);
 
+				bar1Group.append("g")
+					.attr("class", "x brush")
+					.call(brush)
+					.selectAll("rect");
+
 				bar2Group.append("rect")
-					.datum(data)
+					.datum(talkTurns)
 					.attr("class", "area")
-					.attr("d", bar2);
+					.attr("d", bar);
 
 				bar2Group.append("g")
 					.attr("class", "x axis")
 					.call(x2Axis);
 
-				bar2Group.append("g")
-					.attr("class", "x brush")
-					.call(brush)
-					.selectAll("rect")
-
 				function brushed() {
-					x.domain(brush.empty() ? x2.domain() : brush.extent());
-					bar1Group.select(".area").attr("d", bar);
-					bar1Group.select(".x.axis").call(xAxis);
+					x2.domain(brush.empty() ? x.domain() : brush.extent());
+					bar2Group.select(".area").attr("d", bar);
+					bar2Group.select(".x.axis").call(xAxis);
 				}
 				
 
