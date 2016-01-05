@@ -1239,7 +1239,7 @@
 					}
 
 					focus.selectAll("rect").data(brush.extent())
-						.update()
+						.enter()
 						.append("rect")
 						.attr("x", function(d) {
 							return x2(d.startTime);
