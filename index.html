@@ -1135,62 +1135,167 @@
 						return d.endTime;
 					})])
 					.range([0, w]);
-
 				var x2 = d3.scale.linear()
 					.domain([0, d3.max(talkTurns, function(d) { 
 						return d.endTime;
 					})])
 					.range([0, w]);
 
+				var xAxis = d3.svg.axis().scale(x).orient("top");
+				var x2Axis = d3.svg.axis().scale(x2).orient("top");
+
+				var brush = d3.svg.brush()
+					.x(x)
+					.on("brush", brushed);
+
 				var svg = d3.select("#d3SessionOverview").append("svg")
 					.attr("width", w)
 					.attr("height", h);
 
+				var context = svg.append("g")
+					.attr("class", "context")
+					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")");
+
+				var focus = svg.append("g")
+					.attr("class", "focus")
+					.attr("transform", "translate(" + bar2Margin.left + "," + (bar1Margin.top + bar1Height + bar1Margin.bottom + bar2Margin.top) + ")");
+
+				/*
 				svg.append("defs").append("clipPath")
 					.attr("id", "clip")
 					.append("rect")
-					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")")
+					.attr("transform", "translate(" + bar1Margin.left + "," + 0 + ")")
 					.attr("width", w)
 					.attr("height", h);
+				*/ // ggdelete
 
-				var bar1Group = svg.append("g")
-					.attr("class", "bar1Group")
-					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")");
 
-				var bar2Group = svg.append("g")
-					.attr("class", "bar2Group")
-					.attr("transform", "translate(" + bar2Margin.left + "," + (bar1Margin.top + bar1Height + bar1Margin.bottom + bar2Margin.top) + ")");
+				x.domain([0, d3.max(talkTurns, function(d) {
+					return d.endTime;
+				})]);
+				x2.domain(x.domain());
 
+				focus.selectAll("rect").data(talkTurns)
+					.enter()
+					.append("rect")
+					.attr("x", function(d) {
+						return x2(d.startTime);
+					})
+					.attr("width", function(d) {
+						return x2(d.duration);
+					})
+					.attr("height", bar1Height)
+					.attr("class", function(d) {
+						if (d.speaker == "therapist") {
+							return "greenFill";
+						} else {
+							return "blueFill";
+						}
+					})
+					.attr("fill-opacity", function(d) {
+						return d.vocalArousal;
+					});
+
+				focus.append("g")
+					.attr("class", "x axis")
+					.call(xAxis);
+
+				context.selectAll("rect").data(talkTurns)
+					.enter()
+					.append("rect")
+					.attr("x", function(d) {
+						return x(d.startTime);
+					})
+					.attr("width", function(d) {
+						return x(d.duration);
+					})
+					.attr("height", bar1Height)
+					.attr("class", function(d) {
+						if (d.speaker == "therapist") {
+							return "greenFill";
+						} else {
+							return "blueFill";
+						}
+					})
+					.attr("fill-opacity", function(d) {
+						return d.vocalArousal;
+					});
+
+				context.append("g")
+					.attr("class", "x axis")
+					.call(x2Axis);
+
+				context.append("g")
+					.attr("class", "x brush")
+					.call(brush)
+					.selectAll("rect")
+					.attr("height", bar1Height / 2);
+
+				function brushed() {
+					if (brush.empty()) {
+						x2.domain(x.domain());
+					} else {
+						x2.domain(brush.extent());
+					}
+
+					focus.selectAll("rect").data(brush.extent())
+						.update()
+						.append("rect")
+						.attr("x", function(d) {
+							return x2(d.startTime);
+						})
+						.attr("width", function(d) {
+							return x2(d.duration);
+						})
+						.attr("height", bar1Height)
+						.attr("class", function(d) {
+							if (d.speaker == "therapist") {
+								return "greenFill";
+							} else {
+								return "blueFill";
+							}
+						})
+						.attr("fill-opacity", function(d) {
+							return d.vocalArousal;
+						});
+
+					focus.select(".x.axis").call(x2Axis);
+				}
+
+
+
+				/*
 				var brushGroup = svg.append("g")
 					.attr("class", "brushGroup")
 					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")");
-
-				var xAxis = d3.svg.axis()
-					.scale(x)
-					.orient("bottom");
-
-				var x2Axis = d3.svg.axis()
-					.scale(x2)
-					.orient("bottom");
+				*/ // gg broken?
 
 
 
+				/*
 				var brush = d3.svg.brush()
 					.x(x2)
 					.extent([0, d3.max(talkTurns, function(d) {
 						return d.endTime / 10;
 					})])
 					.on("brush", brushed);
+				*/ // ggold
 
+
+
+				/*
 				brushGroup.append("g")
 					.attr("class", "brush")
 					.call(brush)
 					.selectAll("rect")
 					.attr("height", bar1Height);
+				*/ // ggbroken?
 
 
 
-				var bar = bar1Group.selectAll("rect").data(talkTurns)
+
+				/*
+				var bar1 = bar1Group.selectAll("rect").data(talkTurns)
 					.enter()
 					.append("rect")
 					.attr("x", function(d) {
@@ -1259,15 +1364,8 @@
 				bar2Group.append("g")
 					.attr("class", "x axis")
 					.call(x2Axis);
+				*/
 
-				function brushed() {
-					x2.domain(brush.empty() ? x.domain() : brush.extent());
-					bar2Group.select(".area").attr("d", bar);
-					bar2Group.select(".x.axis").call(xAxis);
-				}
-				
-
-				
 
 
 				/* gg old function
