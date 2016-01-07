@@ -1123,7 +1123,6 @@
 				var h = 204;
 
 				var talkTurns = data.session.talkTurn;
-				var selected = talkTurns;
 
 				var bar1Margin = {top: 24, right: 0, bottom: 24, left: 0};
 				var bar2Margin = {top: 24, right: 0, bottom: 24, left: 0};
@@ -1146,6 +1145,9 @@
 
 				var brush = d3.svg.brush()
 					.x(x)
+					.extent([0, d3.max(talkTurns, function(d) {
+						return d.endTime / 10;
+					})])
 					.on("brush", brushed);
 
 				var svg = d3.select("#d3SessionOverview").append("svg")
@@ -1175,7 +1177,8 @@
 				})]);
 				x2.domain(x.domain());
 
-				focus.selectAll("rect").data(talkTurns)
+				/*
+				focus.selectAll("rect").data(brush.extent())
 					.enter()
 					.append("rect")
 					.attr("x", function(d) {
@@ -1195,6 +1198,7 @@
 					.attr("fill-opacity", function(d) {
 						return d.vocalArousal;
 					});
+				*/
 
 				focus.append("g")
 					.attr("class", "x axis")
@@ -1238,25 +1242,32 @@
 						x2.domain(brush.extent());
 					}
 
-					focus.selectAll("rect").data(brush.extent())
+					var e = brush.extent();
+					var selected = context.selectAll("rect").filter(function(d) {
+						return d.startTime >= e[0] && d.endTime <= e[1];
+					})
+
+					console.log(selected);
+
+					focus.selectAll("rect").data(selected)
 						.enter()
 						.append("rect")
 						.attr("x", function(d) {
-							return x2(d.startTime);
+							return x2(d.__data__.startTime);
 						})
 						.attr("width", function(d) {
-							return x2(d.duration);
+							return x2(d.__data__.duration);
 						})
 						.attr("height", bar1Height)
 						.attr("class", function(d) {
-							if (d.speaker == "therapist") {
+							if (d.__data__.speaker == "therapist") {
 								return "greenFill";
 							} else {
 								return "blueFill";
 							}
 						})
 						.attr("fill-opacity", function(d) {
-							return d.vocalArousal;
+							return d.__data__.vocalArousal;
 						});
 
 					focus.select(".x.axis").call(x2Axis);
