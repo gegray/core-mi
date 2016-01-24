@@ -1107,6 +1107,8 @@
 				var w = parseFloat(d3.select("#d3SessionOverview").style("width"));
 				var h = 204;
 
+				var focusGraph;
+
 				var talkTurns = data.session.talkTurn;
 
 				var bar1Margin = {top: 24, right: 0, bottom: 24, left: 0};
@@ -1115,18 +1117,23 @@
 				var bar2Height = (h - bar1Margin.top - bar1Margin.bottom - bar2Margin.top - bar2Margin.bottom) / 2;
 
 				var x = d3.scale.linear()
-					.domain([0, d3.max(talkTurns, function(d) { 
+					.domain([0, d3.max(talkTurns, function(d) {
 						return d.endTime;
 					})])
 					.range([0, w]);
 				var x2 = d3.scale.linear()
-					.domain([0, d3.max(talkTurns, function(d) { 
-						return d.endTime;
+					.domain([0, d3.max(talkTurns, function(d) {
+						return d.endTime / 10;
 					})])
 					.range([0, w]);
 
-				var xAxis = d3.svg.axis().scale(x).orient("top");
-				var x2Axis = d3.svg.axis().scale(x2).orient("top");
+				var xAxis = d3.svg.axis()
+						.scale(x)
+						.orient("bottom");
+
+				var x2Axis = d3.svg.axis()
+						.scale(x2)
+						.orient("bottom");
 
 				var brush = d3.svg.brush()
 					.x(x)
@@ -1139,55 +1146,49 @@
 					.attr("width", w)
 					.attr("height", h);
 
+				svg.append("defs").append("clipPath")
+						.attr("id", "clip")
+						.append("rect")
+						.attr("width", w)
+						.attr("height", bar1Height);
+
+				var focus = svg.append("g")
+						.attr("class", "focus")
+						.attr("transform", "translate(" + bar2Margin.left + "," + (bar1Margin.top + bar1Height + bar1Margin.bottom + bar2Margin.top) + ")");
+
+				var barsGroup = focus.append("g")
+						.attr('clip-path', 'url(#clip)');
+
 				var context = svg.append("g")
 					.attr("class", "context")
 					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")");
 
-				var focus = svg.append("g")
-					.attr("class", "focus")
-					.attr("transform", "translate(" + bar2Margin.left + "," + (bar1Margin.top + bar1Height + bar1Margin.bottom + bar2Margin.top) + ")");
-
-				/*
-				svg.append("defs").append("clipPath")
-					.attr("id", "clip")
-					.append("rect")
-					.attr("transform", "translate(" + bar1Margin.left + "," + 0 + ")")
-					.attr("width", w)
-					.attr("height", h);
-				*/ // ggdelete
-
-
-				x.domain([0, d3.max(talkTurns, function(d) {
-					return d.endTime;
-				})]);
-				x2.domain(x.domain());
-
-				/*
-				focus.selectAll("rect").data(brush.extent())
-					.enter()
-					.append("rect")
-					.attr("x", function(d) {
-						return x2(d.startTime);
-					})
-					.attr("width", function(d) {
-						return x2(d.duration);
-					})
-					.attr("height", bar1Height)
-					.attr("class", function(d) {
-						if (d.speaker == "therapist") {
-							return "greenFill";
-						} else {
-							return "blueFill";
-						}
-					})
-					.attr("fill-opacity", function(d) {
-						return d.vocalArousal;
-					});
-				*/
 
 				focus.append("g")
 					.attr("class", "x axis")
-					.call(xAxis);
+					.attr("transform", "translate(0," + bar2Height + ")")
+					.call(x2Axis);
+
+				focusGraph = barsGroup.selectAll("rect").data(talkTurns)
+						.enter()
+						.append("rect")
+						.attr("x", function(d) {
+							return x2(d.startTime);
+						})
+						.attr("width", function(d) {
+							return x2(d.duration);
+						})
+						.attr("height", bar2Height)
+						.attr("class", function(d) {
+							if (d.speaker == "therapist") {
+								return "greenFill";
+							} else {
+								return "blueFill";
+							}
+						})
+						.attr("fill-opacity", function(d) {
+							return d.vocalArousal;
+						});
 
 				context.selectAll("rect").data(talkTurns)
 					.enter()
@@ -1212,7 +1213,8 @@
 
 				context.append("g")
 					.attr("class", "x axis")
-					.call(x2Axis);
+					.attr("transform", "translate(0," + bar1Height + ")")
+					.call(xAxis);
 
 				context.append("g")
 					.attr("class", "x brush")
@@ -1221,41 +1223,13 @@
 					.attr("height", bar1Height / 2);
 
 				function brushed() {
-					if (brush.empty()) {
-						x2.domain(x.domain());
-					} else {
-						x2.domain(brush.extent());
-					}
-
-					var e = brush.extent();
-					var selected = context.selectAll("rect").filter(function(d) {
-						return d.startTime >= e[0] && d.endTime <= e[1];
-					})
-
-					console.log(selected);
-
-					focus.selectAll("rect").data(selected)
-						.enter()
-						.append("rect")
-						.attr("x", function(d) {
-							return x2(d.__data__.startTime);
-						})
-						.attr("width", function(d) {
-							return x2(d.__data__.duration);
-						})
-						.attr("height", bar1Height)
-						.attr("class", function(d) {
-							if (d.__data__.speaker == "therapist") {
-								return "greenFill";
-							} else {
-								return "blueFill";
-							}
-						})
-						.attr("fill-opacity", function(d) {
-							return d.__data__.vocalArousal;
-						});
-
+					x2.domain(brush.empty() ? x.domain() : brush.extent());
+					x2.range([0, w]);
+					focusGraph.attr("x", function(d, i) { return x2(d.startTime); });
+//					focusGraph.attr("width", function(d, i) { return x2(d.duration); });
+					focusGraph.attr("width", 20);
 					focus.select(".x.axis").call(x2Axis);
+
 				}
 
 
