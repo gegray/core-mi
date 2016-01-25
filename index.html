@@ -1117,14 +1117,15 @@
 				var bar2Height = (h - bar1Margin.top - bar1Margin.bottom - bar2Margin.top - bar2Margin.bottom) / 2;
 
 				var x = d3.scale.linear()
-					.domain([0, d3.max(talkTurns, function(d) {
-						return d.endTime;
-					})])
+                    .domain([0, d3.max(talkTurns, function (d) {
+                        return d.endTime;
+                    })])
 					.range([0, w]);
+
 				var x2 = d3.scale.linear()
-					.domain([0, d3.max(talkTurns, function(d) {
-						return d.endTime / 10;
-					})])
+					.domain([0, d3.max(talkTurns, function (d) {
+                        return d.endTime / 10;
+                    })])
 					.range([0, w]);
 
 				var xAxis = d3.svg.axis()
@@ -1225,9 +1226,8 @@
 				function brushed() {
 					x2.domain(brush.empty() ? x.domain() : brush.extent());
 					x2.range([0, w]);
-					focusGraph.attr("x", function(d, i) { return x2(d.startTime); });
-//					focusGraph.attr("width", function(d, i) { return x2(d.duration); });
-					focusGraph.attr("width", 20);
+					focusGraph.attr("x", function(d) { return x2(d.startTime); });
+					focusGraph.attr("width", function(d) { return x2(d.endTime) - x2(d.startTime); }); // Thank God.
 					focus.select(".x.axis").call(x2Axis);
 
 				}
