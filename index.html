@@ -1194,6 +1194,7 @@
 					.attr("transform", "translate(0," + bar2Height + ")")
 					.call(x2Axis);
 
+
 				focusGraph = barsGroup.selectAll("rect").data(talkTurns)
 						.enter()
 						.append("rect")
@@ -1214,6 +1215,39 @@
 						.attr("fill-opacity", function(d) {
 							return d.vocalArousal;
 						});
+
+				var ttDiv = d3.select("#d3SessionOverview")
+					.append("div")
+					.attr("class", "tooltip")
+					.style("opacity", 0);
+
+				/* Interactive ASR text hover - mouse */
+				focusGraph.on("mouseenter", function(d) {
+					d3.select(this)
+					.attr("stroke", "#333333")
+					.attr("stroke-width", "2");
+					
+					ttDiv.transition()
+						.duration(200)
+						.style("opacity", 0.9);
+
+					ttDiv.html(d.asrText)
+						.style("left", "16px")
+						.style("top",  "220px");
+
+					console.log(d.asrText);
+				});
+
+				focusGraph.on("mouseout", function() {
+					d3.select(this)
+					.attr("stroke", "none")
+					.attr("stroke-width", "none");
+
+					ttDiv.transition()
+						.duration(400)
+						.style("opacity", 0);
+				});
+
 
 				context.selectAll("rect").data(talkTurns)
 					.enter()
