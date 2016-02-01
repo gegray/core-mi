@@ -1189,7 +1189,6 @@
 					.attr("class", "context")
 					.attr("transform", "translate(" + bar1Margin.left + "," + bar1Margin.top + ")");
 
-
 				focus.append("g")
 					.attr("class", "x axis")
 					.attr("transform", "translate(0," + bar2Height + ")")
@@ -1246,15 +1245,21 @@
 					.attr("class", "x brush")
 					.call(brush)
 					.selectAll("rect")
-					.attr("height", bar1Height / 2);
+					.attr("height", bar1Height);
 
 				function brushed() {
 					x2.domain(brush.empty() ? x.domain() : brush.extent());
 					x2.range([0, w]);
-					focusGraph.attr("x", function(d) { return x2(d.startTime); });
-					focusGraph.attr("width", function(d) { return x2(d.endTime) - x2(d.startTime); }); // Thank God.
+					
+					focusGraph.attr("x", function(d) { 
+						return x2(d.startTime); 
+					});
+					
+					focusGraph.attr("width", function(d) { 
+						return x2(d.endTime) - x2(d.startTime);
+					});
+					
 					focus.select(".x.axis").call(x2Axis);
-
 				}
 
 
