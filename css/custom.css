@@ -385,6 +385,10 @@ CHARTS & GRAPHS
 	width: 18px;
 	height: 18px;
 	background: #13997A;
+	background: -webkit-linear-gradient(left,rgba(19,153,122,0.25),rgba(19,153,122,1));
+	background: -o-linear-gradient(right,rgba(19,153,122,0.25),rgba(19,153,122,1));
+	background: -moz-linear-gradient(right,rgba(19,153,122,0.25),rgba(19,153,122,1));
+	background: linear-gradient(to right, rgba(19,153,122,0.25), rgba(19,153,122,1));
 	margin-right: 12px;
 }
 
@@ -393,6 +397,10 @@ CHARTS & GRAPHS
 	width: 18px;
 	height: 18px;
 	background: #337AB7;
+	background: -webkit-linear-gradient(left,rgba(51,122,183,0.25),rgba(51,122,183,1));
+	background: -o-linear-gradient(right,rgba(51,122,183,0.25),rgba(51,122,183,1));
+	background: -moz-linear-gradient(right,rgba(51,122,183,0.25),rgba(51,122,183,1));
+	background: linear-gradient(to right, rgba(51,122,183,0.25), rgba(51,122,183,1));
 	margin-right: 12px;
 }
 

@@ -79,7 +79,7 @@
 				        					<h4 class="modal-title">Overall MI Fidelity</h4>
 				        				</div>
 				        				<div class="modal-body">
-				        					<p>The overall MI fidelity scores ranges from 0-12 with 12 representing full therapist fidelity to MI. You receive 0,1, or 2 points for your performance on each of the 6 MI fidelity metrics (MI Spirit, Empathy, Reflection to Question Ratio, % Complex Reflections, % MI Adherent, % Open Questions). You receive 1 point for scores that meet basic proficiency benchmarks, and 2 points for scores that meet benchmarks for competence. The total score is a sum of the points from each metric.</p>
+				        					<p>The overall MI fidelity scores ranges from 0-12 where 12 represents excellent fidelity to MI. You receive 0,1, or 2 points for your performance on each of the 6 MI fidelity metrics (MI Spirit, Empathy, Reflection to Question Ratio, Percent Open Questions, Percent Complex Reflections, and Percent MI Adherence). You receive 1 point for scores that meet basic proficiency benchmarks, and 2 points for scores that meet benchmarks for competence. </p>
 				        				</div>
 				        				<div class="modal-footer">
 				        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -102,7 +102,7 @@
 											<h4 class="modal-title">MI Adherance</h4>
 										</div>
 										<div class="modal-body">
-											<p>Some text in the modal.</p>
+											<p>MI counselors who are 'adherent' are those that ask open questions, make complex reflections, support and affirm their clients, and emphasize their client's autonomy. Non-adherent counselors are confrontational, directing, warning, and advice giving. This measure is the total number of MI adherent behaviors divided by the sum of adherent and non-adherent behaviors. Higher is better and anything less than 100% indicates some non-adherent behaviors. </p>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -160,7 +160,7 @@
 				        					<h4 class="modal-title">Global Ratings</h4>
 				        				</div>
 				        				<div class="modal-body">
-				        					<p>The global ratings section provide single number estimates from a five-point scale to characterize some aspect the entire interaction you had with your client. These scores are meant to capture a global impression or overall judgment about a specific dimension, sometimes called the “gestalt.”</p>
+				        					<p>Global ratings characterize the overall quality of the session and are rated on a 1-5 scale (where 5 is excellent).  The MI developers have proposed cutoffs for 'basic proficiency' (3.5+) and 'competency' (4+). </p>
 				        				</div>
 				        				<div class="modal-footer">
 				        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -191,7 +191,7 @@
 													<h4 class="modal-title">MI Spirit</h4>
 												</div>
 												<div class="modal-body">
-													<p>This rating is intended to capture the overall competence of the counselor in using motivational interviewing. It explicitly focuses on the three inter-related characteristics of collaboration, evocation, and autonomy. The rater should consider all three of these characteristics when assigning a value for this scale, and low scores in any of these dimensions should be reflected in a lower overall spirit score. Nevertheless, the global spirit rating is intended to capture the whole gestalt of the counselor’s competence without too much “picking apart” of the scale’s components.</p>
+													<p>MI Spirit captures the general counseling style of Motivational Interviewing, which 1) is a collaborative approach, 2) shows interest in and evokes the client's perspective, and 3) does not impose views on the client but rather supports the client's ability to make their own choices for their lives. </p>
 												</div>
 												<div class="modal-footer">
 													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -216,7 +216,7 @@
 													<h4 class="modal-title">Empathy</h4>
 												</div>
 												<div class="modal-body">
-													<p>This scale is intended to capture the extent to which the therapist understands and/or makes an effort to grasp the client’s perspective.</p>
+													<p>Empathy is a rating of how well the therapist understands the client's perspective and makes efforts to see the world as their client sees it. </p>
 												</div>
 												<div class="modal-footer">
 													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -232,12 +232,14 @@
 				    <!-- Right Column -->
 				    <div class="col-sm-4">
 				    	<p class="t2">Notes
-				    		<!-- Trigger the modal with a button -->
+
+				    		<!-- NOTES modal placeholder
+				    		<!-- Trigger the modal with a button
 				        	<span type="button" data-toggle="modal" data-target="#notesModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-				        	<!-- Modal -->
+				        	<!-- Modal 
 				        	<div id="notesModal" class="modal fade" role="dialog">
 				        		<div class="modal-dialog">
-				        			<!-- Modal content-->
+				        			<!-- Modal content
 				        			<div class="modal-content">
 				        				<div class="modal-header">
 				        					<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -252,6 +254,8 @@
 				        			</div>
 				        		</div>
 				        	</div>
+							-->
+
 				    	</p>
 				    	<div id="d3NotesGeneral">
 				    		<!-- D3 Notes: general GOES HERE-->
@@ -279,9 +283,9 @@
 						<hr>
 						<p class="t2">Behavior Counts
 							<!-- Trigger the modal with a button -->
-				        	<span type="button" data-toggle="modal" data-target="#overallMiFidelityModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+				        	<span type="button" data-toggle="modal" data-target="#behaviorCountsModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 				        	<!-- Modal -->
-				        	<div id="overallMiFidelityModal" class="modal fade" role="dialog">
+				        	<div id="behaviorCountsModal" class="modal fade" role="dialog">
 				        		<div class="modal-dialog">
 				        			<!-- Modal content-->
 				        			<div class="modal-content">
@@ -290,7 +294,7 @@
 				        					<h4 class="modal-title">Behavior Counts</h4>
 				        				</div>
 				        				<div class="modal-body">
-				        					<p>The behavior counts section provide specific summaries of your session based on tallies of particular behaviors you exhibited during the session. These running tallies occur from the beginning of the session until the end.</p>
+				        					<p>While Global Ratings measure the overall quality of the session, Behavior Counts capture specific details of what a counselors says, such as types of questions and reflections. The MI developers have proposed cutoffs for 'basic proficiency' and 'competency' for each scale, which are indicated on the bar graphs. </p>
 				        				</div>
 				        				<div class="modal-footer">
 				        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -302,7 +306,7 @@
 						<p class="p1">Reflection to Question Ratio: 
 							<span class="w900" id="d3RToQNum">
 								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
-							</span> (Reflection : Question) 
+							</span> 
 							<!-- Trigger the modal with a button -->
 							<span type="button" data-toggle="modal" data-target="#RToQModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 							<!-- Modal -->
@@ -315,7 +319,7 @@
 											<h4 class="modal-title">Reflection to Question Ratio</h4>
 										</div>
 										<div class="modal-body">
-											<p>This category is meant to capture reflective listening statements made by the therapist in response to client statements. A Reflection may introduce new meaning or material, but it essentially captures and returns to clients something about what they have just said. Reflections must be further categorized into Simple or Complex categories.</p>
+											<p>An effective MI counselor uses more reflective statements (i.e., summaries of what the client has said) vs. questions. This measure is a ratio of the total number of reflections divided by the total number of questions, and thus, higher is better. </p>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -333,17 +337,17 @@
 					    		<p class="p2 gray">|<br>&ge; 3.0 |</p>
 					    	</div>
 					    	<div class="d3RToQBarAxisColumn axesShiftLeft">
-					    		<p class="p2 gray">|<br>p: 2.0 |</p>
+					    		<p class="p2 gray">|<br>c: 2.0 |</p>
 					    	</div>
 					    	<div class="d3RToQBarAxisColumn axesShiftLeft">
-					    		<p class="p2 gray">|<br>c: 1.0 |</p>
+					    		<p class="p2 gray">|<br>p: 1.0 |</p>
 					    	</div>
 					    </div>
 
 						<p class="p1">Percent Open Questions: 
 							<span class="w900" id="d3POQNum">
 								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
-							</span>% (Open : Closed) 
+							</span>% 
 							<!-- Trigger the modal with a button -->
 							<span type="button" data-toggle="modal" data-target="#POQModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 							<!-- Modal -->
@@ -356,7 +360,7 @@
 											<h4 class="modal-title">Percent Open Questions</h4>
 										</div>
 										<div class="modal-body">
-											<p>An open question is coded when the interviewer asks a question that allows a wide range of possible answers. The question may seek information, may invite the client’s perspective or may encourage self-exploration. The open question allows the option of surprise for the questioner.</p>
+											<p>When MI counselors ask questions, they strive to ask 'open' questions that invite a range of possible answers and may invite the client's perspective or encourage self-exploration. Closed questions are ones that can be answered in a single, or few, words. This measure is the total number of open questions divided by the sum of open and closed questions. Higher is better. </p>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -374,17 +378,17 @@
 					    		<p class="p2 gray">|<br>100 |</p>
 					    	</div>
 					    	<div class="d3PctOpenQuestionsAxisColumnProficiency axesShiftLeft">
-					    		<p class="p2 gray">|<br>p: 70 |</p>
+					    		<p class="p2 gray">|<br>c: 70 |</p>
 					    	</div>
 					    	<div class="d3PctOpenQuestionsAxisColumnCompetency axesShiftLeft">
-					    		<p class="p2 gray">|<br>c: 50 |</p>
+					    		<p class="p2 gray">|<br>p: 50 |</p>
 					    	</div>
 					    </div>
 
 						<p class="p1">Percent Complex Reflections: 
 							<span class="w900" id="d3PCRNum">
 								<!-- D3 Reflection to Question Ratio: number GOES HERE -->
-							</span>% (Complex : Simple) 
+							</span>% 
 							<!-- Trigger the modal with a button -->
 							<span type="button" data-toggle="modal" data-target="#PCRModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 							<!-- Modal -->
@@ -397,7 +401,7 @@
 											<h4 class="modal-title">Percent Complex Reflections</h4>
 										</div>
 										<div class="modal-body">
-											<p>Complex reflections typically add substantial meaning or emphasis to what the client has said. These reflections serve the purpose of conveying a deeper or more complex picture of what the client has said. Sometimes the therapist may choose to emphasize a particular part of what the client has said to make a point or take the conversation in a different direction. Therapists may add subtle or very obvious content to the client’s words, or they may combine statements from the client to form summaries that are complex in nature.</p>
+											<p>Reflections are summaries of what the client has expressed and said. A simple reflection is an almost verbatim restatement of what the client said. A complex reflection is a summary that adds meaning or emphasis or might integrate additional information. A complex reflection is one way that a therapist conveys they are trying to understand their client and his or her worldview. This measure is the total number of complex reflections divided by the sum of complex and simple reflections. Higher is better. </p>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -415,10 +419,10 @@
 					    		<p class="p2 gray">|<br>100 |</p>
 					    	</div>
 					    	<div class="d3PctComplexReflectionsAxisColumnProficiency axesShiftLeft">
-					    		<p class="p2 gray">|<br>p: 50 |</p>
+					    		<p class="p2 gray">|<br>c: 50 |</p>
 					    	</div>
 					    	<div class="d3PctComplexReflectionsAxisColumnCompetency axesShiftLeft">
-					    		<p class="p2 gray">|<br>c: 40 |</p>
+					    		<p class="p2 gray">|<br>p: 40 |</p>
 					    	</div>
 					    </div>
 
@@ -443,7 +447,7 @@
 			        					<h4 class="modal-title">Session View</h4>
 			        				</div>
 			        				<div class="modal-body">
-			        					<p>Some text in the modal.</p>
+			        					<p>The Session View portion of the CORE-MI report provides additional details about the counseling session that may be helpful for a therapist's self-reflection and/or supervision. These details are not necessarily related to MI. </p>
 			        				</div>
 			        				<div class="modal-footer">
 			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -472,7 +476,7 @@
 						<p class="p1">Percent Talk Time: 
 							<span class="w900" id="d3PctTalkTimeNum">
 								<!-- D3 Percent Talk Time: number GOES HERE -->
-							</span>% (Therapist : Client) 
+							</span>% 
 							<!-- Trigger the modal with a button -->
 							<span type="button" data-toggle="modal" data-target="#pctTalkTimeModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 							<!-- Modal -->
@@ -485,7 +489,7 @@
 											<h4 class="modal-title">Percent Talk Time</h4>
 										</div>
 										<div class="modal-body">
-											<p>Some text in the modal.</p>
+											<p>Because MI therapists focus on evoking their client's perspectives, it is preferable for client's to talk more during the session relative to the counselor. </p>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -506,7 +510,28 @@
 			<!-- Session View - Overview Title -->
 			<div class="row">
 				<div class="col-sm-12">
-					<p class="t3">Overview</p>
+					<p class="t3">Session Timeline <!-- "Session Timeline" was formerly "Overview"
+						<!-- Trigger the modal with a button -->
+			        	<span type="button" data-toggle="modal" data-target="#sessionTimelineModal" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+			        	<!-- Modal -->
+			        	<div id="sessionTimelineModal" class="modal fade" role="dialog">
+			        		<div class="modal-dialog">
+			        			<!-- Modal content-->
+			        			<div class="modal-content">
+			        				<div class="modal-header">
+			        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        					<h4 class="modal-title">Session Timeline</h4>
+			        				</div>
+			        				<div class="modal-body">
+			        					<p>The horizontal bar below is a timeline of the entire session.  Each stripe in the bar represents a 'talk turn' (uninterupted speaking by client or therapist). Each talk turn is color coded and the shading or depth of color is related to the level of arousal in the voice for that talk turn. Thus a very dark green or blue stripe represents a talk turn where someone was 'intense' vocally, which might be anger, frustration, surprise, or joy. The slider in the top bar controls the level of detail shown in the lower bar. Clicking on a talk turn will show the text of what was spoken in that talk turn. </p>
+			        				</div>
+			        				<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        				</div>
+			        			</div>
+			        		</div>
+			        	</div>
+					</p>
 				</div>
 			</div>
 
