@@ -1,0 +1,1179 @@
+{
+    "sessionNumber": "100101",
+    "beginTime": "0:0:0.94",
+    "endTime": "0:11:2.88",
+    "duration": "0:11:1.94",
+    "date": "2015.12.16",
+    "therapist": "Brian Pace",
+    "client": {
+        "clientID": "Aaron Dembe",
+        "sex": "f",
+        "age": 26
+    },
+    "scores": {
+        "globals": {
+            "overall": 6,
+            "empathy": 3.60833333333,
+            "miSpirit": 3.48813333333
+        },
+        "behaviorCounts": {
+            "reflectionToQuestion": {
+                "reflections": 17,
+                "questions": 6,
+                "ratio": 2.83333333333
+            },
+            "percentOpenQuestions": {
+                "openQuestions": 3,
+                "closedQuestions": 3,
+                "percent": 50.0
+            },
+            "percentComplexReflections": {
+                "complexReflections": 8,
+                "simpleReflections": 9,
+                "percent": 47.0588235294
+            }
+        },
+        "miAdherence": 100.0
+    },
+    "notes": {
+        "general": [
+            {
+                "id": 1,
+                "text": "This is the note as a string. "
+            },
+            {
+                "id": 2,
+                "text": "This is another note as a string. "
+            }
+        ],
+        "sessionStrengths": [
+            {
+                "id": 1,
+                "text": "This is a session strength as a string. "
+            },
+            {
+                "id": 2,
+                "text": "This is another session strength as a string. "
+            }
+        ],
+        "areasForImprovement": [
+            {
+                "id": 1,
+                "text": "This is an area for improvement as a string. "
+            },
+            {
+                "id": 2,
+                "text": "This is another area for improvement as a string. "
+            }
+        ]
+    },
+    "session": {
+        "talkTime": {
+            "therapist": 149.74,
+            "client": 426.76,
+            "therapistToClientPercent": 0.259739809193
+        },
+        "talkTurn": [
+            {
+                "id": 1,
+                "startTime": 0.94,
+                "endTime": 1.98,
+                "duration": 1.04,
+                "speaker": "therapist",
+                "vocalArousal": 0.818,
+                "codes": [ "GI" ],
+                "asrText": "so"
+            },
+            {
+                "id": 2,
+                "startTime": 2.32,
+                "endTime": 4.86,
+                "duration": 2.54,
+                "speaker": "therapist",
+                "vocalArousal": 0.596,
+                "codes": [ "QUC" ],
+                "asrText": "good morning they're in the morning or"
+            },
+            {
+                "id": 3,
+                "startTime": 4.88,
+                "endTime": 7.6,
+                "duration": 2.72,
+                "speaker": "client",
+                "vocalArousal": 0.444,
+                "codes": [ "CLI" ],
+                "asrText": "i am"
+            },
+            {
+                "id": 4,
+                "startTime": 8.1,
+                "endTime": 9.08,
+                "duration": 0.98,
+                "speaker": "client",
+                "vocalArousal": 0.618,
+                "codes": [ "CLI" ],
+                "asrText": "i've had better days"
+            },
+            {
+                "id": 5,
+                "startTime": 9.1,
+                "endTime": 13.92,
+                "duration": 4.82,
+                "speaker": "therapist",
+                "vocalArousal": 0.569,
+                "codes": [ "GI" ],
+                "asrText": "it's okay yeah oh sorry to hear that uh i'm"
+            },
+            {
+                "id": 6,
+                "startTime": 14.92,
+                "endTime": 17.12,
+                "duration": 2.2,
+                "speaker": "therapist",
+                "vocalArousal": 0.553,
+                "codes": [ "COU" ],
+                "asrText": "we talk a little bit about what brings you in so"
+            },
+            {
+                "id": 7,
+                "startTime": 17.14,
+                "endTime": 19.74,
+                "duration": 2.6,
+                "speaker": "client",
+                "vocalArousal": 0.589,
+                "codes": [ "CLI" ],
+                "asrText": "hmm yeah yeah um"
+            },
+            {
+                "id": 8,
+                "startTime": 19.76,
+                "endTime": 20.76,
+                "duration": 1.0,
+                "speaker": "therapist",
+                "vocalArousal": 0.856,
+                "codes": [ "FA" ],
+                "asrText": "so"
+            },
+            {
+                "id": 9,
+                "startTime": 20.78,
+                "endTime": 24.4,
+                "duration": 3.62,
+                "speaker": "client",
+                "vocalArousal": 0.434,
+                "codes": [ "CLI" ],
+                "asrText": "i am here too"
+            },
+            {
+                "id": 10,
+                "startTime": 24.68,
+                "endTime": 27.22,
+                "duration": 2.54,
+                "speaker": "client",
+                "vocalArousal": 0.52,
+                "codes": [ "CLI" ],
+                "asrText": "i guess get off of academic probation"
+            },
+            {
+                "id": 11,
+                "startTime": 29.18,
+                "endTime": 31.06,
+                "duration": 1.88,
+                "speaker": "client",
+                "vocalArousal": 0.432,
+                "codes": [ "CLI" ],
+                "asrText": "there was some mm"
+            },
+            {
+                "id": 12,
+                "startTime": 32.0,
+                "endTime": 37.46,
+                "duration": 5.46,
+                "speaker": "client",
+                "vocalArousal": 0.645,
+                "codes": [ "CLI" ],
+                "asrText": "there as i guess you could call to reach etiquette recently and um"
+            },
+            {
+                "id": 13,
+                "startTime": 38.42,
+                "endTime": 42.94,
+                "duration": 4.52,
+                "speaker": "client",
+                "vocalArousal": 0.544,
+                "codes": [ "CLI" ],
+                "asrText": "some stuff went down and it's a long story anyhow uh"
+            },
+            {
+                "id": 14,
+                "startTime": 43.48,
+                "endTime": 47.24,
+                "duration": 3.76,
+                "speaker": "client",
+                "vocalArousal": 0.455,
+                "codes": [ "CLI" ],
+                "asrText": "here i am and i would have got placed on academic probation for"
+            },
+            {
+                "id": 15,
+                "startTime": 47.6,
+                "endTime": 51.02,
+                "duration": 3.42,
+                "speaker": "client",
+                "vocalArousal": 0.313,
+                "codes": [ "CLI" ],
+                "asrText": "um a behavioral issue okay um"
+            },
+            {
+                "id": 16,
+                "startTime": 52.58,
+                "endTime": 57.54,
+                "duration": 4.96,
+                "speaker": "therapist",
+                "vocalArousal": 0.526,
+                "codes": [ "REC" ],
+                "asrText": "so something went down and not entirely sure what that something happened and you're a little bit of a a day"
+            },
+            {
+                "id": 17,
+                "startTime": 57.56,
+                "endTime": 67.92,
+                "duration": 10.36,
+                "speaker": "client",
+                "vocalArousal": 0.485,
+                "codes": [ "CLI" ],
+                "asrText": "yeah like i mean basically stories i got in a bar fight okay um and you know there was quite a bit of drinking going on and"
+            },
+            {
+                "id": 18,
+                "startTime": 69.2,
+                "endTime": 76.66,
+                "duration": 7.46,
+                "speaker": "client",
+                "vocalArousal": 0.489,
+                "codes": [ "CLI" ],
+                "asrText": "and yeah had that's really the whole story i can tell you more but that's the that's the cream in the crowd that okay"
+            },
+            {
+                "id": 19,
+                "startTime": 76.74,
+                "endTime": 82.44,
+                "duration": 5.7,
+                "speaker": "therapist",
+                "vocalArousal": 0.535,
+                "codes": [ "REC" ],
+                "asrText": "so some alcohol use maybe led into this fight it sounds like that you may have been related that night"
+            },
+            {
+                "id": 20,
+                "startTime": 82.46,
+                "endTime": 91.8,
+                "duration": 9.34,
+                "speaker": "client",
+                "vocalArousal": 0.453,
+                "codes": [ "CLI" ],
+                "asrText": "yeah i mean it would probably didn't help okay um you know bar fights they tend to happen with alcohol yeah um"
+            },
+            {
+                "id": 21,
+                "startTime": 92.08,
+                "endTime": 95.54,
+                "duration": 3.46,
+                "speaker": "therapist",
+                "vocalArousal": 0.456,
+                "codes": [ "QUC" ],
+                "asrText": "and the punishments or"
+            },
+            {
+                "id": 22,
+                "startTime": 95.76,
+                "endTime": 101.42,
+                "duration": 5.66,
+                "speaker": "therapist",
+                "vocalArousal": 0.394,
+                "codes": [ "QUC" ],
+                "asrText": "the the repercussions of this is uh is it like a suspension or"
+            },
+            {
+                "id": 23,
+                "startTime": 102.38,
+                "endTime": 123.6,
+                "duration": 21.22,
+                "speaker": "client",
+                "vocalArousal": 0.466,
+                "codes": [ "CLI" ],
+                "asrText": "yeah well you know and actually not entirely sure it's um it's academic probation for behavioral issue but also my uh agree it's probably a and what the university which is they would be ideally alcohol on and so those two things put together and um the committee decided"
+            },
+            {
+                "id": 24,
+                "startTime": 124.74,
+                "endTime": 134.24,
+                "duration": 9.5,
+                "speaker": "client",
+                "vocalArousal": 0.399,
+                "codes": [ "CLI" ],
+                "asrText": "on academic probation and um and two i wanted to have a re mediation plan on that plan included okay doing"
+            },
+            {
+                "id": 25,
+                "startTime": 134.78,
+                "endTime": 137.4,
+                "duration": 2.62,
+                "speaker": "client",
+                "vocalArousal": 0.282,
+                "codes": [ "CLI" ],
+                "asrText": "um meeting with someone i don't know"
+            },
+            {
+                "id": 26,
+                "startTime": 137.44,
+                "endTime": 143.62,
+                "duration": 6.18,
+                "speaker": "therapist",
+                "vocalArousal": 0.573,
+                "codes": [ "RES" ],
+                "asrText": "okay so the plan requires you to be here mm hmm um so you may or may not want to be here but"
+            },
+            {
+                "id": 27,
+                "startTime": 143.64,
+                "endTime": 147.0,
+                "duration": 3.36,
+                "speaker": "client",
+                "vocalArousal": 0.48,
+                "codes": [ "CLI" ],
+                "asrText": "you have to be here yeah yeah true because i have to be here"
+            },
+            {
+                "id": 28,
+                "startTime": 147.02,
+                "endTime": 151.62,
+                "duration": 4.6,
+                "speaker": "therapist",
+                "vocalArousal": 0.5,
+                "codes": [ "QUO" ],
+                "asrText": "okay well how can we make this time worthwhile for you"
+            },
+            {
+                "id": 29,
+                "startTime": 153.18,
+                "endTime": 158.94,
+                "duration": 5.76,
+                "speaker": "client",
+                "vocalArousal": 0.559,
+                "codes": [ "CLI" ],
+                "asrText": "um i don't i'm i'm not even sure kind of what well we're supposed to be doing here okay"
+            },
+            {
+                "id": 30,
+                "startTime": 161.44,
+                "endTime": 164.0,
+                "duration": 2.56,
+                "speaker": "client",
+                "vocalArousal": 0.491,
+                "codes": [ "CLI" ],
+                "asrText": "to be perfectly honest i mean um"
+            },
+            {
+                "id": 31,
+                "startTime": 164.28,
+                "endTime": 166.42,
+                "duration": 2.14,
+                "speaker": "client",
+                "vocalArousal": 0.513,
+                "codes": [ "CLI" ],
+                "asrText": "like i have legal representation"
+            },
+            {
+                "id": 32,
+                "startTime": 168.86,
+                "endTime": 173.68,
+                "duration": 4.82,
+                "speaker": "client",
+                "vocalArousal": 0.457,
+                "codes": [ "CLI" ],
+                "asrText": "you know my dad said is like on top of that he's a lawyer and it's all your friends and"
+            },
+            {
+                "id": 33,
+                "startTime": 174.38,
+                "endTime": 177.64,
+                "duration": 3.26,
+                "speaker": "client",
+                "vocalArousal": 0.461,
+                "codes": [ "CLI" ],
+                "asrText": "um and so we've got that side of things covered"
+            },
+            {
+                "id": 34,
+                "startTime": 178.38,
+                "endTime": 183.28,
+                "duration": 4.9,
+                "speaker": "client",
+                "vocalArousal": 0.628,
+                "codes": [ "CLI" ],
+                "asrText": "uh um i now i mean i'll probably also had a two or something like that"
+            },
+            {
+                "id": 35,
+                "startTime": 183.84,
+                "endTime": 185.54,
+                "duration": 1.7,
+                "speaker": "client",
+                "vocalArousal": 0.413,
+                "codes": [ "CLI" ],
+                "asrText": "and um"
+            },
+            {
+                "id": 36,
+                "startTime": 186.82,
+                "endTime": 191.82,
+                "duration": 5.0,
+                "speaker": "client",
+                "vocalArousal": 0.414,
+                "codes": [ "CLI" ],
+                "asrText": "and just you know cover my bases that way as far as universities concerned and"
+            },
+            {
+                "id": 37,
+                "startTime": 192.72,
+                "endTime": 193.68,
+                "duration": 0.96,
+                "speaker": "client",
+                "vocalArousal": 0.354,
+                "codes": [ "CLI" ],
+                "asrText": "and then michael"
+            },
+            {
+                "id": 38,
+                "startTime": 193.7,
+                "endTime": 202.44,
+                "duration": 8.74,
+                "speaker": "therapist",
+                "vocalArousal": 0.538,
+                "codes": [ "GI" ],
+                "asrText": "we sort of out of the way it's okay you know so you get the legal area covered yeah and this academic area addressed mm"
+            },
+            {
+                "id": 39,
+                "startTime": 203.34,
+                "endTime": 213.8,
+                "duration": 10.46,
+                "speaker": "therapist",
+                "vocalArousal": 0.523,
+                "codes": [ "QUO" ],
+                "asrText": "i look into some tumor um tutoring how about just yourself and your overall functioning and wellbeing and stuff like that how's that going"
+            },
+            {
+                "id": 40,
+                "startTime": 215.16,
+                "endTime": 216.52,
+                "duration": 1.36,
+                "speaker": "client",
+                "vocalArousal": 0.757,
+                "codes": [ "CLI" ],
+                "asrText": "my wife my whole life"
+            },
+            {
+                "id": 41,
+                "startTime": 216.54,
+                "endTime": 225.78,
+                "duration": 9.24,
+                "speaker": "therapist",
+                "vocalArousal": 0.565,
+                "codes": [ "REC" ],
+                "asrText": "well like your day to day activities if how you feeling um it sounds like you were intoxicated at nine or ten concerns related to"
+            },
+            {
+                "id": 42,
+                "startTime": 225.8,
+                "endTime": 229.2,
+                "duration": 3.4,
+                "speaker": "client",
+                "vocalArousal": 0.437,
+                "codes": [ "CLI" ],
+                "asrText": "alcohol use or not really yeah"
+            },
+            {
+                "id": 43,
+                "startTime": 233.38,
+                "endTime": 235.56,
+                "duration": 2.18,
+                "speaker": "therapist",
+                "vocalArousal": 0.411,
+                "codes": [ "GI" ],
+                "asrText": "so daytoday feel like things are going pretty"
+            },
+            {
+                "id": 44,
+                "startTime": 235.58,
+                "endTime": 239.82,
+                "duration": 4.24,
+                "speaker": "client",
+                "vocalArousal": 0.555,
+                "codes": [ "CLI" ],
+                "asrText": "pretty good yeah i like my life here i mean i live um i live with"
+            },
+            {
+                "id": 45,
+                "startTime": 240.38,
+                "endTime": 243.42,
+                "duration": 3.04,
+                "speaker": "client",
+                "vocalArousal": 0.513,
+                "codes": [ "CLI" ],
+                "asrText": "uh some fraternity brothers and um"
+            },
+            {
+                "id": 46,
+                "startTime": 245.04,
+                "endTime": 248.0,
+                "duration": 2.96,
+                "speaker": "client",
+                "vocalArousal": 0.431,
+                "codes": [ "CLI" ],
+                "asrText": "and i mean they're not they're my best friends"
+            },
+            {
+                "id": 47,
+                "startTime": 248.3,
+                "endTime": 249.46,
+                "duration": 1.16,
+                "speaker": "client",
+                "vocalArousal": 0.35,
+                "codes": [ "CLI" ],
+                "asrText": "you know and"
+            },
+            {
+                "id": 48,
+                "startTime": 249.98,
+                "endTime": 251.44,
+                "duration": 1.46,
+                "speaker": "client",
+                "vocalArousal": 0.361,
+                "codes": [ "CLI" ],
+                "asrText": "um"
+            },
+            {
+                "id": 49,
+                "startTime": 252.1,
+                "endTime": 258.16,
+                "duration": 6.06,
+                "speaker": "client",
+                "vocalArousal": 0.454,
+                "codes": [ "CLI" ],
+                "asrText": "yeah like i have if i had i had really quite amazing time here o'clock on campus and"
+            },
+            {
+                "id": 50,
+                "startTime": 258.76,
+                "endTime": 264.9,
+                "duration": 6.14,
+                "speaker": "client",
+                "vocalArousal": 0.511,
+                "codes": [ "CLI" ],
+                "asrText": "yeah hi i'm that it's gonna be over soon and you know if i graduate on time everything mm"
+            },
+            {
+                "id": 51,
+                "startTime": 265.52,
+                "endTime": 280.74,
+                "duration": 15.22,
+                "speaker": "client",
+                "vocalArousal": 0.42,
+                "codes": [ "CLI" ],
+                "asrText": "you know like because i know these are maybe the best years of my life you know and yeah um and a little while probably i'll i'll graduating maybe other business school but neither way all you know i'm a business major and so i hope"
+            },
+            {
+                "id": 52,
+                "startTime": 281.46,
+                "endTime": 282.7,
+                "duration": 1.24,
+                "speaker": "client",
+                "vocalArousal": 0.396,
+                "codes": [ "CLI" ],
+                "asrText": "i'll be um"
+            },
+            {
+                "id": 53,
+                "startTime": 283.48,
+                "endTime": 288.98,
+                "duration": 5.5,
+                "speaker": "client",
+                "vocalArousal": 0.508,
+                "codes": [ "CLI" ],
+                "asrText": "in that world pretty soon and just having a job and just making a ton of money and"
+            },
+            {
+                "id": 54,
+                "startTime": 289.24,
+                "endTime": 296.58,
+                "duration": 7.34,
+                "speaker": "client",
+                "vocalArousal": 0.444,
+                "codes": [ "CLI" ],
+                "asrText": "um having a time to spend it and that kinda thing yeah yeah so trying to take advantage now yeah would you expect to do that"
+            },
+            {
+                "id": 55,
+                "startTime": 296.6,
+                "endTime": 297.12,
+                "duration": 0.52,
+                "speaker": "therapist",
+                "vocalArousal": 0.565,
+                "codes": [ "RES" ],
+                "asrText": "do it"
+            },
+            {
+                "id": 56,
+                "startTime": 297.14,
+                "endTime": 303.16,
+                "duration": 6.02,
+                "speaker": "client",
+                "vocalArousal": 0.459,
+                "codes": [ "CLI" ],
+                "asrText": "um they'll be it not this year but next took uh huh coming up yup yup i'm a junior so okay um"
+            },
+            {
+                "id": 57,
+                "startTime": 306.06,
+                "endTime": 314.6,
+                "duration": 8.54,
+                "speaker": "therapist",
+                "vocalArousal": 0.394,
+                "codes": [ "QUO" ],
+                "asrText": "so given you're here because then and so now bar would be helpful to talk about that night would you feel like comfortable discussing maybe kinda what"
+            },
+            {
+                "id": 58,
+                "startTime": 314.62,
+                "endTime": 320.78,
+                "duration": 6.16,
+                "speaker": "client",
+                "vocalArousal": 0.659,
+                "codes": [ "CLI" ],
+                "asrText": "happened sure yeah i mean like it's a pretty yeah i guess commonplace story"
+            },
+            {
+                "id": 59,
+                "startTime": 321.3,
+                "endTime": 331.82,
+                "duration": 10.52,
+                "speaker": "client",
+                "vocalArousal": 0.513,
+                "codes": [ "CLI" ],
+                "asrText": "um you know some friends and i wrote a bar and you get to be perfectly honest i have like can't remember every single detail what happened"
+            },
+            {
+                "id": 60,
+                "startTime": 332.1,
+                "endTime": 340.22,
+                "duration": 8.12,
+                "speaker": "client",
+                "vocalArousal": 0.478,
+                "codes": [ "CLI" ],
+                "asrText": "um but the basic impression should you know looking back in my memory faults here um basic impression i have is that"
+            },
+            {
+                "id": 61,
+                "startTime": 341.38,
+                "endTime": 350.66,
+                "duration": 9.28,
+                "speaker": "client",
+                "vocalArousal": 0.559,
+                "codes": [ "CLI" ],
+                "asrText": "there is just got i was just it was like you know it was like it never been drunk before and i guess first drink he was being"
+            },
+            {
+                "id": 62,
+                "startTime": 351.26,
+                "endTime": 363.8,
+                "duration": 12.54,
+                "speaker": "client",
+                "vocalArousal": 0.486,
+                "codes": [ "CLI" ],
+                "asrText": "just a complete your brownie he was loud and obnoxious and like getting in people's faces and he's getting our faces and we were some girls he was getting in their face and"
+            },
+            {
+                "id": 63,
+                "startTime": 365.7,
+                "endTime": 366.96,
+                "duration": 1.26,
+                "speaker": "client",
+                "vocalArousal": 0.489,
+                "codes": [ "CLI" ],
+                "asrText": "and so"
+            },
+            {
+                "id": 64,
+                "startTime": 367.74,
+                "endTime": 368.76,
+                "duration": 1.02,
+                "speaker": "client",
+                "vocalArousal": 0.564,
+                "codes": [ "CLI" ],
+                "asrText": "you know"
+            },
+            {
+                "id": 65,
+                "startTime": 369.54,
+                "endTime": 374.1,
+                "duration": 4.56,
+                "speaker": "client",
+                "vocalArousal": 0.655,
+                "codes": [ "CLI" ],
+                "asrText": "do i remember exactly like how the fight started"
+            },
+            {
+                "id": 66,
+                "startTime": 374.84,
+                "endTime": 379.02,
+                "duration": 4.18,
+                "speaker": "client",
+                "vocalArousal": 0.675,
+                "codes": [ "CLI" ],
+                "asrText": "this one first what's that hon solo are cuidado i don't know"
+            },
+            {
+                "id": 67,
+                "startTime": 379.44,
+                "endTime": 384.94,
+                "duration": 5.5,
+                "speaker": "client",
+                "vocalArousal": 0.45,
+                "codes": [ "CLI" ],
+                "asrText": "um or greed it what's it because name you know talking yeah yeah doesn't matter um"
+            },
+            {
+                "id": 68,
+                "startTime": 385.36,
+                "endTime": 387.86,
+                "duration": 2.5,
+                "speaker": "client",
+                "vocalArousal": 0.645,
+                "codes": [ "CLI" ],
+                "asrText": "i don't remember exactly how it started but"
+            },
+            {
+                "id": 69,
+                "startTime": 388.32,
+                "endTime": 392.42,
+                "duration": 4.1,
+                "speaker": "client",
+                "vocalArousal": 0.541,
+                "codes": [ "CLI" ],
+                "asrText": "um someone took a swimming and i"
+            },
+            {
+                "id": 70,
+                "startTime": 392.84,
+                "endTime": 394.52,
+                "duration": 1.68,
+                "speaker": "client",
+                "vocalArousal": 0.419,
+                "codes": [ "CLI" ],
+                "asrText": "took this way and"
+            },
+            {
+                "id": 71,
+                "startTime": 396.78,
+                "endTime": 403.7,
+                "duration": 6.92,
+                "speaker": "client",
+                "vocalArousal": 0.463,
+                "codes": [ "CLI" ],
+                "asrText": "st gentleman and i were involved in the uh but of a feel for off okay and um"
+            },
+            {
+                "id": 72,
+                "startTime": 404.04,
+                "endTime": 406.92,
+                "duration": 2.88,
+                "speaker": "client",
+                "vocalArousal": 0.598,
+                "codes": [ "CLI" ],
+                "asrText": "yeah and that the cops happen to be there"
+            },
+            {
+                "id": 73,
+                "startTime": 407.64,
+                "endTime": 413.66,
+                "duration": 6.02,
+                "speaker": "client",
+                "vocalArousal": 0.519,
+                "codes": [ "CLI" ],
+                "asrText": "they weren't called for us you know they were just sort of there are ready just a lot can"
+            },
+            {
+                "id": 74,
+                "startTime": 414.44,
+                "endTime": 416.1,
+                "duration": 1.66,
+                "speaker": "client",
+                "vocalArousal": 0.399,
+                "codes": [ "CLI" ],
+                "asrText": "um and so"
+            },
+            {
+                "id": 75,
+                "startTime": 416.54,
+                "endTime": 421.0,
+                "duration": 4.46,
+                "speaker": "client",
+                "vocalArousal": 0.642,
+                "codes": [ "CLI" ],
+                "asrText": "i think if they hadn't been there i wouldn't have got any salt charge but"
+            },
+            {
+                "id": 76,
+                "startTime": 421.72,
+                "endTime": 427.08,
+                "duration": 5.36,
+                "speaker": "client",
+                "vocalArousal": 0.482,
+                "codes": [ "CLI" ],
+                "asrText": "um they were out yeah well that part of stories you've got an assault charge okay um"
+            },
+            {
+                "id": 77,
+                "startTime": 427.9,
+                "endTime": 431.86,
+                "duration": 3.96,
+                "speaker": "client",
+                "vocalArousal": 0.353,
+                "codes": [ "CLI" ],
+                "asrText": "so yeah that's why it that's the sort of illegal about that"
+            },
+            {
+                "id": 78,
+                "startTime": 431.88,
+                "endTime": 452.9,
+                "duration": 21.02,
+                "speaker": "therapist",
+                "vocalArousal": 0.447,
+                "codes": [ "REC" ],
+                "asrText": "yeah so out drinking with friends so it sounds like kind of a normal night uh i'm at a bar um all those there were parts of the night that you don't remember um and like to this potential that could have let her but you look in a fight with assault charge yeah um is that"
+            },
+            {
+                "id": 79,
+                "startTime": 453.1,
+                "endTime": 459.78,
+                "duration": 6.68,
+                "speaker": "therapist",
+                "vocalArousal": 0.523,
+                "codes": [ "REC" ],
+                "asrText": "seems kinda scary when you think back and don't remember parts of the night or is that sort of normal for you"
+            },
+            {
+                "id": 80,
+                "startTime": 459.8,
+                "endTime": 463.54,
+                "duration": 3.74,
+                "speaker": "client",
+                "vocalArousal": 0.576,
+                "codes": [ "CLI" ],
+                "asrText": "hmm ski i mean i don't think it's scary"
+            },
+            {
+                "id": 81,
+                "startTime": 465.96,
+                "endTime": 480.36,
+                "duration": 14.4,
+                "speaker": "client",
+                "vocalArousal": 0.511,
+                "codes": [ "CLI" ],
+                "asrText": "i guess it could be i mean like i kinda just don't know what happened for portions of the night um obviously i would prefer to get in bar fights um i don't know it's like could have gone differently and probably i don't know how though mm hmm"
+            },
+            {
+                "id": 82,
+                "startTime": 482.26,
+                "endTime": 486.0,
+                "duration": 3.74,
+                "speaker": "therapist",
+                "vocalArousal": 0.577,
+                "codes": [ "REC" ],
+                "asrText": "yes you have a preference to not want to get into a bar fight"
+            },
+            {
+                "id": 83,
+                "startTime": 487.02,
+                "endTime": 492.2,
+                "duration": 5.18,
+                "speaker": "client",
+                "vocalArousal": 0.572,
+                "codes": [ "CLI" ],
+                "asrText": "yeah right i mean like who what and you know it's like i'm i'm a lover not fighter and"
+            },
+            {
+                "id": 84,
+                "startTime": 494.34,
+                "endTime": 497.1,
+                "duration": 2.76,
+                "speaker": "client",
+                "vocalArousal": 0.444,
+                "codes": [ "CLI" ],
+                "asrText": "i love all types of people you know it's like"
+            },
+            {
+                "id": 85,
+                "startTime": 497.9,
+                "endTime": 505.12,
+                "duration": 7.22,
+                "speaker": "client",
+                "vocalArousal": 0.425,
+                "codes": [ "CLI" ],
+                "asrText": "uh you know like any kind of whatever she looked different i like any types of foreigners and"
+            },
+            {
+                "id": 86,
+                "startTime": 508.54,
+                "endTime": 510.42,
+                "duration": 1.88,
+                "speaker": "therapist",
+                "vocalArousal": 0.676,
+                "codes": [ "RES" ],
+                "asrText": "so your lover"
+            },
+            {
+                "id": 87,
+                "startTime": 511.4,
+                "endTime": 513.78,
+                "duration": 2.38,
+                "speaker": "therapist",
+                "vocalArousal": 0.419,
+                "codes": [ "RES" ],
+                "asrText": "not a fighter mm hmm um"
+            },
+            {
+                "id": 88,
+                "startTime": 514.12,
+                "endTime": 516.18,
+                "duration": 2.06,
+                "speaker": "therapist",
+                "vocalArousal": 0.35,
+                "codes": [ "RES" ],
+                "asrText": "but that night"
+            },
+            {
+                "id": 89,
+                "startTime": 516.56,
+                "endTime": 518.92,
+                "duration": 2.36,
+                "speaker": "therapist",
+                "vocalArousal": 0.32,
+                "codes": [ "RES" ],
+                "asrText": "it was different right or something"
+            },
+            {
+                "id": 90,
+                "startTime": 518.94,
+                "endTime": 521.64,
+                "duration": 2.7,
+                "speaker": "client",
+                "vocalArousal": 0.678,
+                "codes": [ "CLI" ],
+                "asrText": "for the yeah i mean it's almost like"
+            },
+            {
+                "id": 91,
+                "startTime": 521.88,
+                "endTime": 532.3,
+                "duration": 10.42,
+                "speaker": "client",
+                "vocalArousal": 0.606,
+                "codes": [ "CLI" ],
+                "asrText": "you know not the and the police exactly but like that's sort of thing was like kind of keeping it's like i was keeping the piece that i was doing this guy you know"
+            },
+            {
+                "id": 92,
+                "startTime": 533.08,
+                "endTime": 538.5,
+                "duration": 5.42,
+                "speaker": "client",
+                "vocalArousal": 0.579,
+                "codes": [ "CLI" ],
+                "asrText": "i was just one of those out of control people they needed to"
+            },
+            {
+                "id": 93,
+                "startTime": 540.02,
+                "endTime": 550.2,
+                "duration": 10.18,
+                "speaker": "client",
+                "vocalArousal": 0.547,
+                "codes": [ "CLI" ],
+                "asrText": "the people went safer and that um you know there was something i was gonna happen and some effects something did happen i'm just glad i was the one that happen to you instead of someone else's more"
+            },
+            {
+                "id": 94,
+                "startTime": 550.42,
+                "endTime": 554.04,
+                "duration": 3.62,
+                "speaker": "client",
+                "vocalArousal": 0.372,
+                "codes": [ "CLI" ],
+                "asrText": "defenseless or phone bill something like that you know right"
+            },
+            {
+                "id": 95,
+                "startTime": 555.04,
+                "endTime": 558.52,
+                "duration": 3.48,
+                "speaker": "therapist",
+                "vocalArousal": 0.339,
+                "codes": [ "REC" ],
+                "asrText": "so you feel like you're really helping out but yet"
+            },
+            {
+                "id": 96,
+                "startTime": 558.92,
+                "endTime": 567.16,
+                "duration": 8.24,
+                "speaker": "therapist",
+                "vocalArousal": 0.492,
+                "codes": [ "REC" ],
+                "asrText": "on the one hand you're helping out or you feel like you're sticking up for everybody else mm hmm and there and then you walk with assault charge right now"
+            },
+            {
+                "id": 97,
+                "startTime": 567.18,
+                "endTime": 572.04,
+                "duration": 4.86,
+                "speaker": "client",
+                "vocalArousal": 0.531,
+                "codes": [ "CLI" ],
+                "asrText": "like sometimes when you you take one for the team it's staying is a little you know"
+            },
+            {
+                "id": 98,
+                "startTime": 572.44,
+                "endTime": 575.3,
+                "duration": 2.86,
+                "speaker": "client",
+                "vocalArousal": 0.61,
+                "codes": [ "CLI" ],
+                "asrText": "and like my my fraternity brothers know that and"
+            },
+            {
+                "id": 99,
+                "startTime": 575.78,
+                "endTime": 585.14,
+                "duration": 9.36,
+                "speaker": "client",
+                "vocalArousal": 0.451,
+                "codes": [ "CLI" ],
+                "asrText": "you know each one of us a sort of taking one for the team at various points and you know whether it's an assault charge or or having a come crawling to the dean something like that"
+            },
+            {
+                "id": 100,
+                "startTime": 587.02,
+                "endTime": 588.8,
+                "duration": 1.78,
+                "speaker": "therapist",
+                "vocalArousal": 0.487,
+                "codes": [ "RES" ],
+                "asrText": "okay so the"
+            },
+            {
+                "id": 101,
+                "startTime": 589.32,
+                "endTime": 597.28,
+                "duration": 7.96,
+                "speaker": "therapist",
+                "vocalArousal": 0.421,
+                "codes": [ "RES" ],
+                "asrText": "you also feel like you've taken one for the team but at this point trying to how you reconcile the fact that that led you to here"
+            },
+            {
+                "id": 102,
+                "startTime": 597.68,
+                "endTime": 600.78,
+                "duration": 3.1,
+                "speaker": "client",
+                "vocalArousal": 0.475,
+                "codes": [ "CLI" ],
+                "asrText": "uh huh yeah i mean"
+            },
+            {
+                "id": 103,
+                "startTime": 601.34,
+                "endTime": 605.62,
+                "duration": 4.28,
+                "speaker": "client",
+                "vocalArousal": 0.33,
+                "codes": [ "CLI" ],
+                "asrText": "kind of like an inevitable chain of consequences you know yeah"
+            },
+            {
+                "id": 104,
+                "startTime": 606.46,
+                "endTime": 615.54,
+                "duration": 9.08,
+                "speaker": "client",
+                "vocalArousal": 0.465,
+                "codes": [ "CLI" ],
+                "asrText": "um what i choose to be here now but you know go with the way things went down it's kinda one thing leads to another i'll say yeah"
+            },
+            {
+                "id": 105,
+                "startTime": 623.78,
+                "endTime": 625.28,
+                "duration": 1.5,
+                "speaker": "client",
+                "vocalArousal": 0.733,
+                "codes": [ "CLI" ],
+                "asrText": "um my dad is"
+            },
+            {
+                "id": 106,
+                "startTime": 625.76,
+                "endTime": 631.62,
+                "duration": 5.86,
+                "speaker": "client",
+                "vocalArousal": 0.554,
+                "codes": [ "CLI" ],
+                "asrText": "uh uh my dad's been there too you know you told me some stories about how"
+            },
+            {
+                "id": 107,
+                "startTime": 631.82,
+                "endTime": 653.36,
+                "duration": 21.54,
+                "speaker": "client",
+                "vocalArousal": 0.487,
+                "codes": [ "CLI" ],
+                "asrText": "it's all gonna be okay i just have to sort of keep my head up and and this will pass all things most pass you know because one of those things so what does that look like keeping your head up a lot of things uh so what sort of you know just like maybe while this whole thing before it was over waiting for to blow over maybe not getting another bar fight type thing yeah yeah"
+            },
+            {
+                "id": 108,
+                "startTime": 653.9,
+                "endTime": 658.46,
+                "duration": 4.56,
+                "speaker": "therapist",
+                "vocalArousal": 0.492,
+                "codes": [ "RES" ],
+                "asrText": "so not a lines well with your lover notified or"
+            },
+            {
+                "id": 109,
+                "startTime": 658.48,
+                "endTime": 662.88,
+                "duration": 4.4,
+                "speaker": "client",
+                "vocalArousal": 0.372,
+                "codes": [ "CLI" ],
+                "asrText": "oh yeah for sure yeah for sure for sure so"
+            },
+            {
+                "id": 110,
+                "startTime": 664.96,
+                "endTime": 666.72,
+                "duration": 1.76,
+                "speaker": "therapist",
+                "vocalArousal": 0.514,
+                "codes": [ "FA" ],
+                "asrText": "okay"
+            }
+        ]
+    }
+}
